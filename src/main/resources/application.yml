@@ -1,0 +1,16 @@
+#Mon Aug 19 12:30:57 CEST 2024
+micronaut:
+  application:
+    name: aviation-backend
+  server:
+    port: 3001
+
+mongodb:
+  uri: mongodb://root:password@mongo:27017/aviationDb
+  options:
+    maxConnectionIdleTime: 10000
+    readConcern: majority
+  cluster:
+    maxWaitQueueSize: 5
+  connectionPool:
+    maxSize: 20
