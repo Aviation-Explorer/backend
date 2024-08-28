@@ -1,12 +1,12 @@
 #Mon Aug 19 12:30:57 CEST 2024
 micronaut:
   application:
-    name: aviation-backend
+    name: user-service
   server:
     port: 3001
 
 mongodb:
-  uri: mongodb://root:password@mongo:27017/aviationDb
+  uri: mongodb://${MONGO_HOST:localhost}:27017/aviationDb
   options:
     maxConnectionIdleTime: 10000
     readConcern: majority

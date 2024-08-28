@@ -2,7 +2,7 @@ FROM gradle:8.8-alpine AS build
 
 WORKDIR /aviation/backend/
 
-COPY . .
+COPY .. .
 
 RUN gradle build --no-daemon
 

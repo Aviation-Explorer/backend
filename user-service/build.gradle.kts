@@ -1,22 +1,15 @@
 plugins {
-    id("com.github.johnrengelman.shadow") version "8.1.1"
-    id("io.micronaut.application") version "4.4.0"
+    id("com.github.johnrengelman.shadow")
+    id("io.micronaut.application")
     id("io.micronaut.test-resources") version "4.4.0"
     id("io.micronaut.aot") version "4.4.0"
     id("java")
-    id("groovy") // For Spock tests
+    id("groovy")
 }
 
-version = "0.1"
-group = "aviation.backend"
-
-repositories {
-    mavenCentral()
-}
-
-subprojects {
-    repositories {
-        mavenCentral()
+tasks.withType<com.github.jengelman.gradle.plugins.shadow.tasks.ShadowJar> {
+    manifest {
+        attributes["Main-Class"] = "aviation.userService.UserServiceApplication"
     }
 }
 
@@ -30,32 +23,26 @@ dependencies {
     implementation("io.micronaut.mongodb:micronaut-mongo-reactive")
     implementation("io.micronaut.serde:micronaut-serde-jackson")
     runtimeOnly("ch.qos.logback:logback-classic")
+    runtimeOnly("org.yaml:snakeyaml")
     testImplementation("io.micronaut.test:micronaut-test-spock:$micronautVersion")
     testImplementation("org.spockframework:spock-core:$spockVersion")
     testImplementation("io.micronaut:micronaut-http-client")
 }
-
-java {
-    sourceCompatibility = JavaVersion.VERSION_17
-    targetCompatibility = JavaVersion.VERSION_17
-}
-
 
 micronaut {
     runtime("netty")
     testRuntime("spock")
     processing {
         incremental(true)
-        annotations("aviation.backend.*")
+        annotations("aviation.userService.*")
     }
-    aot {
-        optimizeServiceLoading = false
-        convertYamlToJava = false
-        precomputeOperations = true
-        cacheEnvironment = true
-        optimizeClassLoading = true
-        deduceEnvironment = true
-        optimizeNetty = true
-        replaceLogbackXml = true
-    }
+}
+
+application {
+    mainClass.set("aviation.userService.UserServiceApplication")
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_17
+    targetCompatibility = JavaVersion.VERSION_17
 }
