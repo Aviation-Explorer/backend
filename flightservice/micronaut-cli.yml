@@ -1,0 +1,6 @@
+applicationType: default
+defaultPackage: aviation
+testFramework: junit
+sourceLanguage: java
+buildTool: gradle
+features: [app-name, consul, discovery-client, discovery-consul, graalvm, gradle, http-client, http-client-test, java, java-application, junit, logback, management, micronaut-aot, micronaut-build, micronaut-http-validation, netty-server, properties, readme, serialization-jackson, shade, static-resources]
