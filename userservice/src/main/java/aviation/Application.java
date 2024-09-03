@@ -1,4 +1,4 @@
-package aviation.userservice.controllers;
+package aviation;
 
 import io.micronaut.runtime.Micronaut;
 
