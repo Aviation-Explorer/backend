@@ -11,7 +11,8 @@
 *On localhost*
 
 1. Run `docker run consul:1.15.4`
-2. From each service run one of either:
+2. Change host in `application.properties` from `${CONSUL_HOST\:consul}...` to `${CONSUL_HOST\:localhost}...`
+3. From each service run one of either:
     * `./gradlew clean build` and `java -jar build/libs/<service-name>-all.jar`
     * `./gradlew run`
-3. Consul is available on http://localhost:8500 and each service is under specific endpoint (i.e. `userservice` uses `/userservice` endpoint    )
+4. Consul is available on http://localhost:8500 and each service is under specific endpoint (i.e. `userservice` uses `/userservice` endpoint    )
