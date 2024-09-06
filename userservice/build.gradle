@@ -12,13 +12,25 @@ repositories {
 }
 
 dependencies {
+    annotationProcessor("org.projectlombok:lombok")
     annotationProcessor("io.micronaut:micronaut-http-validation")
     annotationProcessor("io.micronaut.serde:micronaut-serde-processor")
+    annotationProcessor("io.micronaut.validation:micronaut-validation-processor")    
+
     implementation("io.micronaut:micronaut-http-client")
     implementation("io.micronaut:micronaut-management")
     implementation("io.micronaut.discovery:micronaut-discovery-client")
     implementation("io.micronaut.serde:micronaut-serde-jackson")
+    implementation("io.micronaut.data:micronaut-data-jdbc")
+    implementation("io.micronaut.flyway:micronaut-flyway")
+    implementation("io.micronaut.sql:micronaut-jdbc-hikari")
+    implementation("io.micronaut.validation:micronaut-validation")
+
     runtimeOnly("ch.qos.logback:logback-classic")
+    runtimeOnly("org.flywaydb:flyway-mysql:10.17.3")
+    runtimeOnly("org.mariadb.jdbc:mariadb-java-client")
+
+    compileOnly("org.projectlombok:lombok")
 }
 
 

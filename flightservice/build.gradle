@@ -14,11 +14,18 @@ repositories {
 dependencies {
     annotationProcessor("io.micronaut:micronaut-http-validation")
     annotationProcessor("io.micronaut.serde:micronaut-serde-processor")
+    annotationProcessor("io.micronaut.data:micronaut-data-document-processor")
+
     implementation("io.micronaut:micronaut-http-client")
     implementation("io.micronaut:micronaut-management")
     implementation("io.micronaut.discovery:micronaut-discovery-client")
     implementation("io.micronaut.serde:micronaut-serde-jackson")
+    implementation("io.micronaut.mongodb:micronaut-mongo-sync")
+
+
     runtimeOnly("ch.qos.logback:logback-classic")
+    runtimeOnly("org.mongodb:mongodb-driver-sync")
+
 }
 
 

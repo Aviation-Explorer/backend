@@ -15,4 +15,8 @@
 3. From each service run one of either:
     * `./gradlew clean build` and `java -jar build/libs/<service-name>-all.jar`
     * `./gradlew run`
-4. Consul is available on http://localhost:8500 and each service is under specific endpoint (i.e. `userservice` uses `/userservice` endpoint    )
+4. Consul is available on http://localhost:8500 and each service is under specific endpoint (i.e. `userservice` uses `/userservice` endpoint)
+
+> [!IMPORTANT]
+> 1. In Dockerfiles and when running locally `./gradlew [build | run] -x test` due to MariaDB host. It is caused by running test with TestContainers(?) and not recognizing this host.
+> 2.
