@@ -7,7 +7,7 @@ import io.micronaut.http.annotation.Controller;
 import io.micronaut.http.annotation.Get;
 import io.micronaut.http.annotation.Produces;
 
-@Controller("/api/flightservice")
+@Controller("/api/flight")
 public class FlightController {
     @Get("/health")
     @Produces(MediaType.TEXT_PLAIN)

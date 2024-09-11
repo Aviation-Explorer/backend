@@ -5,41 +5,44 @@ plugins {
 }
 
 version = "0.1"
-group = "aviation"
+group = "authservice"
 
-repositories {
+repositories {    
     mavenCentral()
 }
 
-dependencies {
-    annotationProcessor("org.projectlombok:lombok")
+dependencies {    
     annotationProcessor("io.micronaut.security:micronaut-security-annotations")
     annotationProcessor("io.micronaut:micronaut-http-validation")
     annotationProcessor("io.micronaut.serde:micronaut-serde-processor")
-    annotationProcessor("io.micronaut.validation:micronaut-validation-processor")    
-
-    implementation("io.micronaut:micronaut-http-client")
+    annotationProcessor("io.micronaut.validation:micronaut-validation-processor") 
+    annotationProcessor("io.micronaut:micronaut-aop")   
+    
+    implementation("io.micronaut.serde:micronaut-serde-jackson")
+    implementation("io.micronaut.redis:micronaut-redis-lettuce")
     implementation("io.micronaut:micronaut-management")
     implementation("io.micronaut.discovery:micronaut-discovery-client")
-    implementation("io.micronaut.serde:micronaut-serde-jackson")
-    implementation("io.micronaut.data:micronaut-data-jdbc")
-    implementation("io.micronaut.flyway:micronaut-flyway")
-    implementation("io.micronaut.sql:micronaut-jdbc-hikari")
-    implementation("io.micronaut.validation:micronaut-validation")
-    implementation("io.micronaut.reactor:micronaut-reactor")
     implementation("io.micronaut.security:micronaut-security-jwt")
-    implementation("org.mindrot:jbcrypt:0.4")
+    implementation("io.micronaut:micronaut-aop")
+    implementation("io.micronaut:micronaut-http-client")
+    implementation("io.micronaut.cache:micronaut-cache-caffeine")
 
-    runtimeOnly("ch.qos.logback:logback-classic")
-    runtimeOnly("org.flywaydb:flyway-mysql:10.17.3")
-    runtimeOnly("org.mariadb.jdbc:mariadb-java-client")
 
-    compileOnly("org.projectlombok:lombok")
+
+    compileOnly("io.micronaut:micronaut-http-client")
+     
+    runtimeOnly("ch.qos.logback:logback-classic:1.4.5")
+
+    testImplementation("io.micronaut:micronaut-http-client")
+
+    aotPlugins platform("io.micronaut.platform:micronaut-platform:4.5.1")
+    aotPlugins("io.micronaut.security:micronaut-security-aot")
 }
 
 
+
 application {
-    mainClass = "aviation.Application"
+    mainClass = "authservice.Application"
 }
 java {
     sourceCompatibility = JavaVersion.toVersion("17")
@@ -54,7 +57,7 @@ micronaut {
     testRuntime("junit5")
     processing {
         incremental(true)
-        annotations("aviation.*")
+        annotations("authservice.*")
     }
     aot {
         // Please review carefully the optimizations enabled below
@@ -67,8 +70,6 @@ micronaut {
         deduceEnvironment = true
         optimizeNetty = true
         replaceLogbackXml = true
+        configurationProperties.put("micronaut.security.jwks.enabled","true")
     }
 }
-
-
-

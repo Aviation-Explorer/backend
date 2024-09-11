@@ -1,55 +1,60 @@
 package aviation.controllers;
 
-import java.net.URI;
-import java.util.List;
-import java.util.UUID;
-
 import aviation.models.AviationUser;
-import aviation.repository.UserRepository;
-import io.micronaut.http.HttpResponse;
+import aviation.models.UserCredentials;
+import aviation.models.dto.AviationUserDto;
+import aviation.services.AviationUserService;
+import java.util.logging.Logger;
 import io.micronaut.http.MediaType;
 import io.micronaut.http.annotation.Body;
+import io.micronaut.http.annotation.Consumes;
 import io.micronaut.http.annotation.Controller;
 import io.micronaut.http.annotation.Get;
 import io.micronaut.http.annotation.Post;
 import io.micronaut.http.annotation.Produces;
 import io.micronaut.scheduling.TaskExecutors;
 import io.micronaut.scheduling.annotation.ExecuteOn;
-import jakarta.validation.constraints.NotBlank;
+import io.micronaut.security.annotation.Secured;
+import io.micronaut.security.rules.SecurityRule;
+import reactor.core.publisher.Flux;
+import reactor.core.publisher.Mono;
 
 @ExecuteOn(TaskExecutors.BLOCKING)
-@Controller("/api/userservice")
+@Controller("/api/user")
 public class UserController {
-    private final UserRepository userRepository;
+    private static final Logger LOGGER = Logger.getLogger("UserController");
 
-    public UserController(UserRepository userRepository) {
-        this.userRepository = userRepository;
+    private final AviationUserService userService;
+
+    public UserController(AviationUserService userService) {
+        this.userService = userService;
     }
 
     @Get("/health")
     @Produces(MediaType.TEXT_PLAIN)
     public String healthCheck() {
-        return "User Service is up and running!";
+        return "User Service is up and running!";        
     }
-
-    @Get("/users")
+    
+    @Secured(SecurityRule.IS_ANONYMOUS)
+    @Get("/users")    
     @Produces(MediaType.APPLICATION_JSON)
-    public List<AviationUser> getUsers() {
-        return userRepository.findAll();
+    public Flux<AviationUserDto> getUsers() {
+        LOGGER.info("Retreived users from MariaDB");
+        return userService.findAll();
+    }    
+
+    @Secured(SecurityRule.IS_ANONYMOUS)
+    @Post("/verify")
+    public Mono<Boolean> verifyCredentials(@Body UserCredentials credentials) {
+        return userService.verifyCredentials(credentials);
     }
 
-    @Post
-    public HttpResponse<AviationUser> saveUser(@Body("user") @NotBlank AviationUser user) {
-        AviationUser userToSave = userRepository.save(user);
-
-        return HttpResponse
-        .created(userToSave)
-        .headers(headers -> headers.location(location(userToSave.getId())));
+    @Post("/user")
+    @Secured(SecurityRule.IS_ANONYMOUS)
+    @Consumes(MediaType.APPLICATION_JSON)
+    public Mono<AviationUserDto> saveUser(@Body AviationUser user) {           
+        return userService.save(user);
+        
     }
-
-    protected URI location(UUID id) {
-        return URI.create("/user/" + id);
-    }
-
-
 }

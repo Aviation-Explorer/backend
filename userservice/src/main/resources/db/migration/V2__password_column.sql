@@ -1,0 +1,2 @@
+ALTER TABLE aviation_user 
+ADD COLUMN password VARCHAR(255) NOT NULL;

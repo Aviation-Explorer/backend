@@ -10,13 +10,14 @@
 
 *On localhost*
 
-1. Run `docker run consul:1.15.4`
-2. Change host in `application.properties` from `${CONSUL_HOST\:consul}...` to `${CONSUL_HOST\:localhost}...`
-3. From each service run one of either:
+1. Run `docker run -p 8500:8500 -d consul:1.15.4`
+2. Run `docker run -e MARIADB_ROOT_PASSWORD=password -e MARIADB_DATABASE=userDb -p 3306:3306 -d mariadb`
+3. Run `docker run -p 6379:6379 -d redis`
+4. From each service run one of either:
     * `./gradlew clean build` and `java -jar build/libs/<service-name>-all.jar`
     * `./gradlew run`
-4. Consul is available on http://localhost:8500 and each service is under specific endpoint (i.e. `userservice` uses `/userservice` endpoint)
+5. Each service is under specific endpoint (i.e. `userservice` uses `/user` endpoint)
 
 > [!IMPORTANT]
 > 1. In Dockerfiles and when running locally `./gradlew [build | run] -x test` due to MariaDB host. It is caused by running test with TestContainers(?) and not recognizing this host.
-> 2.
+> 2. When add `implementation("io.micronaut.security:micronaut-security-jwt")` ALL endpoints are secured by default. To omit secure use `@Secured(SecurityRule.IS_ANONYMOUS)`

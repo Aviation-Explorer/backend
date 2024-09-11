@@ -1,1 +1,3 @@
-include 'flightservice', 'userservice'
+include 'flightservice',
+ 'userservice',
+ 'authservice'
