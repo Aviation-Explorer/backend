@@ -1,8 +1,7 @@
 plugins {
     id("com.github.johnrengelman.shadow") version "8.1.1"
     id("io.micronaut.application") version "4.4.2"
-    id("io.micronaut.aot") version "4.4.2"
-    id("com.github.sherter.google-java-format") version "0.9"
+    id("io.micronaut.aot") version "4.4.2"    
 }
 
 version = "0.1"
@@ -11,15 +10,11 @@ repositories {
     mavenCentral()
 }
 
-java {
-    sourceCompatibility = JavaVersion.toVersion("17")
-    targetCompatibility = JavaVersion.toVersion("17")
-}
-
 application {
-    mainClass.set("") 
+        mainClass = ""
 }
 
-tasks.named("check") {
-    dependsOn(tasks.named("googleJavaFormat"))
-}
+java {
+        sourceCompatibility = JavaVersion.toVersion("17")
+        targetCompatibility = JavaVersion.toVersion("17")
+    }

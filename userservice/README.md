@@ -11,3 +11,21 @@ User microservice is responsible for:
 - MariaDB
 - `auth service`
  
+## Api endpoints
+### `/api/user/users`
+*response*
+```json
+{
+
+}
+```
+
+### `/api/auth/logout`
+*body*
+```json
+{
+    "token": "JWT-token"    
+}
+```
+*response* \
+Void

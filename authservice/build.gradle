@@ -17,6 +17,7 @@ dependencies {
     annotationProcessor("io.micronaut.serde:micronaut-serde-processor")
     annotationProcessor("io.micronaut.validation:micronaut-validation-processor") 
     annotationProcessor("io.micronaut:micronaut-aop")   
+    annotationProcessor("io.micronaut.openapi:micronaut-openapi")
     
     implementation("io.micronaut.serde:micronaut-serde-jackson")
     implementation("io.micronaut.redis:micronaut-redis-lettuce")
@@ -27,8 +28,7 @@ dependencies {
     implementation("io.micronaut:micronaut-http-client")
     implementation("io.micronaut.cache:micronaut-cache-caffeine")
 
-
-
+    compileOnly("io.micronaut.openapi:micronaut-openapi-annotations")
     compileOnly("io.micronaut:micronaut-http-client")
      
     runtimeOnly("ch.qos.logback:logback-classic:1.4.5")
@@ -47,6 +47,12 @@ application {
 java {
     sourceCompatibility = JavaVersion.toVersion("17")
     targetCompatibility = JavaVersion.toVersion("17")
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.compilerArgs = [
+            '-parameters'
+    ]
 }
 
 

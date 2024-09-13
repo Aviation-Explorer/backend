@@ -1,10 +1,15 @@
 package authservice.controllers;
 
+import java.util.Optional;
 import java.util.logging.Logger;
 
-import authservice.services.JwtRedisAuthService;
+import authservice.services.JWTService;
 import io.micronaut.http.annotation.Body;
 import io.micronaut.http.annotation.Controller;
+import io.micronaut.http.annotation.Get;
+import io.micronaut.http.annotation.Head;
+import io.micronaut.http.annotation.Header;
+import io.micronaut.http.annotation.PathVariable;
 import io.micronaut.http.annotation.Post;
 import io.micronaut.security.annotation.Secured;
 import io.micronaut.security.authentication.UsernamePasswordCredentials;
@@ -16,15 +21,15 @@ import reactor.core.publisher.Mono;
 @Controller("/api/auth")
 public class LoginController {
     private static final Logger LOG = Logger.getLogger("LoginController");
-    private static final int EXPIRATION_TIME = 3600;
+    private static final int EXPIRATION_TIME = 30;
 
     @Inject
-    private JwtRedisAuthService jwtRedisAuthService;
+    private JWTService jwtRedisAuthService;
 
     
     @Post("/login")
     public Mono<String> login(@Body UsernamePasswordCredentials credentials) {                 
-        return jwtRedisAuthService.generateAndStoreToken(credentials, EXPIRATION_TIME)
+        return jwtRedisAuthService.authenticateUser(credentials, EXPIRATION_TIME)
         .flatMap(token -> {
             if(token != null) {
                 LOG.info("Logged in successfully with token: " + token);
@@ -35,10 +40,14 @@ public class LoginController {
             }
         });        
     }
+
+    @Get("/validate")
+    public Optional<String> validateToken(@Header String jwtToken) {
+        return jwtRedisAuthService.validateToken(jwtToken);
+    }
     
     @Post("/logout")
-    public void logout(String token) {
-        jwtRedisAuthService.revokeToken(token);
+    public void logout(String token) {        
         LOG.info("Logged out successfully");
     }
 

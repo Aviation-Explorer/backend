@@ -23,10 +23,7 @@ public class AviationUserService {
     }
 
     public Flux<AviationUserDto> findAll() {
-        List<AviationUser> users = userRepository.findAll();
-        for(AviationUser u : users) {
-            LOGGER.info("USER PASSWORD FROM DB :" +  u.getPassword());
-        }
+        List<AviationUser> users = userRepository.findAll();        
         return Flux.fromIterable(users)
                 .map(this::toDto);
     }
