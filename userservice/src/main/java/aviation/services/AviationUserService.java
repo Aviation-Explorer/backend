@@ -3,31 +3,28 @@ package aviation.services;
 import java.util.List;
 
 import aviation.models.AviationUser;
-import aviation.models.RefreshTokenEntity;
 import aviation.models.UserCredentials;
 import aviation.models.dto.AviationUserDto;
-import aviation.repository.RefreshTokenRepository;
 import aviation.repository.UserRepository;
 import aviation.utils.PasswordManager;
 import jakarta.inject.Singleton;
+import lombok.extern.slf4j.Slf4j;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 import java.util.Optional;
-import java.util.logging.Logger;
 
 @Singleton
+@Slf4j
 public class AviationUserService {
-    private final UserRepository userRepository;
-    private final RefreshTokenRepository refreshTokenRepository;
-    private static final Logger LOGGER = Logger.getLogger("AviationUserService");
+    private final UserRepository userRepository;    
+    
 
-    public AviationUserService(UserRepository userRepository, RefreshTokenRepository refreshTokenRepository) {
-        this.userRepository = userRepository;
-        this.refreshTokenRepository = refreshTokenRepository;
+    public AviationUserService(UserRepository userRepository) {
+        this.userRepository = userRepository;        
     }
 
     public Flux<AviationUserDto> findAll() {
-        List<AviationUser> users = userRepository.findAll();        
+        List<AviationUser> users = userRepository.findAll(); 
         return Flux.fromIterable(users)
                 .map(this::toDto);
     }
@@ -56,10 +53,6 @@ public class AviationUserService {
 
     }
 
-    public Mono<List<RefreshTokenEntity>> getTokens() {
-        return Mono.just(refreshTokenRepository.findAll());
-    }
-
     private AviationUserDto toDto(AviationUser user) {
         return new AviationUserDto(user.getName(),
                 user.getSurname(),
@@ -67,5 +60,4 @@ public class AviationUserService {
                 user.getPhoneNumber(),
                 user.getAge());
     }
-
 }

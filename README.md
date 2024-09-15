@@ -11,7 +11,7 @@
 *On localhost*
 
 1. Run `docker run -p 8500:8500 -d consul:1.15.4`
-2. Run `docker run -e MARIADB_ROOT_PASSWORD=password -e MARIADB_DATABASE=userDb -p 3306:3306 -d mariadb`
+2. Run `docker run -e MARIADB_ROOT_PASSWORD=password -e MARIADB_DATABASE=userDb -p 3306:3306 -d mariadb:11.2`
 4. From each service run one of either:
     * `./gradlew clean build` and `java -jar build/libs/<service-name>-all.jar`
     * `./gradlew run`
