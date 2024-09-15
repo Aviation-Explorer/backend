@@ -1,17 +1,18 @@
 package aviation.controllers;
 
 import aviation.models.AviationUser;
+import aviation.models.RefreshTokenEntity;
 import aviation.models.UserCredentials;
 import aviation.models.dto.AviationUserDto;
 import aviation.services.AviationUserService;
+
+import java.util.List;
 import java.util.logging.Logger;
 
-import io.micronaut.core.annotation.Order;
 import io.micronaut.http.MediaType;
 import io.micronaut.http.annotation.Body;
 import io.micronaut.http.annotation.Consumes;
 import io.micronaut.http.annotation.Controller;
-import io.micronaut.http.annotation.Filter;
 import io.micronaut.http.annotation.Get;
 import io.micronaut.http.annotation.Post;
 import io.micronaut.http.annotation.Produces;
@@ -23,6 +24,7 @@ import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
 @ExecuteOn(TaskExecutors.BLOCKING)
+@Secured(SecurityRule.IS_AUTHENTICATED)
 @Controller("/api/user")
 public class UserController {
     private static final Logger LOGGER = Logger.getLogger("UserController");
@@ -38,14 +40,18 @@ public class UserController {
     public String healthCheck() {
         return "User Service is up and running!";        
     }
-    
-    @Secured(SecurityRule.IS_ANONYMOUS)
+        
     @Get("/users")    
-    @Produces(MediaType.APPLICATION_JSON)
+    @Produces(MediaType.APPLICATION_JSON)    
     public Flux<AviationUserDto> getUsers() {
         LOGGER.info("Retreived users from MariaDB");
         return userService.findAll();
-    }    
+    }   
+    
+    @Get("/token")
+    public Mono<List<RefreshTokenEntity>> getTokens() {
+        return userService.getTokens();
+    }
 
     @Secured(SecurityRule.IS_ANONYMOUS)
     @Post("/verify")

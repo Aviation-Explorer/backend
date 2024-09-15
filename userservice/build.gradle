@@ -18,6 +18,7 @@ dependencies {
     annotationProcessor("io.micronaut.serde:micronaut-serde-processor")
     annotationProcessor("io.micronaut.validation:micronaut-validation-processor")    
 
+implementation("io.micrometer:context-propagation")
     implementation("io.micronaut:micronaut-http-client")
     implementation("io.micronaut:micronaut-management")
     implementation("io.micronaut.discovery:micronaut-discovery-client")
@@ -30,6 +31,7 @@ dependencies {
     implementation("io.micronaut.security:micronaut-security-jwt")
     implementation("org.mindrot:jbcrypt:0.4")
 
+    runtimeOnly("com.h2database:h2")
     runtimeOnly("ch.qos.logback:logback-classic")
     runtimeOnly("org.flywaydb:flyway-mysql:10.17.3")
     runtimeOnly("org.mariadb.jdbc:mariadb-java-client")

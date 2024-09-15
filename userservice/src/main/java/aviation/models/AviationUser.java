@@ -1,6 +1,7 @@
 package aviation.models;
 
 import io.micronaut.core.annotation.Nullable;
+import io.micronaut.data.annotation.GeneratedValue;
 import io.micronaut.data.annotation.Id;
 import io.micronaut.data.annotation.MappedEntity;
 import io.micronaut.serde.annotation.Serdeable;
@@ -16,6 +17,7 @@ import lombok.Setter;
 @Setter
 public class AviationUser {
     @Id
+    @GeneratedValue
     private Long id;
     @NotNull
     private String name;
