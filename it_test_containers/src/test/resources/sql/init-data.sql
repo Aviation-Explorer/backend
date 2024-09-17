@@ -1,0 +1,1 @@
+insert into aviation_user(id, name, surname, email, password) values (1, 'Test', 'Test', 'Test@email.com', 'password');

@@ -16,8 +16,7 @@ import java.util.Optional;
 @Singleton
 @Slf4j
 public class AviationUserService {
-    private final UserRepository userRepository;    
-    
+    private final UserRepository userRepository;
 
     public AviationUserService(UserRepository userRepository) {
         this.userRepository = userRepository;        

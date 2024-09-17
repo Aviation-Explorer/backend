@@ -1,0 +1,8 @@
+
+
+rootProject.name="it_test_containers"
+include ':flightservice', ':userservice', ':authservice'
+project(':flightservice').projectDir = new File(settingsDir, "../flightservice")
+project(':authservice').projectDir = new File(settingsDir, "../authservice")
+project(':userservice').projectDir = new File(settingsDir, "../userservice")
+
