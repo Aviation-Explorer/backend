@@ -1,4 +1,4 @@
-FROM gradle:8.8-alpine AS build
+FROM gradle:8.8 AS build
 
 WORKDIR /app/backend/userservice
 
@@ -13,6 +13,8 @@ WORKDIR /app/backend/userservice
 RUN apk add --no-cache bash
 
 COPY --from=build /app/backend/userservice/build/libs/userservice*-all.jar app.jar
+
+VOLUME [ "/user-data" ]
 
 ADD https://raw.githubusercontent.com/vishnubob/wait-for-it/master/wait-for-it.sh /wait-for-it.sh
 RUN chmod +x /wait-for-it.sh

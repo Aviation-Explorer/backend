@@ -13,6 +13,7 @@ repositories {
 
 
 dependencies {
+    annotationProcessor("org.projectlombok:lombok")
     annotationProcessor("io.micronaut:micronaut-http-validation")
     annotationProcessor("io.micronaut.serde:micronaut-serde-processor")
     annotationProcessor("io.micronaut.data:micronaut-data-document-processor")
@@ -22,14 +23,20 @@ dependencies {
     implementation("io.micronaut:micronaut-http-client")
     implementation("io.micronaut:micronaut-management")
     implementation("io.micronaut.discovery:micronaut-discovery-client")
-    implementation("io.micronaut.serde:micronaut-serde-jackson")
-    implementation("io.micronaut.mongodb:micronaut-mongo-sync")
     implementation("io.micronaut.security:micronaut-security-jwt")
-    compileOnly("io.micronaut.openapi:micronaut-openapi-annotations")
+    implementation("io.micronaut.reactor:micronaut-reactor")
+
+    implementation("io.micronaut.serde:micronaut-serde-jackson")
+
+    implementation("io.micronaut.mongodb:micronaut-mongo-reactive")
+    implementation("io.micronaut.data:micronaut-data-mongodb")
 
 
-    runtimeOnly("ch.qos.logback:logback-classic")
     runtimeOnly("org.mongodb:mongodb-driver-sync")
+    runtimeOnly("ch.qos.logback:logback-classic")
+
+    compileOnly("org.projectlombok:lombok")
+    compileOnly("io.micronaut.openapi:micronaut-openapi-annotations")
 
 }
 

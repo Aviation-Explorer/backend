@@ -1,0 +1,5 @@
+mariadb:
+  image: mariadb:11.2
+
+userservice:
+  image: kajtekdocker/userservice:1.0

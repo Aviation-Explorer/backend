@@ -10,12 +10,16 @@
 
 *On localhost*
 
-1. Run `docker run -p 8500:8500 -d consul:1.15.4`
-2. Run `docker run -e MARIADB_ROOT_PASSWORD=password -e MARIADB_DATABASE=userDb -p 3306:3306 -d mariadb:11.2`
-4. From each service run one of either:
+1. Create volumes:
+   * `docker volume create users-volume` 
+   * `docker volume create flights-volume`
+2. Run `docker run -p 8500:8500 -d --name aviation-consul consul:1.15.4 | docker start aviation-consul`
+3. Run `docker run -p 27017:27017 -e MONGO_INITDB_DATABASE=aviationDb -e MONGO_INITDB_ROOT_USERNAME=admin -e MONGO_INITDB_ROOT_PASSWORD=password --name aviation-mongo -v flights-volume:/app/flights-data -d mongo:7.0.14 | docker start aviation-mongo`
+4. Run `docker run -e MARIADB_ROOT_PASSWORD=password -e MARIADB_DATABASE=userDb -p 3306:3306 -v users-volume:/app/user-data --name aviation-maria -d mariadb:11.2 | docker start aviation-maria`
+5. From each service run one of either:
     * `./gradlew clean build` and `java -jar build/libs/<service-name>-all.jar`
     * `./gradlew run`
-5. Each service is under specific endpoint (i.e. `userservice` uses `/user` endpoint)
+6. Each service is under specific endpoint (i.e. `userservice` uses `/user` endpoint)
 
 > [!IMPORTANT]
 > 1. In Dockerfiles and when running locally `./gradlew [build | run] -x test` due to MariaDB host. It is caused by running test with TestContainers(?) and not recognizing this host.
