@@ -46,7 +46,7 @@ public class UserController {
         return userService.verifyCredentials(credentials);
     }
 
-    @Post("/user")
+    @Post
     @Secured(SecurityRule.IS_ANONYMOUS)
     @Consumes(MediaType.APPLICATION_JSON)
     public Mono<AviationUserDto> saveUser(@Body AviationUser user) {

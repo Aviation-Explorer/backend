@@ -1,9 +1,9 @@
 package aviation.repositories;
 
-import aviation.models.airport.Airport;
+import aviation.models.airline.Airline;
 import io.micronaut.data.mongodb.annotation.MongoRepository;
 import io.micronaut.data.repository.CrudRepository;
 import org.bson.types.ObjectId;
 
 @MongoRepository
-public interface AirportRepository extends CrudRepository<Airport, ObjectId> {}
+public interface AirlineRepository extends CrudRepository<Airline, ObjectId> {}

@@ -25,9 +25,9 @@ public class AuthenticationProviderUserPassword<B> implements HttpRequestExecuto
             @NonNull AuthenticationRequest<String, String> authRequest) {        
         UserCredentials credentials = new UserCredentials(authRequest.getIdentity(), authRequest.getSecret());
 
-        Mono<Boolean> areValidCredentials = client.verifyCredentials(credentials);        
+        Mono<Boolean> areValidCredentials = client.verifyCredentials(credentials);
 
-        return areValidCredentials.block()
+        return Boolean.TRUE.equals(areValidCredentials.block())
                 ? AuthenticationResponse.success(authRequest.getIdentity())
                 : AuthenticationResponse.failure();
     }

@@ -1,7 +1,7 @@
 package aviation.services;
 
-import aviation.models.Airport;
-import aviation.models.dto.AirportDto;
+import aviation.models.airport.Airport;
+import aviation.models.airport.dto.AirportDto;
 import aviation.repositories.AirportRepository;
 import jakarta.inject.Singleton;
 import lombok.extern.slf4j.Slf4j;
@@ -19,8 +19,7 @@ public class AirportService {
     }
 
     public Flux<AirportDto> getAirports() {
-        List<Airport> airports = airportRepository.findAll();
-        log.info("AIRPORT NAME {}", airports.get(0).getAirportId());
+        List<Airport> airports = airportRepository.findAll();        
         return Flux.fromIterable(airports)
                 .map(this::toDto);
     }

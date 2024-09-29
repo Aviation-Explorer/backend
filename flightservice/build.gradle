@@ -2,6 +2,7 @@ plugins {
     id("com.github.johnrengelman.shadow") version "8.1.1"
     id("io.micronaut.application") version "4.4.2"
     id("io.micronaut.aot") version "4.4.2"
+    id("com.github.sherter.google-java-format") version "0.9"
 }
 
 version = "0.1"
@@ -47,6 +48,10 @@ application {
 java {
     sourceCompatibility = JavaVersion.toVersion("17")
     targetCompatibility = JavaVersion.toVersion("17")
+}
+
+googleJavaFormat {
+    toolVersion = "1.15.0"
 }
 
 

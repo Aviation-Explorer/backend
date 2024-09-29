@@ -18,7 +18,7 @@ dependencies {
     annotationProcessor("io.micronaut.security:micronaut-security-annotations")
     annotationProcessor("io.micronaut:micronaut-http-validation")
     annotationProcessor("io.micronaut.serde:micronaut-serde-processor")
-    annotationProcessor("io.micronaut.validation:micronaut-validation-processor")  
+    annotationProcessor("io.micronaut.validation:micronaut-validation-processor")
     annotationProcessor("io.micronaut.openapi:micronaut-openapi")
 
     implementation("io.micrometer:context-propagation")
@@ -38,7 +38,7 @@ dependencies {
     runtimeOnly("org.flywaydb:flyway-mysql:10.17.3")
     runtimeOnly("org.mariadb.jdbc:mariadb-java-client")
 
-    compileOnly("io.micronaut.openapi:micronaut-openapi-annotations")  
+    compileOnly("io.micronaut.openapi:micronaut-openapi-annotations")
     compileOnly("org.projectlombok:lombok")
 
     testImplementation("io.micronaut:micronaut-http-client")

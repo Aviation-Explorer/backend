@@ -1,4 +1,5 @@
 plugins {
+    id("groovy")
     id("com.github.johnrengelman.shadow") version "8.1.1"
     id("io.micronaut.application") version "4.4.2"
     id("io.micronaut.aot") version "4.4.2"
@@ -30,12 +31,16 @@ dependencies {
     implementation("io.micronaut.cache:micronaut-cache-caffeine")
 
     compileOnly("io.micronaut.openapi:micronaut-openapi-annotations")
-    compileOnly("io.micronaut:micronaut-http-client")    
+    compileOnly("io.micronaut:micronaut-http-client")
     compileOnly("org.projectlombok:lombok")
-     
+
+    runtimeOnly("org.mariadb.jdbc:mariadb-java-client")
     runtimeOnly("ch.qos.logback:logback-classic:1.4.5")
 
     testImplementation("io.micronaut:micronaut-http-client")
+    testImplementation("org.testcontainers:testcontainers")
+    testImplementation("org.testcontainers:spock")
+    testImplementation("org.testcontainers:mariadb")
 
     aotPlugins platform("io.micronaut.platform:micronaut-platform:4.5.1")
     aotPlugins("io.micronaut.security:micronaut-security-aot")
@@ -62,7 +67,7 @@ graalvmNative.toolchainDetection = false
 
 micronaut {
     runtime("netty")
-    testRuntime("junit5")
+    testRuntime("spock2")
     processing {
         incremental(true)
         annotations("authservice.*")

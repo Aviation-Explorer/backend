@@ -1,5 +1,4 @@
 
 
 rootProject.name="userservice"
-include ':flightservice'
 

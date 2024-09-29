@@ -1,7 +1,8 @@
 package aviation.controllers;
 
+import aviation.models.airline.dto.AirlineDto;
 import aviation.models.airport.dto.AirportDto;
-import aviation.services.AirportService;
+import aviation.services.AirlineService;
 import io.micronaut.http.annotation.Controller;
 import io.micronaut.http.annotation.Get;
 import io.micronaut.scheduling.TaskExecutors;
@@ -15,15 +16,15 @@ import reactor.core.publisher.Flux;
 @ExecuteOn(TaskExecutors.BLOCKING)
 @Secured(SecurityRule.IS_AUTHENTICATED)
 @Slf4j
-public class AirportController {
-  private final AirportService airportService;
+public class AirlineController {
+  private final AirlineService airlineService;
 
-  public AirportController(AirportService airportService) {
-    this.airportService = airportService;
+  public AirlineController(AirlineService airlineService) {
+    this.airlineService = airlineService;
   }
 
-  @Get("/airports")
-  public Flux<AirportDto> getAirports() {
-    return airportService.getAirports();
+  @Get("/airlines")
+  public Flux<AirlineDto> getAirports() {
+    return airlineService.getAirlines();
   }
 }

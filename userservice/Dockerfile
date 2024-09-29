@@ -19,4 +19,4 @@ VOLUME [ "/user-data" ]
 ADD https://raw.githubusercontent.com/vishnubob/wait-for-it/master/wait-for-it.sh /wait-for-it.sh
 RUN chmod +x /wait-for-it.sh
 
-CMD /wait-for-it.sh mariadb:3306 -- java -jar app.jar
+CMD /wait-for-it.sh ${DB_HOST}:${DB_PORT} -- java -jar app.jar
