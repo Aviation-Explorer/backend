@@ -19,3 +19,4 @@
 - docker exec -i aviation-mongo mongoimport --db aviationDb --collection countries --type json --file /tmp/countries.json --jsonArray --authenticationDatabase admin -u admin -p password
 
 To enter mongo container: `docker exec -it aviation-mongo mongosh -u admin -p password --authenticationDatabase admin`
+    
