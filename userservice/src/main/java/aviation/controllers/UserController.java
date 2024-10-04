@@ -4,10 +4,10 @@ import aviation.models.AviationUser;
 import aviation.models.UserCredentials;
 import aviation.models.dto.AviationUserDto;
 import aviation.services.AviationUserService;
-
-import java.util.logging.Logger;
-
+import io.micronaut.http.HttpResponse;
+import io.micronaut.http.HttpStatus;
 import io.micronaut.http.MediaType;
+import io.micronaut.http.MutableHttpResponse;
 import io.micronaut.http.annotation.Body;
 import io.micronaut.http.annotation.Consumes;
 import io.micronaut.http.annotation.Controller;
@@ -26,31 +26,35 @@ import reactor.core.publisher.Mono;
 @Secured(SecurityRule.IS_AUTHENTICATED)
 @Slf4j
 @Controller("/api/user")
-public class UserController {    
+public class UserController {
 
-    private final AviationUserService userService;
+  private final AviationUserService userService;
 
-    public UserController(AviationUserService userService) {
-        this.userService = userService;
-    }
+  public UserController(AviationUserService userService) {
+    this.userService = userService;
+  }
 
-    @Get("/users")
-    @Produces(MediaType.APPLICATION_JSON)
-    public Flux<AviationUserDto> getUsers() {        
-        return userService.findAll();
-    }
+  @Get("/users")
+  @Produces(MediaType.APPLICATION_JSON)
+  public Flux<AviationUserDto> getUsers() {
+    return userService.findAll();
+  }
 
-    @Secured(SecurityRule.IS_ANONYMOUS)
-    @Post("/verify")
-    public Mono<Boolean> verifyCredentials(@Body UserCredentials credentials) {
-        return userService.verifyCredentials(credentials);
-    }
+  @Secured(SecurityRule.IS_ANONYMOUS)
+  @Post("/verify")
+  public Mono<Boolean> verifyCredentials(@Body UserCredentials credentials) {
+    return userService.verifyCredentials(credentials);
+  }
 
-    @Post
-    @Secured(SecurityRule.IS_ANONYMOUS)
-    @Consumes(MediaType.APPLICATION_JSON)
-    public Mono<AviationUserDto> saveUser(@Body AviationUser user) {
-        return userService.save(user);
-
-    }
+  @Post
+  @Secured(SecurityRule.IS_ANONYMOUS)
+  @Consumes(MediaType.APPLICATION_JSON)
+  public Mono<MutableHttpResponse<AviationUserDto>> saveUser(@Body AviationUser user) {
+    return userService
+        .save(user)
+        .map(HttpResponse::created)
+        .onErrorResume(
+            IllegalArgumentException.class,
+            e -> Mono.just(HttpResponse.status(HttpStatus.CONFLICT, e.getMessage())));
+  }
 }

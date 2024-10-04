@@ -15,19 +15,19 @@ import org.bson.types.ObjectId;
 @Serdeable
 public class Country {
   @Id @GeneratedValue ObjectId _id;
-  String id;
-  String capital;
-  String currencyCode;
-  String fipsCode;
-  String countryIso2;
-  String countryIso3;
-  String continent;
-  String countryId;
-  String countryName;
-  String currencyName;
-  String countryIsoNumeric;
-  String phonePrefix;
-  String population;
+  private final String id;
+  private final String capital;
+  private final String currencyCode;
+  private final String fipsCode;
+  private final String countryIso2;
+  private final String countryIso3;
+  private final String continent;
+  private final String countryId;
+  private final String countryName;
+  private final String currencyName;
+  private final String countryIsoNumeric;
+  private final String phonePrefix;
+  private final String population;
 
   @BsonCreator
   public Country(

@@ -13,7 +13,7 @@ import reactor.core.publisher.Flux;
 
 @Controller("/api/flight-data")
 @ExecuteOn(TaskExecutors.BLOCKING)
-@Secured(SecurityRule.IS_AUTHENTICATED)
+@Secured(SecurityRule.IS_ANONYMOUS)
 @Slf4j
 public class AirportController {
   private final AirportService airportService;

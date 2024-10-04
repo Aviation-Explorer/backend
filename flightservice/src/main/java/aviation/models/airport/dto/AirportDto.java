@@ -9,6 +9,7 @@ public record AirportDto(
     String airportId,
     String iataCode,
     String cityIataCode,
+    String cityName,
     String icaoCode,
     String countryIso2,
     String geonameId,

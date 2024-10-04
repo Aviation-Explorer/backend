@@ -1,14 +1,11 @@
 package aviation.services;
 
-import aviation.models.city.City;
-import aviation.models.city.dto.CityDto;
 import aviation.models.country.Country;
 import aviation.models.country.dto.CountryDto;
 import aviation.repositories.CountryRepository;
 import jakarta.inject.Singleton;
-import reactor.core.publisher.Flux;
-
 import java.util.List;
+import reactor.core.publisher.Flux;
 
 @Singleton
 public class CountryService {

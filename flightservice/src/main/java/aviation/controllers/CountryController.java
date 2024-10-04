@@ -12,7 +12,7 @@ import reactor.core.publisher.Flux;
 
 @Controller("/api/flight-data")
 @ExecuteOn(TaskExecutors.BLOCKING)
-@Secured(SecurityRule.IS_AUTHENTICATED)
+@Secured(SecurityRule.IS_ANONYMOUS)
 public class CountryController {
   private final CountryService countryService;
 

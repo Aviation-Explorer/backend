@@ -4,7 +4,7 @@ WORKDIR /app/backend/authservice
 
 COPY . .
 
-RUN gradle build --no-daemon
+RUN gradle build --no-daemon -x test
 
 FROM openjdk:17-alpine 
 

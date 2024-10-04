@@ -2,7 +2,6 @@ plugins {
     id("com.github.johnrengelman.shadow") version "8.1.1"
     id("io.micronaut.application") version "4.4.2"
     id("io.micronaut.aot") version "4.4.2"
-    id("com.github.sherter.google-java-format") version "0.9"
 }
 
 version = "0.1"
@@ -27,7 +26,7 @@ dependencies {
     implementation("io.micronaut.security:micronaut-security-jwt")
     implementation("io.micronaut.reactor:micronaut-reactor")
 
-    implementation("io.micronaut.serde:micronaut-serde-jackson")
+    implementation("io.micronaut.serde:micronaut-serde-bson")
 
     implementation("io.micronaut.mongodb:micronaut-mongo-reactive")
     implementation("io.micronaut.data:micronaut-data-mongodb")
@@ -49,11 +48,6 @@ java {
     sourceCompatibility = JavaVersion.toVersion("17")
     targetCompatibility = JavaVersion.toVersion("17")
 }
-
-googleJavaFormat {
-    toolVersion = "1.15.0"
-}
-
 
 graalvmNative.toolchainDetection = false
 

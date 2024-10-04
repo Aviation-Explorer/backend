@@ -2,13 +2,10 @@ package aviation.services;
 
 import aviation.models.airline.Airline;
 import aviation.models.airline.dto.AirlineDto;
-import aviation.models.city.City;
-import aviation.models.city.dto.CityDto;
 import aviation.repositories.AirlineRepository;
 import jakarta.inject.Singleton;
-import reactor.core.publisher.Flux;
-
 import java.util.List;
+import reactor.core.publisher.Flux;
 
 @Singleton
 public class AirlineService {

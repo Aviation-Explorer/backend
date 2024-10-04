@@ -5,6 +5,7 @@ import aviation.models.city.dto.CityDto;
 import aviation.repositories.CityRepository;
 import jakarta.inject.Singleton;
 import reactor.core.publisher.Flux;
+import reactor.core.publisher.Mono;
 
 import java.util.List;
 
@@ -20,6 +21,10 @@ public class CityService {
     List<City> cities = cityRepository.findAll();
 
     return Flux.fromIterable(cities).map(this::toDto);
+  }
+
+  public Mono<CityDto> getCityByIataCode(String iataCode) {
+    return Mono.justOrEmpty(cityRepository.findByIataCode(iataCode)).map(this::toDto);
   }
 
   private CityDto toDto(City city) {

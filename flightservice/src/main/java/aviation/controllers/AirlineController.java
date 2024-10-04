@@ -1,7 +1,6 @@
 package aviation.controllers;
 
 import aviation.models.airline.dto.AirlineDto;
-import aviation.models.airport.dto.AirportDto;
 import aviation.services.AirlineService;
 import io.micronaut.http.annotation.Controller;
 import io.micronaut.http.annotation.Get;
@@ -14,7 +13,7 @@ import reactor.core.publisher.Flux;
 
 @Controller("/api/flight-data")
 @ExecuteOn(TaskExecutors.BLOCKING)
-@Secured(SecurityRule.IS_AUTHENTICATED)
+@Secured(SecurityRule.IS_ANONYMOUS)
 @Slf4j
 public class AirlineController {
   private final AirlineService airlineService;
