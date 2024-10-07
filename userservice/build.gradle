@@ -3,6 +3,7 @@ plugins {
     id("com.github.johnrengelman.shadow") version "8.1.1"
     id("io.micronaut.application") version "4.4.2"
     id("io.micronaut.aot") version "4.4.2"
+    id("io.micronaut.test-resources") version "4.4.2"
 }
 
 version = "0.1"
@@ -45,6 +46,9 @@ dependencies {
     testImplementation("org.testcontainers:mariadb")
     testImplementation("org.testcontainers:testcontainers")
     testImplementation("org.testcontainers:spock")
+    testImplementation("org.testcontainers:consul:1.15.4")
+
+
 }
 
 

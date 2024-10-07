@@ -12,7 +12,7 @@ import org.testcontainers.spock.Testcontainers
 import spock.lang.Shared
 import spock.lang.Unroll
 
-@MicronautTest
+@MicronautTest(environments = "test")
 @Testcontainers
 class AuthServiceTest extends BaseTest {
 
@@ -56,5 +56,10 @@ class AuthServiceTest extends BaseTest {
         where:
         email            | password
         "bad@email.com" | "bad_password"
+    }
+
+    def "should pass"(){
+        expect:
+        2 == 2
     }
 }

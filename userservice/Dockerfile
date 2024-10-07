@@ -1,4 +1,4 @@
-FROM gradle:8.8 AS build
+FROM gradle:8.8-alpine AS build
 
 WORKDIR /app/backend/userservice
 

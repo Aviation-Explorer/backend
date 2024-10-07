@@ -1,36 +1,36 @@
 package aviation
 
-import org.testcontainers.containers.GenericContainer
+import io.micronaut.context.annotation.Property
+import io.micronaut.test.support.TestPropertyProvider
+import org.testcontainers.consul.ConsulContainer
 import org.testcontainers.containers.MariaDBContainer
-import org.testcontainers.containers.wait.strategy.Wait
 import org.testcontainers.utility.DockerImageName
-import spock.lang.Shared
 import spock.lang.Specification
 
-abstract class BaseTest extends Specification {
-    @Shared
+@Property(name = "datasources.default.url", value = "jdbc:tc:mariadb:11.2:///userDb")
+abstract class BaseTest extends Specification implements TestPropertyProvider {
+
     static MariaDBContainer mariadbContainer = new MariaDBContainer<>(DockerImageName.parse("mariadb:11.2"))
             .withExposedPorts(3306)
             .withUsername("root")
             .withPassword("")
             .withDatabaseName("userDb")
-            .waitingFor(Wait.forListeningPort())
 
-    @Shared
-    static GenericContainer consulContainer = new GenericContainer("consul:1.15.4")
+    static ConsulContainer consulContainer = new ConsulContainer(DockerImageName.parse("consul:1.15.4"))
             .withExposedPorts(8500)
-            .waitingFor(Wait.forListeningPort())
 
     def setupSpec() {
         mariadbContainer.start()
         consulContainer.start()
-        print("diupa" + consulContainer.getLogs())
-        print("diupa2" + mariadbContainer.getLogs())
 
     }
 
-    def cleanupSpec() {
-        mariadbContainer.stop()
-        consulContainer.stop()
+    @Override
+    Map<String, String> getProperties() {
+        return [
+                "CONSUL_HOST"              : consulContainer.getHost(),
+                "CONSUL_PORT"              : consulContainer.getMappedPort(8500).toString(),
+                "consul.client.defaultZone": "http://${consulContainer.getHost()}:${consulContainer.getMappedPort(8500)}"
+        ]
     }
 }

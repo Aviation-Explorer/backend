@@ -8,46 +8,39 @@ import org.testcontainers.utility.DockerImageName
 import spock.lang.Shared
 import spock.lang.Specification
 
+import java.time.Duration
+
 abstract class BaseTest extends Specification {
 
-    static def network = Network.newNetwork()
+    static Network network = Network.newNetwork()
+
     @Shared
     static GenericContainer consulContainer = new GenericContainer("consul:1.15.4")
-            .withExposedPorts(8500)
             .withNetwork(network)
-            .withNetworkMode("host")
-            .waitingFor(Wait.forListeningPort())
+            .withExposedPorts(8500)
+
     @Shared
     static MariaDBContainer mariadbContainer = new MariaDBContainer<>(DockerImageName.parse("mariadb:11.2"))
-            .withExposedPorts(3306)
             .withNetwork(network)
-            .withNetworkMode("host")
+            .withNetworkAliases("mariadb")
+            .withExposedPorts(3306)
             .withDatabaseName("userDb")
             .withInitScript("sql/init.sql")
             .waitingFor(Wait.forListeningPort())
 
     @Shared
-    static GenericContainer userServiceContainer = new GenericContainer("kajtekdocker/userservice:1.4")
-            .withExposedPorts(8082)
+    static GenericContainer userServiceContainer = new GenericContainer("kajtekdocker/userservice:1.5")
             .withNetwork(network)
-            .withNetworkMode("host")
-            .waitingFor(Wait.forListeningPort())
+            .withExposedPorts(8082)
+            .waitingFor(Wait.forListeningPort()).withStartupTimeout(Duration.ofSeconds(50))
 
     def setupSpec() {
         mariadbContainer.start()
         consulContainer.start()
-        userServiceContainer.withEnv("DB_HOST", mariadbContainer.getHost())
+        userServiceContainer.withEnv("DB_HOST", "localhost")
         userServiceContainer.withEnv("DB_PORT", mariadbContainer.getMappedPort(3306).toString())
+        userServiceContainer.withEnv("CONSUL_HOST", "consul")
         userServiceContainer.withEnv("CONSUL_PORT", consulContainer.getMappedPort(8500).toString())
         userServiceContainer.start()
-        print("mariadubpa " + mariadbContainer.getHost() + ":" + mariadbContainer.getMappedPort(3306))
-        print("ka3wo" + consulContainer.getHost() + ":" + consulContainer.getMappedPort(8500))
-        print("dupa" + userServiceContainer.getLogs())
-    }
-
-    def cleanupSpec() {
-        mariadbContainer.stop()
-        consulContainer.stop()
-        userServiceContainer.stop()
     }
 }
