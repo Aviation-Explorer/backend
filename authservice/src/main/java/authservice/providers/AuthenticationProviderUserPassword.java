@@ -1,11 +1,11 @@
 package authservice.providers;
 
-
 import authservice.clients.UserServiceClient;
 import authservice.models.UserCredentials;
 import io.micronaut.core.annotation.NonNull;
 import io.micronaut.core.annotation.Nullable;
 import io.micronaut.http.HttpRequest;
+import io.micronaut.http.HttpResponse;
 import io.micronaut.security.authentication.AuthenticationRequest;
 import io.micronaut.security.authentication.AuthenticationResponse;
 import io.micronaut.security.authentication.provider.HttpRequestExecutorAuthenticationProvider;
@@ -22,14 +22,18 @@ public class AuthenticationProviderUserPassword<B> implements HttpRequestExecuto
 
     @Override
     public @NonNull AuthenticationResponse authenticate(@Nullable HttpRequest<B> requestContext,
-            @NonNull AuthenticationRequest<String, String> authRequest) {        
+                                                        @NonNull AuthenticationRequest<String, String> authRequest) {
         UserCredentials credentials = new UserCredentials(authRequest.getIdentity(), authRequest.getSecret());
 
-        Mono<Boolean> areValidCredentials = client.verifyCredentials(credentials);
+        Mono<HttpResponse<Boolean>> responseMono = client.verifyCredentials(credentials);
 
-        return Boolean.TRUE.equals(areValidCredentials.block())
-                ? AuthenticationResponse.success(authRequest.getIdentity())
-                : AuthenticationResponse.failure();
+        HttpResponse<Boolean> response = responseMono.block();
+        if (response != null && response.getStatus().getCode() == 200 && Boolean.TRUE.equals(response.body())) {
+            return AuthenticationResponse.success(authRequest.getIdentity());
+        } else if (response != null && Boolean.FALSE.equals(response.body())) {
+            return AuthenticationResponse.failure("Invalid credentials");
+        } else {
+            return AuthenticationResponse.failure("Unexpected error occurred");
+        }
     }
-
 }

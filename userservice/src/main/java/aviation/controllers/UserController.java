@@ -1,19 +1,17 @@
 package aviation.controllers;
 
 import aviation.models.AviationUser;
+import aviation.models.AviationUserFlight;
 import aviation.models.UserCredentials;
 import aviation.models.dto.AviationUserDto;
+import aviation.models.dto.AviationUserFlightDto;
+import aviation.models.dto.FlightSubmissionDto;
 import aviation.services.AviationUserService;
 import io.micronaut.http.HttpResponse;
 import io.micronaut.http.HttpStatus;
 import io.micronaut.http.MediaType;
 import io.micronaut.http.MutableHttpResponse;
-import io.micronaut.http.annotation.Body;
-import io.micronaut.http.annotation.Consumes;
-import io.micronaut.http.annotation.Controller;
-import io.micronaut.http.annotation.Get;
-import io.micronaut.http.annotation.Post;
-import io.micronaut.http.annotation.Produces;
+import io.micronaut.http.annotation.*;
 import io.micronaut.scheduling.TaskExecutors;
 import io.micronaut.scheduling.annotation.ExecuteOn;
 import io.micronaut.security.annotation.Secured;
@@ -43,6 +41,7 @@ public class UserController {
   @Secured(SecurityRule.IS_ANONYMOUS)
   @Post("/verify")
   public Mono<Boolean> verifyCredentials(@Body UserCredentials credentials) {
+    log.info("Verifying credentials for: {}. Invoked from authservice.", credentials.email());
     return userService.verifyCredentials(credentials);
   }
 
@@ -56,5 +55,31 @@ public class UserController {
         .onErrorResume(
             IllegalArgumentException.class,
             e -> Mono.just(HttpResponse.status(HttpStatus.CONFLICT, e.getMessage())));
+  }
+
+  @Post("/flight")
+  public Mono<MutableHttpResponse<AviationUserFlight>> saveFlightForUser(
+      @Body FlightSubmissionDto submissionDto) {
+    return userService
+        .saveFlightForUser(submissionDto.email(), submissionDto.flight())
+        .map(HttpResponse::created)
+        .onErrorResume(
+            IllegalArgumentException.class,
+            e -> Mono.just(HttpResponse.status(HttpStatus.CONFLICT, e.getMessage())));
+  }
+
+  @Get("/{email}/flights")
+  @Produces(MediaType.APPLICATION_JSON)
+  public Flux<AviationUserFlightDto> getUserFlights(@PathVariable("email") String email) {
+    return userService
+        .getFlightsForUser(email)
+        .doOnError(e -> log.error("Error fetching flights for user {}: {}", email, e.getMessage()))
+        .onErrorResume(e -> Flux.empty());
+  }
+
+  @Delete("/flight/{email}/{id}")
+  public Mono<MutableHttpResponse<?>> deleteFlightForUser(@PathVariable("email") String email, @PathVariable("id") Long id) {
+    return userService.deleteFlightForUser(email, id);
+
   }
 }

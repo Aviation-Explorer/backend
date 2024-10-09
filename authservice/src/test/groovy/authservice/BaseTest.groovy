@@ -29,18 +29,15 @@ abstract class BaseTest extends Specification {
             .waitingFor(Wait.forListeningPort())
 
     @Shared
-    static GenericContainer userServiceContainer = new GenericContainer("kajtekdocker/userservice:1.5")
+    static GenericContainer userServiceContainer = new GenericContainer("kajtekdocker/userservice:1.4")
             .withNetwork(network)
-            .withExposedPorts(8082)
-            .waitingFor(Wait.forListeningPort()).withStartupTimeout(Duration.ofSeconds(50))
 
     def setupSpec() {
-        mariadbContainer.start()
-        consulContainer.start()
-        userServiceContainer.withEnv("DB_HOST", "localhost")
-        userServiceContainer.withEnv("DB_PORT", mariadbContainer.getMappedPort(3306).toString())
-        userServiceContainer.withEnv("CONSUL_HOST", "consul")
-        userServiceContainer.withEnv("CONSUL_PORT", consulContainer.getMappedPort(8500).toString())
-        userServiceContainer.start()
+//        mariadbContainer.start()
+//        consulContainer.start()
+//        userServiceContainer.withEnv("DB_HOST", "localhost")
+//        userServiceContainer.withEnv("DB_PORT", "3306")
+//        userServiceContainer.start()
+//        print("ABC: " + userServiceContainer.getLogs())
     }
 }

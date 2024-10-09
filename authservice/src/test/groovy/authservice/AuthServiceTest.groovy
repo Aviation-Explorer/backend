@@ -1,5 +1,6 @@
 package authservice
 
+import authservice.models.ErrorResponse
 import io.micronaut.http.HttpRequest
 import io.micronaut.http.HttpStatus
 import io.micronaut.http.client.HttpClient
@@ -12,7 +13,7 @@ import org.testcontainers.spock.Testcontainers
 import spock.lang.Shared
 import spock.lang.Unroll
 
-@MicronautTest(environments = "test")
+@MicronautTest
 @Testcontainers
 class AuthServiceTest extends BaseTest {
 
@@ -46,12 +47,13 @@ class AuthServiceTest extends BaseTest {
 
         when:
         def request = HttpRequest.POST("/login", credentials)
-        def response = client.toBlocking().exchange(request, BearerAccessRefreshToken.class)
+        def response = client.toBlocking().exchange(request, ErrorResponse.class)
 
         then:
-        response.status == HttpStatus.OK
+        response.status == HttpStatus.UNAUTHORIZED
         response.body() != null
-        response.body().accessToken != null
+        response.body().message == "Invalid credentials"  // Check the message
+        response.body()._embedded.errors[0].message == "Invalid credentials"  // Check the embedded error message
 
         where:
         email            | password

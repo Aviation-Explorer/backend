@@ -16,9 +16,9 @@ public class AirlineService {
   }
 
   public Flux<AirlineDto> getAirlines() {
-    List<Airline> cities = airlineRepository.findAll();
+    List<Airline> airlines = airlineRepository.findAll();
 
-    return Flux.fromIterable(cities).map(this::toDto);
+    return Flux.fromIterable(airlines).map(this::toDto);
   }
 
   private AirlineDto toDto(Airline airline) {
