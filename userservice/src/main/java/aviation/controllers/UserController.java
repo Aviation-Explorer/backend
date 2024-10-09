@@ -78,8 +78,12 @@ public class UserController {
   }
 
   @Delete("/flight/{email}/{id}")
-  public Mono<MutableHttpResponse<?>> deleteFlightForUser(@PathVariable("email") String email, @PathVariable("id") Long id) {
-    return userService.deleteFlightForUser(email, id);
-
+  public Mono<MutableHttpResponse<Object>> deleteFlightForUser(@PathVariable("email") String email, @PathVariable("id") Long id) {
+    return userService.deleteFlightForUser(email, id)
+            .then(Mono.just(HttpResponse.noContent()))
+            .onErrorResume(IllegalArgumentException.class, e -> {
+              log.error("Error deleting flight for user {}: {}", email, e.getMessage());
+              return Mono.just(HttpResponse.status(HttpStatus.NOT_FOUND, e.getMessage()));
+            });
   }
 }

@@ -7,18 +7,13 @@ import aviation.models.AviationUserFlight;
 import aviation.models.UserCredentials;
 import aviation.models.dto.AviationUserDto;
 import aviation.models.dto.AviationUserFlightDto;
-import aviation.models.dto.FlightSubmissionDto;
 import aviation.repository.FlightUserRepository;
 import aviation.repository.UserRepository;
 import aviation.utils.PasswordManager;
-import io.micronaut.http.MutableHttpResponse;
 import jakarta.inject.Singleton;
 import lombok.extern.slf4j.Slf4j;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
-
-import java.util.NoSuchElementException;
-import java.util.Optional;
 
 @Singleton
 @Slf4j
@@ -95,7 +90,14 @@ public class AviationUserService {
         flight.getArrivalGate());
   }
 
-  public Mono<MutableHttpResponse<?>> deleteFlightForUser(String email, Long id) {
-    return null;
+  public Mono<Void> deleteFlightForUser(String email, Long id) {
+    return flightUserRepository.deleteFlightByEmailAndID(email, id)
+            .flatMap(rowsAffected -> {
+              if (rowsAffected > 0) {
+                return Mono.empty();
+              } else {
+                return Mono.error(new IllegalArgumentException("No flight found to delete for user: " + email));
+              }
+            });
   }
 }
