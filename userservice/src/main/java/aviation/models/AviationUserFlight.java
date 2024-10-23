@@ -16,6 +16,7 @@ public class AviationUserFlight {
     @Id
     @GeneratedValue
     private Long id;
+    private String airline;
     private String aviationUserEmail;
     private String departureAirport;
     private String arrivalAirport;

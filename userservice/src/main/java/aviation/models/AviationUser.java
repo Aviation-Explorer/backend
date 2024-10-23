@@ -6,6 +6,7 @@ import io.micronaut.data.annotation.Id;
 import io.micronaut.data.annotation.MappedEntity;
 import io.micronaut.serde.annotation.Serdeable;
 import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Pattern;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -24,6 +25,10 @@ public class AviationUser {
     @NotNull
     private String surname;
     @NotNull
+    @Pattern(
+            regexp = "^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&+=]).{8,20}$",
+            message = "Password must be 8-20 characters long, contain at least one digit, one lowercase, one uppercase letter, and one special character."
+    )
     private String password;
     @NotNull
     private String email;

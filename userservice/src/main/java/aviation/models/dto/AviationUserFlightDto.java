@@ -7,6 +7,7 @@ import java.sql.Date;
 @Serdeable
 public record AviationUserFlightDto(
     Long id,
+    String airline,
     String aviationUserEmail,
     String departureAirport,
     String arrivalAirport,

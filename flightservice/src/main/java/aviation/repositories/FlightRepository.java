@@ -14,6 +14,6 @@ public interface FlightRepository extends CrudRepository<Flight, ObjectId> {
     @MongoFindQuery(filter = "{'departure.iata': :iataCode}}")
     List<Flight> findDeparturesByIataAirport(String iataCode);
 
-    @MongoFindQuery(filter = "{ $or: [ { 'departure.iata': :departureIata }, { 'arrival.iata': :arrivalIata }, { 'flightDate': :flightDate } ] }")
+    @MongoFindQuery(filter = "{ $and: [ { 'departure.iata': :departureIata }, { 'arrival.iata': :arrivalIata }, { 'flight_date': :flightDate } ] }")
     List<Flight> findFlightsByParameters(@Nullable String departureIata, @Nullable String arrivalIata, @Nullable String flightDate);
 }
