@@ -2,7 +2,6 @@ package aviation.services;
 
 
 import aviation.exceptions.DuplicateEmailException;
-import aviation.exceptions.DuplicateEmailHandler;
 import aviation.exceptions.InvalidPasswordException;
 import aviation.exceptions.NotFoundException;
 import aviation.models.AviationUser;
@@ -71,6 +70,22 @@ public class AviationUserService {
         .defaultIfEmpty(false);
   }
 
+  public Mono<Boolean> updatePassword(UserCredentials credentials) {
+    return userRepository.findByEmail(credentials.email())
+            .flatMap(user -> {
+              user.setPassword(PasswordManager.hashPassword(credentials.password()));
+              userRepository.update(user);
+              return Mono.just(true);
+            })
+            .switchIfEmpty(Mono.error(new NotFoundException("User not found with email: " + credentials.email())));
+  }
+
+
+  private AviationUserDto toDto(AviationUser user) {
+    return new AviationUserDto(
+            user.getName(), user.getSurname(), user.getEmail(), user.getPhoneNumber(), user.getAge());
+  }
+
   public Mono<AviationUserFlight> saveFlightForUser(
       String email, AviationUserFlight aviationUserFlight) {
     return userRepository
@@ -85,11 +100,6 @@ public class AviationUserService {
 
   public Flux<AviationUserFlightDto> getFlightsForUser(String email) {
     return flightUserRepository.findByUserEmail(email).map(this::toFlightDto);
-  }
-
-  private AviationUserDto toDto(AviationUser user) {
-    return new AviationUserDto(
-        user.getName(), user.getSurname(), user.getEmail(), user.getPhoneNumber(), user.getAge());
   }
 
   private AviationUserFlightDto toFlightDto(AviationUserFlight flight) {

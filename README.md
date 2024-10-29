@@ -22,6 +22,7 @@
 5. From each service run one of either:
     * `./gradlew clean build` and `java -jar build/libs/<service-name>-all.jar`
     * `./gradlew run`
+    * for authservice `AVIATION_SMTP_USER="aviation.explorer.helper@gmail.com" AVIATION_SMTP_PASSWORD="rkzw ynbs lihz dyrw" ./gradlew run`
     * or it can be done with `./gradlew --parallel run` from root directory
 6. Each service is under specific endpoint
 

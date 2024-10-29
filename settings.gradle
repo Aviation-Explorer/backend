@@ -1,1 +1,5 @@
 rootProject.name = 'aviation-backend'
+include(':flightservice')
+include(':userservice')
+include(':authservice')
+

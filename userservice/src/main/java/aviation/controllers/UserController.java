@@ -45,6 +45,12 @@ public class UserController {
     return userService.verifyCredentials(credentials);
   }
 
+  @Secured(SecurityRule.IS_ANONYMOUS)
+  @Patch("/update-password")
+  public Mono<Boolean> updatePassword(@Body UserCredentials credentials) {
+    return userService.updatePassword(credentials);
+  }
+
   @Post
   @Secured(SecurityRule.IS_ANONYMOUS)
   @Consumes(MediaType.APPLICATION_JSON)

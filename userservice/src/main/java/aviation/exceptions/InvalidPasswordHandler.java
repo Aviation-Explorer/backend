@@ -12,11 +12,11 @@ import jakarta.inject.Singleton;
 @Singleton
 @Requires(classes = {InvalidPasswordException.class, ExceptionHandler.class})
 public class InvalidPasswordHandler
-    implements ExceptionHandler<InvalidPasswordException, HttpResponse<ErrorMessage>> {
+    implements ExceptionHandler<InvalidPasswordException, HttpResponse<ErrorResponse>> {
   @Override
-  public HttpResponse<ErrorMessage> handle(
+  public HttpResponse<ErrorResponse> handle(
       HttpRequest request, InvalidPasswordException exception) {
-    ErrorMessage errorMessage = new ErrorMessage(HttpStatus.BAD_REQUEST.getCode(), exception.getMessage());
-    return HttpResponse.serverError(errorMessage).status(HttpStatus.BAD_REQUEST);
+    ErrorResponse errorResponse = new ErrorResponse(HttpStatus.BAD_REQUEST.getCode(), exception.getMessage());
+    return HttpResponse.serverError(errorResponse).status(HttpStatus.BAD_REQUEST);
   }
 }

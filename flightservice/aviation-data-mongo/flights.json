@@ -56103,5 +56103,5391 @@
     },
     "aircraft": null,
     "live": null
+  },
+  {
+    "flight_date": "2024-10-28",
+    "flight_status": "active",
+    "departure": {
+      "airport": "Bejaia",
+      "timezone": "Africa/Algiers",
+      "iata": "BJA",
+      "icao": "DAAE",
+      "terminal": null,
+      "gate": null,
+      "delay": 6,
+      "scheduled": "2024-10-28T08:00:00+00:00",
+      "estimated": "2024-10-28T08:00:00+00:00",
+      "actual": "2024-10-28T08:06:00+00:00",
+      "estimated_runway": "2024-10-28T08:06:00+00:00",
+      "actual_runway": "2024-10-28T08:06:00+00:00"
+    },
+    "arrival": {
+      "airport": "Orly",
+      "timezone": "Europe/Paris",
+      "iata": "ORY",
+      "icao": "LFPO",
+      "terminal": "4",
+      "gate": "04",
+      "baggage": "04",
+      "delay": null,
+      "scheduled": "2024-10-28T10:20:00+00:00",
+      "estimated": "2024-10-28T10:20:00+00:00",
+      "actual": null,
+      "estimated_runway": null,
+      "actual_runway": null
+    },
+    "airline": {
+      "name": "Air Algerie",
+      "iata": "AH",
+      "icao": "DAH"
+    },
+    "flight": {
+      "number": "1112",
+      "iata": "AH1112",
+      "icao": "DAH1112",
+      "codeshared": null
+    },
+    "aircraft": {
+      "registration": "7T-VKH",
+      "iata": "B738",
+      "icao": "B738",
+      "icao24": "0A0078"
+    },
+    "live": {
+      "updated": "2024-10-28T08:34:29+00:00",
+      "latitude": 47.0265,
+      "longitude": 3.987,
+      "altitude": 9677.4,
+      "direction": 343,
+      "speed_horizontal": 811.176,
+      "speed_vertical": 0,
+      "is_ground": false
+    }
+  },
+  {
+    "flight_date": "2024-10-28",
+    "flight_status": "active",
+    "departure": {
+      "airport": "Aeroporto Internacional Guarulhos",
+      "timezone": "America/Sao_Paulo",
+      "iata": "GRU",
+      "icao": "SBGR",
+      "terminal": "3",
+      "gate": "306",
+      "delay": 25,
+      "scheduled": "2024-10-28T04:05:00+00:00",
+      "estimated": "2024-10-28T04:05:00+00:00",
+      "actual": "2024-10-28T04:30:00+00:00",
+      "estimated_runway": "2024-10-28T04:30:00+00:00",
+      "actual_runway": "2024-10-28T04:30:00+00:00"
+    },
+    "arrival": {
+      "airport": "Istanbul Airport",
+      "timezone": "Europe/Istanbul",
+      "iata": "IST",
+      "icao": "LTFM",
+      "terminal": null,
+      "gate": null,
+      "baggage": "8",
+      "delay": null,
+      "scheduled": "2024-10-28T22:35:00+00:00",
+      "estimated": "2024-10-28T22:35:00+00:00",
+      "actual": null,
+      "estimated_runway": null,
+      "actual_runway": null
+    },
+    "airline": {
+      "name": "Turkish Airlines",
+      "iata": "TK",
+      "icao": "THY"
+    },
+    "flight": {
+      "number": "16",
+      "iata": "TK16",
+      "icao": "THY16",
+      "codeshared": null
+    },
+    "aircraft": {
+      "registration": "TC-LGP",
+      "iata": "A359",
+      "icao": "A359",
+      "icao24": "4BB0F0"
+    },
+    "live": {
+      "updated": "2024-10-28T08:35:26+00:00",
+      "latitude": -18.8666,
+      "longitude": -39.2836,
+      "altitude": 11277.6,
+      "direction": 34,
+      "speed_horizontal": 937.112,
+      "speed_vertical": 0,
+      "is_ground": false
+    }
+  },
+  {
+    "flight_date": "2024-10-28",
+    "flight_status": "active",
+    "departure": {
+      "airport": "Aeroporto Internacional Guarulhos",
+      "timezone": "America/Sao_Paulo",
+      "iata": "GRU",
+      "icao": "SBGR",
+      "terminal": "3",
+      "gate": "326",
+      "delay": 4,
+      "scheduled": "2024-10-28T03:55:00+00:00",
+      "estimated": "2024-10-28T03:55:00+00:00",
+      "actual": "2024-10-28T03:58:00+00:00",
+      "estimated_runway": "2024-10-28T03:58:00+00:00",
+      "actual_runway": "2024-10-28T03:58:00+00:00"
+    },
+    "arrival": {
+      "airport": "Jorge Chavez International",
+      "timezone": "America/Lima",
+      "iata": "LIM",
+      "icao": "SPJC",
+      "terminal": "2",
+      "gate": null,
+      "baggage": null,
+      "delay": null,
+      "scheduled": "2024-10-28T07:00:00+00:00",
+      "estimated": "2024-10-28T07:00:00+00:00",
+      "actual": null,
+      "estimated_runway": null,
+      "actual_runway": null
+    },
+    "airline": {
+      "name": "LATAM Airlines",
+      "iata": "LA",
+      "icao": "LAN"
+    },
+    "flight": {
+      "number": "8004",
+      "iata": "LA8004",
+      "icao": "LAN8004",
+      "codeshared": null
+    },
+    "aircraft": {
+      "registration": "PR-TYS",
+      "iata": "A320",
+      "icao": "A320",
+      "icao24": "E4917F"
+    },
+    "live": {
+      "updated": "2024-10-28T08:35:27+00:00",
+      "latitude": -19.9621,
+      "longitude": -57.3386,
+      "altitude": 10370.8,
+      "direction": 291,
+      "speed_horizontal": 796.36,
+      "speed_vertical": 0,
+      "is_ground": false
+    }
+  },
+  {
+    "flight_date": "2024-10-28",
+    "flight_status": "scheduled",
+    "departure": {
+      "airport": "Biratnagar",
+      "timezone": "Asia/Kathmandu",
+      "iata": "BIR",
+      "icao": "VNVT",
+      "terminal": null,
+      "gate": null,
+      "delay": 69,
+      "scheduled": "2024-10-28T12:25:00+00:00",
+      "estimated": "2024-10-28T12:25:00+00:00",
+      "actual": "2024-10-28T13:33:00+00:00",
+      "estimated_runway": "2024-10-28T13:33:00+00:00",
+      "actual_runway": "2024-10-28T13:33:00+00:00"
+    },
+    "arrival": {
+      "airport": "Tribhuvan International",
+      "timezone": "Asia/Kathmandu",
+      "iata": "KTM",
+      "icao": "VNKT",
+      "terminal": "D",
+      "gate": null,
+      "baggage": null,
+      "delay": 76,
+      "scheduled": "2024-10-28T13:05:00+00:00",
+      "estimated": "2024-10-28T13:05:00+00:00",
+      "actual": null,
+      "estimated_runway": null,
+      "actual_runway": null
+    },
+    "airline": {
+      "name": "Yeti Airlines",
+      "iata": "YT",
+      "icao": "NYT"
+    },
+    "flight": {
+      "number": "784",
+      "iata": "YT784",
+      "icao": "NYT784",
+      "codeshared": null
+    },
+    "aircraft": {
+      "registration": "9N-AMZ",
+      "iata": "AT75",
+      "icao": "AT75",
+      "icao24": "70A9F1"
+    },
+    "live": {
+      "updated": "2024-10-28T08:37:25+00:00",
+      "latitude": 27.7049,
+      "longitude": 85.3605,
+      "altitude": 0,
+      "direction": 73,
+      "speed_horizontal": 0,
+      "speed_vertical": 0,
+      "is_ground": true
+    }
+  },
+  {
+    "flight_date": "2024-10-28",
+    "flight_status": "scheduled",
+    "departure": {
+      "airport": "Biarritz Parme",
+      "timezone": "Europe/Paris",
+      "iata": "BIQ",
+      "icao": "LFBZ",
+      "terminal": null,
+      "gate": "6",
+      "delay": 67,
+      "scheduled": "2024-10-28T07:10:00+00:00",
+      "estimated": "2024-10-28T07:10:00+00:00",
+      "actual": "2024-10-28T08:16:00+00:00",
+      "estimated_runway": "2024-10-28T08:16:00+00:00",
+      "actual_runway": "2024-10-28T08:16:00+00:00"
+    },
+    "arrival": {
+      "airport": "Charles De Gaulle",
+      "timezone": "Europe/Paris",
+      "iata": "CDG",
+      "icao": "LFPG",
+      "terminal": "2G",
+      "gate": null,
+      "baggage": "1G",
+      "delay": 37,
+      "scheduled": "2024-10-28T08:50:00+00:00",
+      "estimated": "2024-10-28T08:50:00+00:00",
+      "actual": null,
+      "estimated_runway": null,
+      "actual_runway": null
+    },
+    "airline": {
+      "name": "Air France",
+      "iata": "AF",
+      "icao": "AFR"
+    },
+    "flight": {
+      "number": "7483",
+      "iata": "AF7483",
+      "icao": "AFR7483",
+      "codeshared": null
+    },
+    "aircraft": {
+      "registration": "F-HBLQ",
+      "iata": "E190",
+      "icao": "E190",
+      "icao24": "398570"
+    },
+    "live": {
+      "updated": "2024-10-28T08:34:40+00:00",
+      "latitude": 49.032,
+      "longitude": 3.4372,
+      "altitude": 1104.9,
+      "direction": 296,
+      "speed_horizontal": 311.136,
+      "speed_vertical": 0,
+      "is_ground": false
+    }
+  },
+  {
+    "flight_date": "2024-10-28",
+    "flight_status": "active",
+    "departure": {
+      "airport": "Biarritz Parme",
+      "timezone": "Europe/Paris",
+      "iata": "BIQ",
+      "icao": "LFBZ",
+      "terminal": null,
+      "gate": "6",
+      "delay": 19,
+      "scheduled": "2024-10-28T07:10:00+00:00",
+      "estimated": "2024-10-28T07:10:00+00:00",
+      "actual": null,
+      "estimated_runway": null,
+      "actual_runway": null
+    },
+    "arrival": {
+      "airport": "Charles De Gaulle",
+      "timezone": "Europe/Paris",
+      "iata": "CDG",
+      "icao": "LFPG",
+      "terminal": "2G",
+      "gate": null,
+      "baggage": "1G",
+      "delay": null,
+      "scheduled": "2024-10-28T08:50:00+00:00",
+      "estimated": "2024-10-28T08:50:00+00:00",
+      "actual": null,
+      "estimated_runway": null,
+      "actual_runway": null
+    },
+    "airline": {
+      "name": "WestJet",
+      "iata": "WS",
+      "icao": "WJA"
+    },
+    "flight": {
+      "number": "5010",
+      "iata": "WS5010",
+      "icao": "WJA5010",
+      "codeshared": {
+        "airline_name": "air france",
+        "airline_iata": "af",
+        "airline_icao": "afr",
+        "flight_number": "7483",
+        "flight_iata": "af7483",
+        "flight_icao": "afr7483"
+      }
+    },
+    "aircraft": null,
+    "live": null
+  },
+  {
+    "flight_date": "2024-10-28",
+    "flight_status": "active",
+    "departure": {
+      "airport": "Biarritz Parme",
+      "timezone": "Europe/Paris",
+      "iata": "BIQ",
+      "icao": "LFBZ",
+      "terminal": null,
+      "gate": "6",
+      "delay": 19,
+      "scheduled": "2024-10-28T07:10:00+00:00",
+      "estimated": "2024-10-28T07:10:00+00:00",
+      "actual": null,
+      "estimated_runway": null,
+      "actual_runway": null
+    },
+    "arrival": {
+      "airport": "Charles De Gaulle",
+      "timezone": "Europe/Paris",
+      "iata": "CDG",
+      "icao": "LFPG",
+      "terminal": "2G",
+      "gate": null,
+      "baggage": "1G",
+      "delay": null,
+      "scheduled": "2024-10-28T08:50:00+00:00",
+      "estimated": "2024-10-28T08:50:00+00:00",
+      "actual": null,
+      "estimated_runway": null,
+      "actual_runway": null
+    },
+    "airline": {
+      "name": "KLM",
+      "iata": "KL",
+      "icao": "KLM"
+    },
+    "flight": {
+      "number": "2026",
+      "iata": "KL2026",
+      "icao": "KLM2026",
+      "codeshared": {
+        "airline_name": "air france",
+        "airline_iata": "af",
+        "airline_icao": "afr",
+        "flight_number": "7483",
+        "flight_iata": "af7483",
+        "flight_icao": "afr7483"
+      }
+    },
+    "aircraft": null,
+    "live": null
+  },
+  {
+    "flight_date": "2024-10-28",
+    "flight_status": "active",
+    "departure": {
+      "airport": "Biarritz Parme",
+      "timezone": "Europe/Paris",
+      "iata": "BIQ",
+      "icao": "LFBZ",
+      "terminal": null,
+      "gate": "6",
+      "delay": 19,
+      "scheduled": "2024-10-28T07:10:00+00:00",
+      "estimated": "2024-10-28T07:10:00+00:00",
+      "actual": null,
+      "estimated_runway": null,
+      "actual_runway": null
+    },
+    "arrival": {
+      "airport": "Charles De Gaulle",
+      "timezone": "Europe/Paris",
+      "iata": "CDG",
+      "icao": "LFPG",
+      "terminal": "2G",
+      "gate": null,
+      "baggage": "1G",
+      "delay": null,
+      "scheduled": "2024-10-28T08:50:00+00:00",
+      "estimated": "2024-10-28T08:50:00+00:00",
+      "actual": null,
+      "estimated_runway": null,
+      "actual_runway": null
+    },
+    "airline": {
+      "name": "Delta Air Lines",
+      "iata": "DL",
+      "icao": "DAL"
+    },
+    "flight": {
+      "number": "8752",
+      "iata": "DL8752",
+      "icao": "DAL8752",
+      "codeshared": {
+        "airline_name": "air france",
+        "airline_iata": "af",
+        "airline_icao": "afr",
+        "flight_number": "7483",
+        "flight_iata": "af7483",
+        "flight_icao": "afr7483"
+      }
+    },
+    "aircraft": null,
+    "live": null
+  },
+  {
+    "flight_date": "2024-10-28",
+    "flight_status": "active",
+    "departure": {
+      "airport": "Eelde",
+      "timezone": "Europe/Amsterdam",
+      "iata": "GRQ",
+      "icao": "EHGG",
+      "terminal": null,
+      "gate": null,
+      "delay": 9,
+      "scheduled": "2024-10-28T08:00:00+00:00",
+      "estimated": "2024-10-28T08:00:00+00:00",
+      "actual": "2024-10-28T08:08:00+00:00",
+      "estimated_runway": "2024-10-28T08:08:00+00:00",
+      "actual_runway": "2024-10-28T08:08:00+00:00"
+    },
+    "arrival": {
+      "airport": "Sturup",
+      "timezone": "Europe/Stockholm",
+      "iata": "MMX",
+      "icao": "ESMS",
+      "terminal": "T1",
+      "gate": null,
+      "baggage": null,
+      "delay": null,
+      "scheduled": "2024-10-28T09:58:00+00:00",
+      "estimated": "2024-10-28T09:58:00+00:00",
+      "actual": null,
+      "estimated_runway": null,
+      "actual_runway": null
+    },
+    "airline": {
+      "name": "KLM",
+      "iata": "KL",
+      "icao": "KLM"
+    },
+    "flight": {
+      "number": null,
+      "iata": "KL",
+      "icao": "KLM",
+      "codeshared": null
+    },
+    "aircraft": null,
+    "live": null
+  },
+  {
+    "flight_date": "2024-10-28",
+    "flight_status": "active",
+    "departure": {
+      "airport": "Eelde",
+      "timezone": "Europe/Amsterdam",
+      "iata": "GRQ",
+      "icao": "EHGG",
+      "terminal": null,
+      "gate": null,
+      "delay": 10,
+      "scheduled": "2024-10-28T08:00:00+00:00",
+      "estimated": "2024-10-28T08:00:00+00:00",
+      "actual": "2024-10-28T08:10:00+00:00",
+      "estimated_runway": "2024-10-28T08:10:00+00:00",
+      "actual_runway": "2024-10-28T08:10:00+00:00"
+    },
+    "arrival": {
+      "airport": "Le Touquet",
+      "timezone": "Europe/Paris",
+      "iata": "LTQ",
+      "icao": "LFAT",
+      "terminal": null,
+      "gate": null,
+      "baggage": null,
+      "delay": null,
+      "scheduled": "2024-10-28T10:24:00+00:00",
+      "estimated": "2024-10-28T10:24:00+00:00",
+      "actual": null,
+      "estimated_runway": null,
+      "actual_runway": null
+    },
+    "airline": {
+      "name": "KLM",
+      "iata": "KL",
+      "icao": "KLM"
+    },
+    "flight": {
+      "number": null,
+      "iata": "KL",
+      "icao": "KLM",
+      "codeshared": null
+    },
+    "aircraft": null,
+    "live": null
+  },
+  {
+    "flight_date": "2024-10-28",
+    "flight_status": "active",
+    "departure": {
+      "airport": "Eelde",
+      "timezone": "Europe/Amsterdam",
+      "iata": "GRQ",
+      "icao": "EHGG",
+      "terminal": null,
+      "gate": null,
+      "delay": 2,
+      "scheduled": "2024-10-28T07:15:00+00:00",
+      "estimated": "2024-10-28T07:15:00+00:00",
+      "actual": "2024-10-28T07:16:00+00:00",
+      "estimated_runway": "2024-10-28T07:16:00+00:00",
+      "actual_runway": "2024-10-28T07:16:00+00:00"
+    },
+    "arrival": {
+      "airport": "Moenchen-gl. - Dus Exp",
+      "timezone": "Europe/Berlin",
+      "iata": "MGL",
+      "icao": "EDLN",
+      "terminal": null,
+      "gate": null,
+      "baggage": null,
+      "delay": 3,
+      "scheduled": "2024-10-28T07:59:00+00:00",
+      "estimated": "2024-10-28T07:59:00+00:00",
+      "actual": null,
+      "estimated_runway": null,
+      "actual_runway": null
+    },
+    "airline": {
+      "name": "empty",
+      "iata": null,
+      "icao": null
+    },
+    "flight": {
+      "number": null,
+      "iata": null,
+      "icao": null,
+      "codeshared": null
+    },
+    "aircraft": null,
+    "live": null
+  },
+  {
+    "flight_date": "2024-10-28",
+    "flight_status": "scheduled",
+    "departure": {
+      "airport": "Bilbao",
+      "timezone": "Europe/Madrid",
+      "iata": "BIO",
+      "icao": "LEBB",
+      "terminal": "O",
+      "gate": "31",
+      "delay": 103,
+      "scheduled": "2024-10-28T08:05:00+00:00",
+      "estimated": "2024-10-28T08:05:00+00:00",
+      "actual": null,
+      "estimated_runway": null,
+      "actual_runway": null
+    },
+    "arrival": {
+      "airport": "St-Exupéry",
+      "timezone": "Europe/Paris",
+      "iata": "LYS",
+      "icao": "LFLL",
+      "terminal": "T2",
+      "gate": null,
+      "baggage": null,
+      "delay": null,
+      "scheduled": "2024-10-28T09:35:00+00:00",
+      "estimated": "2024-10-28T09:35:00+00:00",
+      "actual": null,
+      "estimated_runway": null,
+      "actual_runway": null
+    },
+    "airline": {
+      "name": "Volotea",
+      "iata": "V7",
+      "icao": "VOE"
+    },
+    "flight": {
+      "number": "2895",
+      "iata": "V72895",
+      "icao": "VOE2895",
+      "codeshared": null
+    },
+    "aircraft": null,
+    "live": null
+  },
+  {
+    "flight_date": "2024-10-28",
+    "flight_status": "landed",
+    "departure": {
+      "airport": "Bilbao",
+      "timezone": "Europe/Madrid",
+      "iata": "BIO",
+      "icao": "LEBB",
+      "terminal": "O",
+      "gate": "30",
+      "delay": 21,
+      "scheduled": "2024-10-28T07:55:00+00:00",
+      "estimated": "2024-10-28T07:55:00+00:00",
+      "actual": "2024-10-28T08:16:00+00:00",
+      "estimated_runway": "2024-10-28T08:16:00+00:00",
+      "actual_runway": "2024-10-28T08:16:00+00:00"
+    },
+    "arrival": {
+      "airport": "Valencia",
+      "timezone": "Europe/Madrid",
+      "iata": "VLC",
+      "icao": "LEVC",
+      "terminal": "1",
+      "gate": null,
+      "baggage": "3",
+      "delay": 6,
+      "scheduled": "2024-10-28T09:05:00+00:00",
+      "estimated": "2024-10-28T09:05:00+00:00",
+      "actual": "2024-10-28T09:16:00+00:00",
+      "estimated_runway": "2024-10-28T09:16:00+00:00",
+      "actual_runway": "2024-10-28T09:16:00+00:00"
+    },
+    "airline": {
+      "name": "Volotea",
+      "iata": "V7",
+      "icao": "VOE"
+    },
+    "flight": {
+      "number": "3536",
+      "iata": "V73536",
+      "icao": "VOE3536",
+      "codeshared": null
+    },
+    "aircraft": {
+      "registration": "EC-NOL",
+      "iata": "A320",
+      "icao": "A320",
+      "icao24": "34660D"
+    },
+    "live": null
+  },
+  {
+    "flight_date": "2024-10-28",
+    "flight_status": "active",
+    "departure": {
+      "airport": "Bilbao",
+      "timezone": "Europe/Madrid",
+      "iata": "BIO",
+      "icao": "LEBB",
+      "terminal": "O",
+      "gate": "B14",
+      "delay": 24,
+      "scheduled": "2024-10-28T07:40:00+00:00",
+      "estimated": "2024-10-28T07:40:00+00:00",
+      "actual": "2024-10-28T08:04:00+00:00",
+      "estimated_runway": "2024-10-28T08:04:00+00:00",
+      "actual_runway": "2024-10-28T08:04:00+00:00"
+    },
+    "arrival": {
+      "airport": "Schiphol",
+      "timezone": "Europe/Amsterdam",
+      "iata": "AMS",
+      "icao": "EHAM",
+      "terminal": "1",
+      "gate": null,
+      "baggage": "4",
+      "delay": null,
+      "scheduled": "2024-10-28T10:00:00+00:00",
+      "estimated": "2024-10-28T10:00:00+00:00",
+      "actual": null,
+      "estimated_runway": null,
+      "actual_runway": null
+    },
+    "airline": {
+      "name": "Vueling",
+      "iata": "VY",
+      "icao": "VLG"
+    },
+    "flight": {
+      "number": "8354",
+      "iata": "VY8354",
+      "icao": "VLG8354",
+      "codeshared": null
+    },
+    "aircraft": {
+      "registration": "EC-MER",
+      "iata": "A320",
+      "icao": "A320",
+      "icao24": "344692"
+    },
+    "live": {
+      "updated": "2024-10-28T08:35:20+00:00",
+      "latitude": 52.1046,
+      "longitude": 4.2265,
+      "altitude": 2362.2,
+      "direction": 17,
+      "speed_horizontal": 544.488,
+      "speed_vertical": 0,
+      "is_ground": false
+    }
+  },
+  {
+    "flight_date": "2024-10-28",
+    "flight_status": "active",
+    "departure": {
+      "airport": "Bilbao",
+      "timezone": "Europe/Madrid",
+      "iata": "BIO",
+      "icao": "LEBB",
+      "terminal": "O",
+      "gate": "B14",
+      "delay": 24,
+      "scheduled": "2024-10-28T07:40:00+00:00",
+      "estimated": "2024-10-28T07:40:00+00:00",
+      "actual": "2024-10-28T08:04:00+00:00",
+      "estimated_runway": "2024-10-28T08:04:00+00:00",
+      "actual_runway": "2024-10-28T08:04:00+00:00"
+    },
+    "arrival": {
+      "airport": "Schiphol",
+      "timezone": "Europe/Amsterdam",
+      "iata": "AMS",
+      "icao": "EHAM",
+      "terminal": null,
+      "gate": null,
+      "baggage": "4",
+      "delay": null,
+      "scheduled": "2024-10-28T10:00:00+00:00",
+      "estimated": "2024-10-28T10:00:00+00:00",
+      "actual": null,
+      "estimated_runway": null,
+      "actual_runway": null
+    },
+    "airline": {
+      "name": "Qatar Airways",
+      "iata": "QR",
+      "icao": "QTR"
+    },
+    "flight": {
+      "number": "3631",
+      "iata": "QR3631",
+      "icao": "QTR3631",
+      "codeshared": {
+        "airline_name": "vueling",
+        "airline_iata": "vy",
+        "airline_icao": "vlg",
+        "flight_number": "8354",
+        "flight_iata": "vy8354",
+        "flight_icao": "vlg8354"
+      }
+    },
+    "aircraft": null,
+    "live": null
+  },
+  {
+    "flight_date": "2024-10-28",
+    "flight_status": "active",
+    "departure": {
+      "airport": "Bilbao",
+      "timezone": "Europe/Madrid",
+      "iata": "BIO",
+      "icao": "LEBB",
+      "terminal": "O",
+      "gate": "B14",
+      "delay": 24,
+      "scheduled": "2024-10-28T07:40:00+00:00",
+      "estimated": "2024-10-28T07:40:00+00:00",
+      "actual": "2024-10-28T08:04:00+00:00",
+      "estimated_runway": "2024-10-28T08:04:00+00:00",
+      "actual_runway": "2024-10-28T08:04:00+00:00"
+    },
+    "arrival": {
+      "airport": "Schiphol",
+      "timezone": "Europe/Amsterdam",
+      "iata": "AMS",
+      "icao": "EHAM",
+      "terminal": null,
+      "gate": null,
+      "baggage": "4",
+      "delay": null,
+      "scheduled": "2024-10-28T10:00:00+00:00",
+      "estimated": "2024-10-28T10:00:00+00:00",
+      "actual": null,
+      "estimated_runway": null,
+      "actual_runway": null
+    },
+    "airline": {
+      "name": "Iberia",
+      "iata": "IB",
+      "icao": "IBE"
+    },
+    "flight": {
+      "number": "5687",
+      "iata": "IB5687",
+      "icao": "IBE5687",
+      "codeshared": {
+        "airline_name": "vueling",
+        "airline_iata": "vy",
+        "airline_icao": "vlg",
+        "flight_number": "8354",
+        "flight_iata": "vy8354",
+        "flight_icao": "vlg8354"
+      }
+    },
+    "aircraft": null,
+    "live": null
+  },
+  {
+    "flight_date": "2024-10-28",
+    "flight_status": "landed",
+    "departure": {
+      "airport": "Bilbao",
+      "timezone": "Europe/Madrid",
+      "iata": "BIO",
+      "icao": "LEBB",
+      "terminal": "O",
+      "gate": "29",
+      "delay": 18,
+      "scheduled": "2024-10-28T07:30:00+00:00",
+      "estimated": "2024-10-28T07:30:00+00:00",
+      "actual": "2024-10-28T07:47:00+00:00",
+      "estimated_runway": "2024-10-28T07:47:00+00:00",
+      "actual_runway": "2024-10-28T07:47:00+00:00"
+    },
+    "arrival": {
+      "airport": "San Pablo",
+      "timezone": "Europe/Madrid",
+      "iata": "SVQ",
+      "icao": "LEZL",
+      "terminal": "1",
+      "gate": null,
+      "baggage": "3",
+      "delay": 8,
+      "scheduled": "2024-10-28T08:50:00+00:00",
+      "estimated": "2024-10-28T08:50:00+00:00",
+      "actual": "2024-10-28T08:57:00+00:00",
+      "estimated_runway": "2024-10-28T08:57:00+00:00",
+      "actual_runway": "2024-10-28T08:57:00+00:00"
+    },
+    "airline": {
+      "name": "Volotea",
+      "iata": "V7",
+      "icao": "VOE"
+    },
+    "flight": {
+      "number": "3528",
+      "iata": "V73528",
+      "icao": "VOE3528",
+      "codeshared": null
+    },
+    "aircraft": {
+      "registration": "EC-NOP",
+      "iata": "A320",
+      "icao": "A320",
+      "icao24": "346611"
+    },
+    "live": null
+  },
+  {
+    "flight_date": "2024-10-28",
+    "flight_status": "landed",
+    "departure": {
+      "airport": "Bilbao",
+      "timezone": "Europe/Madrid",
+      "iata": "BIO",
+      "icao": "LEBB",
+      "terminal": "O",
+      "gate": "D32",
+      "delay": 6,
+      "scheduled": "2024-10-28T07:20:00+00:00",
+      "estimated": "2024-10-28T07:20:00+00:00",
+      "actual": "2024-10-28T07:26:00+00:00",
+      "estimated_runway": "2024-10-28T07:26:00+00:00",
+      "actual_runway": "2024-10-28T07:26:00+00:00"
+    },
+    "arrival": {
+      "airport": "San Pablo",
+      "timezone": "Europe/Madrid",
+      "iata": "SVQ",
+      "icao": "LEZL",
+      "terminal": "1",
+      "gate": null,
+      "baggage": "6",
+      "delay": null,
+      "scheduled": "2024-10-28T08:45:00+00:00",
+      "estimated": "2024-10-28T08:45:00+00:00",
+      "actual": "2024-10-28T08:35:00+00:00",
+      "estimated_runway": "2024-10-28T08:35:00+00:00",
+      "actual_runway": "2024-10-28T08:35:00+00:00"
+    },
+    "airline": {
+      "name": "Vueling",
+      "iata": "VY",
+      "icao": "VLG"
+    },
+    "flight": {
+      "number": "2512",
+      "iata": "VY2512",
+      "icao": "VLG2512",
+      "codeshared": null
+    },
+    "aircraft": {
+      "registration": "EC-MXG",
+      "iata": "A320",
+      "icao": "A320",
+      "icao24": "345645"
+    },
+    "live": null
+  },
+  {
+    "flight_date": "2024-10-28",
+    "flight_status": "landed",
+    "departure": {
+      "airport": "Bilbao",
+      "timezone": "Europe/Madrid",
+      "iata": "BIO",
+      "icao": "LEBB",
+      "terminal": "O",
+      "gate": "D32",
+      "delay": 6,
+      "scheduled": "2024-10-28T07:20:00+00:00",
+      "estimated": "2024-10-28T07:20:00+00:00",
+      "actual": "2024-10-28T07:26:00+00:00",
+      "estimated_runway": "2024-10-28T07:26:00+00:00",
+      "actual_runway": "2024-10-28T07:26:00+00:00"
+    },
+    "arrival": {
+      "airport": "San Pablo",
+      "timezone": "Europe/Madrid",
+      "iata": "SVQ",
+      "icao": "LEZL",
+      "terminal": "1",
+      "gate": null,
+      "baggage": "6",
+      "delay": null,
+      "scheduled": "2024-10-28T08:45:00+00:00",
+      "estimated": "2024-10-28T08:45:00+00:00",
+      "actual": "2024-10-28T08:35:00+00:00",
+      "estimated_runway": "2024-10-28T08:35:00+00:00",
+      "actual_runway": "2024-10-28T08:35:00+00:00"
+    },
+    "airline": {
+      "name": "Iberia",
+      "iata": "IB",
+      "icao": "IBE"
+    },
+    "flight": {
+      "number": "5357",
+      "iata": "IB5357",
+      "icao": "IBE5357",
+      "codeshared": {
+        "airline_name": "vueling",
+        "airline_iata": "vy",
+        "airline_icao": "vlg",
+        "flight_number": "2512",
+        "flight_iata": "vy2512",
+        "flight_icao": "vlg2512"
+      }
+    },
+    "aircraft": null,
+    "live": null
+  },
+  {
+    "flight_date": "2024-10-28",
+    "flight_status": "active",
+    "departure": {
+      "airport": "Bilbao",
+      "timezone": "Europe/Madrid",
+      "iata": "BIO",
+      "icao": "LEBB",
+      "terminal": null,
+      "gate": "C23",
+      "delay": 18,
+      "scheduled": "2024-10-28T07:20:00+00:00",
+      "estimated": "2024-10-28T07:20:00+00:00",
+      "actual": "2024-10-28T07:38:00+00:00",
+      "estimated_runway": "2024-10-28T07:38:00+00:00",
+      "actual_runway": "2024-10-28T07:38:00+00:00"
+    },
+    "arrival": {
+      "airport": "Franz Josef Strauss",
+      "timezone": "Europe/Berlin",
+      "iata": "MUC",
+      "icao": "EDDM",
+      "terminal": "2",
+      "gate": "T2",
+      "baggage": null,
+      "delay": null,
+      "scheduled": "2024-10-28T09:35:00+00:00",
+      "estimated": "2024-10-28T09:35:00+00:00",
+      "actual": null,
+      "estimated_runway": null,
+      "actual_runway": null
+    },
+    "airline": {
+      "name": "Lufthansa",
+      "iata": "LH",
+      "icao": "DLH"
+    },
+    "flight": {
+      "number": "1831",
+      "iata": "LH1831",
+      "icao": "DLH1831",
+      "codeshared": null
+    },
+    "aircraft": {
+      "registration": "D-AIUD",
+      "iata": "A320",
+      "icao": "A320",
+      "icao24": "3C66A4"
+    },
+    "live": {
+      "updated": "2024-10-28T08:36:19+00:00",
+      "latitude": 48.3351,
+      "longitude": 11.679,
+      "altitude": 624.84,
+      "direction": 83,
+      "speed_horizontal": 259.28,
+      "speed_vertical": 0,
+      "is_ground": false
+    }
+  },
+  {
+    "flight_date": "2024-10-28",
+    "flight_status": "active",
+    "departure": {
+      "airport": "Bilbao",
+      "timezone": "Europe/Madrid",
+      "iata": "BIO",
+      "icao": "LEBB",
+      "terminal": null,
+      "gate": "C23",
+      "delay": 18,
+      "scheduled": "2024-10-28T07:20:00+00:00",
+      "estimated": "2024-10-28T07:20:00+00:00",
+      "actual": "2024-10-28T07:38:00+00:00",
+      "estimated_runway": "2024-10-28T07:38:00+00:00",
+      "actual_runway": "2024-10-28T07:38:00+00:00"
+    },
+    "arrival": {
+      "airport": "Franz Josef Strauss",
+      "timezone": "Europe/Berlin",
+      "iata": "MUC",
+      "icao": "EDDM",
+      "terminal": "2",
+      "gate": "T2",
+      "baggage": null,
+      "delay": null,
+      "scheduled": "2024-10-28T09:35:00+00:00",
+      "estimated": "2024-10-28T09:35:00+00:00",
+      "actual": null,
+      "estimated_runway": null,
+      "actual_runway": null
+    },
+    "airline": {
+      "name": "United Airlines",
+      "iata": "UA",
+      "icao": "UAL"
+    },
+    "flight": {
+      "number": "9439",
+      "iata": "UA9439",
+      "icao": "UAL9439",
+      "codeshared": {
+        "airline_name": "lufthansa",
+        "airline_iata": "lh",
+        "airline_icao": "dlh",
+        "flight_number": "1831",
+        "flight_iata": "lh1831",
+        "flight_icao": "dlh1831"
+      }
+    },
+    "aircraft": null,
+    "live": null
+  },
+  {
+    "flight_date": "2024-10-28",
+    "flight_status": "active",
+    "departure": {
+      "airport": "Bilbao",
+      "timezone": "Europe/Madrid",
+      "iata": "BIO",
+      "icao": "LEBB",
+      "terminal": null,
+      "gate": "C23",
+      "delay": 18,
+      "scheduled": "2024-10-28T07:20:00+00:00",
+      "estimated": "2024-10-28T07:20:00+00:00",
+      "actual": "2024-10-28T07:38:00+00:00",
+      "estimated_runway": "2024-10-28T07:38:00+00:00",
+      "actual_runway": "2024-10-28T07:38:00+00:00"
+    },
+    "arrival": {
+      "airport": "Franz Josef Strauss",
+      "timezone": "Europe/Berlin",
+      "iata": "MUC",
+      "icao": "EDDM",
+      "terminal": "2",
+      "gate": "T2",
+      "baggage": null,
+      "delay": null,
+      "scheduled": "2024-10-28T09:35:00+00:00",
+      "estimated": "2024-10-28T09:35:00+00:00",
+      "actual": null,
+      "estimated_runway": null,
+      "actual_runway": null
+    },
+    "airline": {
+      "name": "ANA",
+      "iata": "NH",
+      "icao": "ANA"
+    },
+    "flight": {
+      "number": "5469",
+      "iata": "NH5469",
+      "icao": "ANA5469",
+      "codeshared": {
+        "airline_name": "lufthansa",
+        "airline_iata": "lh",
+        "airline_icao": "dlh",
+        "flight_number": "1831",
+        "flight_iata": "lh1831",
+        "flight_icao": "dlh1831"
+      }
+    },
+    "aircraft": null,
+    "live": null
+  },
+  {
+    "flight_date": "2024-10-28",
+    "flight_status": "active",
+    "departure": {
+      "airport": "Bilbao",
+      "timezone": "Europe/Madrid",
+      "iata": "BIO",
+      "icao": "LEBB",
+      "terminal": null,
+      "gate": "C23",
+      "delay": 18,
+      "scheduled": "2024-10-28T07:20:00+00:00",
+      "estimated": "2024-10-28T07:20:00+00:00",
+      "actual": "2024-10-28T07:38:00+00:00",
+      "estimated_runway": "2024-10-28T07:38:00+00:00",
+      "actual_runway": "2024-10-28T07:38:00+00:00"
+    },
+    "arrival": {
+      "airport": "Franz Josef Strauss",
+      "timezone": "Europe/Berlin",
+      "iata": "MUC",
+      "icao": "EDDM",
+      "terminal": "2",
+      "gate": "T2",
+      "baggage": null,
+      "delay": null,
+      "scheduled": "2024-10-28T09:35:00+00:00",
+      "estimated": "2024-10-28T09:35:00+00:00",
+      "actual": null,
+      "estimated_runway": null,
+      "actual_runway": null
+    },
+    "airline": {
+      "name": "Air Canada",
+      "iata": "AC",
+      "icao": "ACA"
+    },
+    "flight": {
+      "number": "9374",
+      "iata": "AC9374",
+      "icao": "ACA9374",
+      "codeshared": {
+        "airline_name": "lufthansa",
+        "airline_iata": "lh",
+        "airline_icao": "dlh",
+        "flight_number": "1831",
+        "flight_iata": "lh1831",
+        "flight_icao": "dlh1831"
+      }
+    },
+    "aircraft": null,
+    "live": null
+  },
+  {
+    "flight_date": "2024-10-28",
+    "flight_status": "scheduled",
+    "departure": {
+      "airport": "Bilbao",
+      "timezone": "Europe/Madrid",
+      "iata": "BIO",
+      "icao": "LEBB",
+      "terminal": null,
+      "gate": "24",
+      "delay": 60,
+      "scheduled": "2024-10-28T07:20:00+00:00",
+      "estimated": "2024-10-28T07:20:00+00:00",
+      "actual": "2024-10-28T08:20:00+00:00",
+      "estimated_runway": "2024-10-28T08:20:00+00:00",
+      "actual_runway": "2024-10-28T08:20:00+00:00"
+    },
+    "arrival": {
+      "airport": "Charles De Gaulle",
+      "timezone": "Europe/Paris",
+      "iata": "CDG",
+      "icao": "LFPG",
+      "terminal": "2G",
+      "gate": null,
+      "baggage": "2G",
+      "delay": 31,
+      "scheduled": "2024-10-28T09:10:00+00:00",
+      "estimated": "2024-10-28T09:10:00+00:00",
+      "actual": null,
+      "estimated_runway": null,
+      "actual_runway": null
+    },
+    "airline": {
+      "name": "Air France",
+      "iata": "AF",
+      "icao": "AFR"
+    },
+    "flight": {
+      "number": "1377",
+      "iata": "AF1377",
+      "icao": "AFR1377",
+      "codeshared": null
+    },
+    "aircraft": {
+      "registration": "F-HBLJ",
+      "iata": "E190",
+      "icao": "E190",
+      "icao24": "398569"
+    },
+    "live": {
+      "updated": "2024-10-28T08:34:40+00:00",
+      "latitude": 48.9159,
+      "longitude": 2.4594,
+      "altitude": 3855.72,
+      "direction": 87,
+      "speed_horizontal": 531.524,
+      "speed_vertical": 0,
+      "is_ground": false
+    }
+  },
+  {
+    "flight_date": "2024-10-28",
+    "flight_status": "active",
+    "departure": {
+      "airport": "Bilbao",
+      "timezone": "Europe/Madrid",
+      "iata": "BIO",
+      "icao": "LEBB",
+      "terminal": null,
+      "gate": "24",
+      "delay": 2,
+      "scheduled": "2024-10-28T07:20:00+00:00",
+      "estimated": "2024-10-28T07:20:00+00:00",
+      "actual": null,
+      "estimated_runway": null,
+      "actual_runway": null
+    },
+    "arrival": {
+      "airport": "Charles De Gaulle",
+      "timezone": "Europe/Paris",
+      "iata": "CDG",
+      "icao": "LFPG",
+      "terminal": "2G",
+      "gate": null,
+      "baggage": "2G",
+      "delay": null,
+      "scheduled": "2024-10-28T09:10:00+00:00",
+      "estimated": "2024-10-28T09:10:00+00:00",
+      "actual": null,
+      "estimated_runway": null,
+      "actual_runway": null
+    },
+    "airline": {
+      "name": "WestJet",
+      "iata": "WS",
+      "icao": "WJA"
+    },
+    "flight": {
+      "number": "5108",
+      "iata": "WS5108",
+      "icao": "WJA5108",
+      "codeshared": {
+        "airline_name": "air france",
+        "airline_iata": "af",
+        "airline_icao": "afr",
+        "flight_number": "1377",
+        "flight_iata": "af1377",
+        "flight_icao": "afr1377"
+      }
+    },
+    "aircraft": null,
+    "live": null
+  },
+  {
+    "flight_date": "2024-10-28",
+    "flight_status": "active",
+    "departure": {
+      "airport": "Bilbao",
+      "timezone": "Europe/Madrid",
+      "iata": "BIO",
+      "icao": "LEBB",
+      "terminal": null,
+      "gate": "24",
+      "delay": 2,
+      "scheduled": "2024-10-28T07:20:00+00:00",
+      "estimated": "2024-10-28T07:20:00+00:00",
+      "actual": null,
+      "estimated_runway": null,
+      "actual_runway": null
+    },
+    "arrival": {
+      "airport": "Charles De Gaulle",
+      "timezone": "Europe/Paris",
+      "iata": "CDG",
+      "icao": "LFPG",
+      "terminal": "2G",
+      "gate": null,
+      "baggage": "2G",
+      "delay": null,
+      "scheduled": "2024-10-28T09:10:00+00:00",
+      "estimated": "2024-10-28T09:10:00+00:00",
+      "actual": null,
+      "estimated_runway": null,
+      "actual_runway": null
+    },
+    "airline": {
+      "name": "SAS",
+      "iata": "SK",
+      "icao": "SAS"
+    },
+    "flight": {
+      "number": "9703",
+      "iata": "SK9703",
+      "icao": "SAS9703",
+      "codeshared": {
+        "airline_name": "air france",
+        "airline_iata": "af",
+        "airline_icao": "afr",
+        "flight_number": "1377",
+        "flight_iata": "af1377",
+        "flight_icao": "afr1377"
+      }
+    },
+    "aircraft": null,
+    "live": null
+  },
+  {
+    "flight_date": "2024-10-28",
+    "flight_status": "active",
+    "departure": {
+      "airport": "Bilbao",
+      "timezone": "Europe/Madrid",
+      "iata": "BIO",
+      "icao": "LEBB",
+      "terminal": null,
+      "gate": "24",
+      "delay": 2,
+      "scheduled": "2024-10-28T07:20:00+00:00",
+      "estimated": "2024-10-28T07:20:00+00:00",
+      "actual": null,
+      "estimated_runway": null,
+      "actual_runway": null
+    },
+    "arrival": {
+      "airport": "Charles De Gaulle",
+      "timezone": "Europe/Paris",
+      "iata": "CDG",
+      "icao": "LFPG",
+      "terminal": "2G",
+      "gate": null,
+      "baggage": "2G",
+      "delay": null,
+      "scheduled": "2024-10-28T09:10:00+00:00",
+      "estimated": "2024-10-28T09:10:00+00:00",
+      "actual": null,
+      "estimated_runway": null,
+      "actual_runway": null
+    },
+    "airline": {
+      "name": "China Eastern Airlines",
+      "iata": "MU",
+      "icao": "CES"
+    },
+    "flight": {
+      "number": "1892",
+      "iata": "MU1892",
+      "icao": "CES1892",
+      "codeshared": {
+        "airline_name": "air france",
+        "airline_iata": "af",
+        "airline_icao": "afr",
+        "flight_number": "1377",
+        "flight_iata": "af1377",
+        "flight_icao": "afr1377"
+      }
+    },
+    "aircraft": null,
+    "live": null
+  },
+  {
+    "flight_date": "2024-10-28",
+    "flight_status": "active",
+    "departure": {
+      "airport": "Bilbao",
+      "timezone": "Europe/Madrid",
+      "iata": "BIO",
+      "icao": "LEBB",
+      "terminal": null,
+      "gate": "24",
+      "delay": 2,
+      "scheduled": "2024-10-28T07:20:00+00:00",
+      "estimated": "2024-10-28T07:20:00+00:00",
+      "actual": null,
+      "estimated_runway": null,
+      "actual_runway": null
+    },
+    "arrival": {
+      "airport": "Charles De Gaulle",
+      "timezone": "Europe/Paris",
+      "iata": "CDG",
+      "icao": "LFPG",
+      "terminal": "2G",
+      "gate": null,
+      "baggage": "2G",
+      "delay": null,
+      "scheduled": "2024-10-28T09:10:00+00:00",
+      "estimated": "2024-10-28T09:10:00+00:00",
+      "actual": null,
+      "estimated_runway": null,
+      "actual_runway": null
+    },
+    "airline": {
+      "name": "Air Mauritius",
+      "iata": "MK",
+      "icao": "MAU"
+    },
+    "flight": {
+      "number": "9347",
+      "iata": "MK9347",
+      "icao": "MAU9347",
+      "codeshared": {
+        "airline_name": "air france",
+        "airline_iata": "af",
+        "airline_icao": "afr",
+        "flight_number": "1377",
+        "flight_iata": "af1377",
+        "flight_icao": "afr1377"
+      }
+    },
+    "aircraft": null,
+    "live": null
+  },
+  {
+    "flight_date": "2024-10-28",
+    "flight_status": "active",
+    "departure": {
+      "airport": "Bilbao",
+      "timezone": "Europe/Madrid",
+      "iata": "BIO",
+      "icao": "LEBB",
+      "terminal": null,
+      "gate": "24",
+      "delay": 2,
+      "scheduled": "2024-10-28T07:20:00+00:00",
+      "estimated": "2024-10-28T07:20:00+00:00",
+      "actual": null,
+      "estimated_runway": null,
+      "actual_runway": null
+    },
+    "arrival": {
+      "airport": "Charles De Gaulle",
+      "timezone": "Europe/Paris",
+      "iata": "CDG",
+      "icao": "LFPG",
+      "terminal": "2G",
+      "gate": null,
+      "baggage": "2G",
+      "delay": null,
+      "scheduled": "2024-10-28T09:10:00+00:00",
+      "estimated": "2024-10-28T09:10:00+00:00",
+      "actual": null,
+      "estimated_runway": null,
+      "actual_runway": null
+    },
+    "airline": {
+      "name": "Kenya Airways",
+      "iata": "KQ",
+      "icao": "KQA"
+    },
+    "flight": {
+      "number": "3097",
+      "iata": "KQ3097",
+      "icao": "KQA3097",
+      "codeshared": {
+        "airline_name": "air france",
+        "airline_iata": "af",
+        "airline_icao": "afr",
+        "flight_number": "1377",
+        "flight_iata": "af1377",
+        "flight_icao": "afr1377"
+      }
+    },
+    "aircraft": null,
+    "live": null
+  },
+  {
+    "flight_date": "2024-10-28",
+    "flight_status": "active",
+    "departure": {
+      "airport": "Bilbao",
+      "timezone": "Europe/Madrid",
+      "iata": "BIO",
+      "icao": "LEBB",
+      "terminal": null,
+      "gate": "24",
+      "delay": 2,
+      "scheduled": "2024-10-28T07:20:00+00:00",
+      "estimated": "2024-10-28T07:20:00+00:00",
+      "actual": null,
+      "estimated_runway": null,
+      "actual_runway": null
+    },
+    "arrival": {
+      "airport": "Charles De Gaulle",
+      "timezone": "Europe/Paris",
+      "iata": "CDG",
+      "icao": "LFPG",
+      "terminal": "2G",
+      "gate": null,
+      "baggage": "2G",
+      "delay": null,
+      "scheduled": "2024-10-28T09:10:00+00:00",
+      "estimated": "2024-10-28T09:10:00+00:00",
+      "actual": null,
+      "estimated_runway": null,
+      "actual_runway": null
+    },
+    "airline": {
+      "name": "KLM",
+      "iata": "KL",
+      "icao": "KLM"
+    },
+    "flight": {
+      "number": "2163",
+      "iata": "KL2163",
+      "icao": "KLM2163",
+      "codeshared": {
+        "airline_name": "air france",
+        "airline_iata": "af",
+        "airline_icao": "afr",
+        "flight_number": "1377",
+        "flight_iata": "af1377",
+        "flight_icao": "afr1377"
+      }
+    },
+    "aircraft": null,
+    "live": null
+  },
+  {
+    "flight_date": "2024-10-28",
+    "flight_status": "active",
+    "departure": {
+      "airport": "Bilbao",
+      "timezone": "Europe/Madrid",
+      "iata": "BIO",
+      "icao": "LEBB",
+      "terminal": null,
+      "gate": "24",
+      "delay": 2,
+      "scheduled": "2024-10-28T07:20:00+00:00",
+      "estimated": "2024-10-28T07:20:00+00:00",
+      "actual": null,
+      "estimated_runway": null,
+      "actual_runway": null
+    },
+    "arrival": {
+      "airport": "Charles De Gaulle",
+      "timezone": "Europe/Paris",
+      "iata": "CDG",
+      "icao": "LFPG",
+      "terminal": "2G",
+      "gate": null,
+      "baggage": "2G",
+      "delay": null,
+      "scheduled": "2024-10-28T09:10:00+00:00",
+      "estimated": "2024-10-28T09:10:00+00:00",
+      "actual": null,
+      "estimated_runway": null,
+      "actual_runway": null
+    },
+    "airline": {
+      "name": "Gol",
+      "iata": "G3",
+      "icao": "GLO"
+    },
+    "flight": {
+      "number": "5190",
+      "iata": "G35190",
+      "icao": "GLO5190",
+      "codeshared": {
+        "airline_name": "air france",
+        "airline_iata": "af",
+        "airline_icao": "afr",
+        "flight_number": "1377",
+        "flight_iata": "af1377",
+        "flight_icao": "afr1377"
+      }
+    },
+    "aircraft": null,
+    "live": null
+  },
+  {
+    "flight_date": "2024-10-28",
+    "flight_status": "active",
+    "departure": {
+      "airport": "Bilbao",
+      "timezone": "Europe/Madrid",
+      "iata": "BIO",
+      "icao": "LEBB",
+      "terminal": null,
+      "gate": "24",
+      "delay": 2,
+      "scheduled": "2024-10-28T07:20:00+00:00",
+      "estimated": "2024-10-28T07:20:00+00:00",
+      "actual": null,
+      "estimated_runway": null,
+      "actual_runway": null
+    },
+    "arrival": {
+      "airport": "Charles De Gaulle",
+      "timezone": "Europe/Paris",
+      "iata": "CDG",
+      "icao": "LFPG",
+      "terminal": "2G",
+      "gate": null,
+      "baggage": "2G",
+      "delay": null,
+      "scheduled": "2024-10-28T09:10:00+00:00",
+      "estimated": "2024-10-28T09:10:00+00:00",
+      "actual": null,
+      "estimated_runway": null,
+      "actual_runway": null
+    },
+    "airline": {
+      "name": "Delta Air Lines",
+      "iata": "DL",
+      "icao": "DAL"
+    },
+    "flight": {
+      "number": "8673",
+      "iata": "DL8673",
+      "icao": "DAL8673",
+      "codeshared": {
+        "airline_name": "air france",
+        "airline_iata": "af",
+        "airline_icao": "afr",
+        "flight_number": "1377",
+        "flight_iata": "af1377",
+        "flight_icao": "afr1377"
+      }
+    },
+    "aircraft": null,
+    "live": null
+  },
+  {
+    "flight_date": "2024-10-28",
+    "flight_status": "scheduled",
+    "departure": {
+      "airport": "Bilbao",
+      "timezone": "Europe/Madrid",
+      "iata": "BIO",
+      "icao": "LEBB",
+      "terminal": "O",
+      "gate": "D33",
+      "delay": 7,
+      "scheduled": "2024-10-28T07:10:00+00:00",
+      "estimated": "2024-10-28T07:10:00+00:00",
+      "actual": "2024-10-28T09:05:00+00:00",
+      "estimated_runway": "2024-10-28T09:05:00+00:00",
+      "actual_runway": "2024-10-28T09:05:00+00:00"
+    },
+    "arrival": {
+      "airport": "El Prat De Llobregat",
+      "timezone": "Europe/Madrid",
+      "iata": "BCN",
+      "icao": "LEBL",
+      "terminal": "1",
+      "gate": null,
+      "baggage": "06",
+      "delay": 95,
+      "scheduled": "2024-10-28T08:20:00+00:00",
+      "estimated": "2024-10-28T08:20:00+00:00",
+      "actual": null,
+      "estimated_runway": null,
+      "actual_runway": null
+    },
+    "airline": {
+      "name": "Vueling",
+      "iata": "VY",
+      "icao": "VLG"
+    },
+    "flight": {
+      "number": "1423",
+      "iata": "VY1423",
+      "icao": "VLG1423",
+      "codeshared": null
+    },
+    "aircraft": {
+      "registration": "EC-JYX",
+      "iata": "A320",
+      "icao": "A320",
+      "icao24": "3424D1"
+    },
+    "live": {
+      "updated": "2024-10-28T08:35:30+00:00",
+      "latitude": 42.0186,
+      "longitude": 0.2718,
+      "altitude": 8176.26,
+      "direction": 116,
+      "speed_horizontal": 692.648,
+      "speed_vertical": 0,
+      "is_ground": false
+    }
+  },
+  {
+    "flight_date": "2024-10-28",
+    "flight_status": "scheduled",
+    "departure": {
+      "airport": "Bilbao",
+      "timezone": "Europe/Madrid",
+      "iata": "BIO",
+      "icao": "LEBB",
+      "terminal": "O",
+      "gate": "D33",
+      "delay": 7,
+      "scheduled": "2024-10-28T07:10:00+00:00",
+      "estimated": "2024-10-28T07:10:00+00:00",
+      "actual": "2024-10-28T09:05:00+00:00",
+      "estimated_runway": "2024-10-28T09:05:00+00:00",
+      "actual_runway": "2024-10-28T09:05:00+00:00"
+    },
+    "arrival": {
+      "airport": "El Prat De Llobregat",
+      "timezone": "Europe/Madrid",
+      "iata": "BCN",
+      "icao": "LEBL",
+      "terminal": "1",
+      "gate": null,
+      "baggage": "06",
+      "delay": 95,
+      "scheduled": "2024-10-28T08:20:00+00:00",
+      "estimated": "2024-10-28T08:20:00+00:00",
+      "actual": null,
+      "estimated_runway": null,
+      "actual_runway": null
+    },
+    "airline": {
+      "name": "Qatar Airways",
+      "iata": "QR",
+      "icao": "QTR"
+    },
+    "flight": {
+      "number": "3646",
+      "iata": "QR3646",
+      "icao": "QTR3646",
+      "codeshared": {
+        "airline_name": "vueling",
+        "airline_iata": "vy",
+        "airline_icao": "vlg",
+        "flight_number": "1423",
+        "flight_iata": "vy1423",
+        "flight_icao": "vlg1423"
+      }
+    },
+    "aircraft": null,
+    "live": null
+  },
+  {
+    "flight_date": "2024-10-28",
+    "flight_status": "scheduled",
+    "departure": {
+      "airport": "Bilbao",
+      "timezone": "Europe/Madrid",
+      "iata": "BIO",
+      "icao": "LEBB",
+      "terminal": "O",
+      "gate": "D33",
+      "delay": 7,
+      "scheduled": "2024-10-28T07:10:00+00:00",
+      "estimated": "2024-10-28T07:10:00+00:00",
+      "actual": "2024-10-28T09:05:00+00:00",
+      "estimated_runway": "2024-10-28T09:05:00+00:00",
+      "actual_runway": "2024-10-28T09:05:00+00:00"
+    },
+    "arrival": {
+      "airport": "El Prat De Llobregat",
+      "timezone": "Europe/Madrid",
+      "iata": "BCN",
+      "icao": "LEBL",
+      "terminal": "1",
+      "gate": null,
+      "baggage": "06",
+      "delay": 95,
+      "scheduled": "2024-10-28T08:20:00+00:00",
+      "estimated": "2024-10-28T08:20:00+00:00",
+      "actual": null,
+      "estimated_runway": null,
+      "actual_runway": null
+    },
+    "airline": {
+      "name": "LATAM Airlines",
+      "iata": "LA",
+      "icao": "LAN"
+    },
+    "flight": {
+      "number": "5865",
+      "iata": "LA5865",
+      "icao": "LAN5865",
+      "codeshared": {
+        "airline_name": "vueling",
+        "airline_iata": "vy",
+        "airline_icao": "vlg",
+        "flight_number": "1423",
+        "flight_iata": "vy1423",
+        "flight_icao": "vlg1423"
+      }
+    },
+    "aircraft": null,
+    "live": null
+  },
+  {
+    "flight_date": "2024-10-28",
+    "flight_status": "scheduled",
+    "departure": {
+      "airport": "Bilbao",
+      "timezone": "Europe/Madrid",
+      "iata": "BIO",
+      "icao": "LEBB",
+      "terminal": "O",
+      "gate": "D33",
+      "delay": 7,
+      "scheduled": "2024-10-28T07:10:00+00:00",
+      "estimated": "2024-10-28T07:10:00+00:00",
+      "actual": "2024-10-28T09:05:00+00:00",
+      "estimated_runway": "2024-10-28T09:05:00+00:00",
+      "actual_runway": "2024-10-28T09:05:00+00:00"
+    },
+    "arrival": {
+      "airport": "El Prat De Llobregat",
+      "timezone": "Europe/Madrid",
+      "iata": "BCN",
+      "icao": "LEBL",
+      "terminal": "1",
+      "gate": null,
+      "baggage": "06",
+      "delay": 95,
+      "scheduled": "2024-10-28T08:20:00+00:00",
+      "estimated": "2024-10-28T08:20:00+00:00",
+      "actual": null,
+      "estimated_runway": null,
+      "actual_runway": null
+    },
+    "airline": {
+      "name": "Iberia",
+      "iata": "IB",
+      "icao": "IBE"
+    },
+    "flight": {
+      "number": "5019",
+      "iata": "IB5019",
+      "icao": "IBE5019",
+      "codeshared": {
+        "airline_name": "vueling",
+        "airline_iata": "vy",
+        "airline_icao": "vlg",
+        "flight_number": "1423",
+        "flight_iata": "vy1423",
+        "flight_icao": "vlg1423"
+      }
+    },
+    "aircraft": null,
+    "live": null
+  },
+  {
+    "flight_date": "2024-10-28",
+    "flight_status": "landed",
+    "departure": {
+      "airport": "Diagoras",
+      "timezone": "Europe/Athens",
+      "iata": "RHO",
+      "icao": "LGRP",
+      "terminal": null,
+      "gate": "15",
+      "delay": 18,
+      "scheduled": "2024-10-28T08:55:00+00:00",
+      "estimated": "2024-10-28T08:55:00+00:00",
+      "actual": "2024-10-28T09:13:00+00:00",
+      "estimated_runway": "2024-10-28T09:13:00+00:00",
+      "actual_runway": "2024-10-28T09:13:00+00:00"
+    },
+    "arrival": {
+      "airport": "Athens International Airport \"Eleftherios Venizelos\"",
+      "timezone": "Europe/Athens",
+      "iata": "ATH",
+      "icao": "LGAV",
+      "terminal": "M",
+      "gate": null,
+      "baggage": null,
+      "delay": 2,
+      "scheduled": "2024-10-28T09:55:00+00:00",
+      "estimated": "2024-10-28T09:55:00+00:00",
+      "actual": "2024-10-28T09:57:00+00:00",
+      "estimated_runway": "2024-10-28T09:57:00+00:00",
+      "actual_runway": "2024-10-28T09:57:00+00:00"
+    },
+    "airline": {
+      "name": "Sky Express",
+      "iata": "GQ",
+      "icao": "SEH"
+    },
+    "flight": {
+      "number": "281",
+      "iata": "GQ281",
+      "icao": "SEH281",
+      "codeshared": null
+    },
+    "aircraft": {
+      "registration": "SX-GRB",
+      "iata": "A21N",
+      "icao": "A21N",
+      "icao24": "469E42"
+    },
+    "live": null
+  },
+  {
+    "flight_date": "2024-10-28",
+    "flight_status": "landed",
+    "departure": {
+      "airport": "Diagoras",
+      "timezone": "Europe/Athens",
+      "iata": "RHO",
+      "icao": "LGRP",
+      "terminal": null,
+      "gate": "14",
+      "delay": 4,
+      "scheduled": "2024-10-28T08:30:00+00:00",
+      "estimated": "2024-10-28T08:30:00+00:00",
+      "actual": "2024-10-28T08:34:00+00:00",
+      "estimated_runway": "2024-10-28T08:34:00+00:00",
+      "actual_runway": "2024-10-28T08:34:00+00:00"
+    },
+    "arrival": {
+      "airport": "Samos",
+      "timezone": "Europe/Athens",
+      "iata": "SMI",
+      "icao": "LGSM",
+      "terminal": null,
+      "gate": null,
+      "baggage": null,
+      "delay": null,
+      "scheduled": "2024-10-28T09:15:00+00:00",
+      "estimated": "2024-10-28T09:15:00+00:00",
+      "actual": "2024-10-28T09:05:00+00:00",
+      "estimated_runway": "2024-10-28T09:05:00+00:00",
+      "actual_runway": "2024-10-28T09:05:00+00:00"
+    },
+    "airline": {
+      "name": "Sky Express",
+      "iata": "GQ",
+      "icao": "SEH"
+    },
+    "flight": {
+      "number": "50",
+      "iata": "GQ50",
+      "icao": "SEH50",
+      "codeshared": null
+    },
+    "aircraft": {
+      "registration": "SX-SIX",
+      "iata": "AT45",
+      "icao": "AT45",
+      "icao24": "46CD38"
+    },
+    "live": null
+  },
+  {
+    "flight_date": "2024-10-28",
+    "flight_status": "landed",
+    "departure": {
+      "airport": "George",
+      "timezone": "Africa/Johannesburg",
+      "iata": "GRJ",
+      "icao": "FAGG",
+      "terminal": null,
+      "gate": "3",
+      "delay": 7,
+      "scheduled": "2024-10-28T08:45:00+00:00",
+      "estimated": "2024-10-28T08:45:00+00:00",
+      "actual": "2024-10-28T08:52:00+00:00",
+      "estimated_runway": "2024-10-28T08:52:00+00:00",
+      "actual_runway": "2024-10-28T08:52:00+00:00"
+    },
+    "arrival": {
+      "airport": "Cape Town International",
+      "timezone": "Africa/Johannesburg",
+      "iata": "CPT",
+      "icao": "FACT",
+      "terminal": "1",
+      "gate": "C2",
+      "baggage": "3.2",
+      "delay": null,
+      "scheduled": "2024-10-28T09:40:00+00:00",
+      "estimated": "2024-10-28T09:40:00+00:00",
+      "actual": "2024-10-28T09:40:00+00:00",
+      "estimated_runway": "2024-10-28T09:40:00+00:00",
+      "actual_runway": "2024-10-28T09:40:00+00:00"
+    },
+    "airline": {
+      "name": "South African Airlink",
+      "iata": "4Z",
+      "icao": "LNK"
+    },
+    "flight": {
+      "number": "622",
+      "iata": "4Z622",
+      "icao": "LNK622",
+      "codeshared": null
+    },
+    "aircraft": {
+      "registration": "ZS-YAK",
+      "iata": "E190",
+      "icao": "E190",
+      "icao24": "00AE3A"
+    },
+    "live": null
+  },
+  {
+    "flight_date": "2024-10-28",
+    "flight_status": "landed",
+    "departure": {
+      "airport": "George",
+      "timezone": "Africa/Johannesburg",
+      "iata": "GRJ",
+      "icao": "FAGG",
+      "terminal": null,
+      "gate": "3",
+      "delay": 7,
+      "scheduled": "2024-10-28T08:45:00+00:00",
+      "estimated": "2024-10-28T08:45:00+00:00",
+      "actual": "2024-10-28T08:52:00+00:00",
+      "estimated_runway": "2024-10-28T08:52:00+00:00",
+      "actual_runway": "2024-10-28T08:52:00+00:00"
+    },
+    "arrival": {
+      "airport": "Cape Town International",
+      "timezone": "Africa/Johannesburg",
+      "iata": "CPT",
+      "icao": "FACT",
+      "terminal": "1",
+      "gate": "C2",
+      "baggage": "3.2",
+      "delay": null,
+      "scheduled": "2024-10-28T09:40:00+00:00",
+      "estimated": "2024-10-28T09:40:00+00:00",
+      "actual": "2024-10-28T09:40:00+00:00",
+      "estimated_runway": "2024-10-28T09:40:00+00:00",
+      "actual_runway": "2024-10-28T09:40:00+00:00"
+    },
+    "airline": {
+      "name": "Qatar Airways",
+      "iata": "QR",
+      "icao": "QTR"
+    },
+    "flight": {
+      "number": "5775",
+      "iata": "QR5775",
+      "icao": "QTR5775",
+      "codeshared": {
+        "airline_name": "south african airlink",
+        "airline_iata": "4z",
+        "airline_icao": "lnk",
+        "flight_number": "622",
+        "flight_iata": "4z622",
+        "flight_icao": "lnk622"
+      }
+    },
+    "aircraft": null,
+    "live": null
+  },
+  {
+    "flight_date": "2024-10-28",
+    "flight_status": "landed",
+    "departure": {
+      "airport": "George",
+      "timezone": "Africa/Johannesburg",
+      "iata": "GRJ",
+      "icao": "FAGG",
+      "terminal": null,
+      "gate": "3",
+      "delay": 7,
+      "scheduled": "2024-10-28T08:45:00+00:00",
+      "estimated": "2024-10-28T08:45:00+00:00",
+      "actual": "2024-10-28T08:52:00+00:00",
+      "estimated_runway": "2024-10-28T08:52:00+00:00",
+      "actual_runway": "2024-10-28T08:52:00+00:00"
+    },
+    "arrival": {
+      "airport": "Cape Town International",
+      "timezone": "Africa/Johannesburg",
+      "iata": "CPT",
+      "icao": "FACT",
+      "terminal": "1",
+      "gate": "C2",
+      "baggage": "3.2",
+      "delay": null,
+      "scheduled": "2024-10-28T09:40:00+00:00",
+      "estimated": "2024-10-28T09:40:00+00:00",
+      "actual": "2024-10-28T09:40:00+00:00",
+      "estimated_runway": "2024-10-28T09:40:00+00:00",
+      "actual_runway": "2024-10-28T09:40:00+00:00"
+    },
+    "airline": {
+      "name": "Emirates",
+      "iata": "EK",
+      "icao": "UAE"
+    },
+    "flight": {
+      "number": "4063",
+      "iata": "EK4063",
+      "icao": "UAE4063",
+      "codeshared": {
+        "airline_name": "south african airlink",
+        "airline_iata": "4z",
+        "airline_icao": "lnk",
+        "flight_number": "622",
+        "flight_iata": "4z622",
+        "flight_icao": "lnk622"
+      }
+    },
+    "aircraft": null,
+    "live": null
+  },
+  {
+    "flight_date": "2024-10-28",
+    "flight_status": "landed",
+    "departure": {
+      "airport": "George",
+      "timezone": "Africa/Johannesburg",
+      "iata": "GRJ",
+      "icao": "FAGG",
+      "terminal": null,
+      "gate": "3",
+      "delay": 7,
+      "scheduled": "2024-10-28T08:45:00+00:00",
+      "estimated": "2024-10-28T08:45:00+00:00",
+      "actual": "2024-10-28T08:52:00+00:00",
+      "estimated_runway": "2024-10-28T08:52:00+00:00",
+      "actual_runway": "2024-10-28T08:52:00+00:00"
+    },
+    "arrival": {
+      "airport": "Cape Town International",
+      "timezone": "Africa/Johannesburg",
+      "iata": "CPT",
+      "icao": "FACT",
+      "terminal": "1",
+      "gate": "C2",
+      "baggage": "3.2",
+      "delay": null,
+      "scheduled": "2024-10-28T09:40:00+00:00",
+      "estimated": "2024-10-28T09:40:00+00:00",
+      "actual": "2024-10-28T09:40:00+00:00",
+      "estimated_runway": "2024-10-28T09:40:00+00:00",
+      "actual_runway": "2024-10-28T09:40:00+00:00"
+    },
+    "airline": {
+      "name": "British Airways",
+      "iata": "BA",
+      "icao": "BAW"
+    },
+    "flight": {
+      "number": "6217",
+      "iata": "BA6217",
+      "icao": "BAW6217",
+      "codeshared": {
+        "airline_name": "south african airlink",
+        "airline_iata": "4z",
+        "airline_icao": "lnk",
+        "flight_number": "622",
+        "flight_iata": "4z622",
+        "flight_icao": "lnk622"
+      }
+    },
+    "aircraft": null,
+    "live": null
+  },
+  {
+    "flight_date": "2024-10-28",
+    "flight_status": "landed",
+    "departure": {
+      "airport": "Poretta",
+      "timezone": "Europe/Paris",
+      "iata": "BIA",
+      "icao": "LFKB",
+      "terminal": null,
+      "gate": "F",
+      "delay": 4,
+      "scheduled": "2024-10-28T07:30:00+00:00",
+      "estimated": "2024-10-28T07:30:00+00:00",
+      "actual": "2024-10-28T07:33:00+00:00",
+      "estimated_runway": "2024-10-28T07:33:00+00:00",
+      "actual_runway": "2024-10-28T07:33:00+00:00"
+    },
+    "arrival": {
+      "airport": "Cote D'azur International Airport",
+      "timezone": "Europe/Paris",
+      "iata": "NCE",
+      "icao": "LFMN",
+      "terminal": "2",
+      "gate": null,
+      "baggage": "4",
+      "delay": null,
+      "scheduled": "2024-10-28T08:20:00+00:00",
+      "estimated": "2024-10-28T08:20:00+00:00",
+      "actual": "2024-10-28T08:07:00+00:00",
+      "estimated_runway": "2024-10-28T08:07:00+00:00",
+      "actual_runway": "2024-10-28T08:07:00+00:00"
+    },
+    "airline": {
+      "name": "Air Corsica",
+      "iata": "XK",
+      "icao": "CCM"
+    },
+    "flight": {
+      "number": "202",
+      "iata": "XK202",
+      "icao": "CCM202",
+      "codeshared": null
+    },
+    "aircraft": {
+      "registration": "F-HXKX",
+      "iata": "AT76",
+      "icao": "AT76",
+      "icao24": "39DD57"
+    },
+    "live": null
+  },
+  {
+    "flight_date": "2024-10-28",
+    "flight_status": "landed",
+    "departure": {
+      "airport": "Poretta",
+      "timezone": "Europe/Paris",
+      "iata": "BIA",
+      "icao": "LFKB",
+      "terminal": null,
+      "gate": "F",
+      "delay": 4,
+      "scheduled": "2024-10-28T07:30:00+00:00",
+      "estimated": "2024-10-28T07:30:00+00:00",
+      "actual": "2024-10-28T07:33:00+00:00",
+      "estimated_runway": "2024-10-28T07:33:00+00:00",
+      "actual_runway": "2024-10-28T07:33:00+00:00"
+    },
+    "arrival": {
+      "airport": "Cote D'azur International Airport",
+      "timezone": "Europe/Paris",
+      "iata": "NCE",
+      "icao": "LFMN",
+      "terminal": "2",
+      "gate": null,
+      "baggage": "4",
+      "delay": null,
+      "scheduled": "2024-10-28T08:20:00+00:00",
+      "estimated": "2024-10-28T08:20:00+00:00",
+      "actual": "2024-10-28T08:07:00+00:00",
+      "estimated_runway": "2024-10-28T08:07:00+00:00",
+      "actual_runway": "2024-10-28T08:07:00+00:00"
+    },
+    "airline": {
+      "name": "Alitalia",
+      "iata": "AZ",
+      "icao": "AZA"
+    },
+    "flight": {
+      "number": "6984",
+      "iata": "AZ6984",
+      "icao": "AZA6984",
+      "codeshared": {
+        "airline_name": "air corsica",
+        "airline_iata": "xk",
+        "airline_icao": "ccm",
+        "flight_number": "202",
+        "flight_iata": "xk202",
+        "flight_icao": "ccm202"
+      }
+    },
+    "aircraft": null,
+    "live": null
+  },
+  {
+    "flight_date": "2024-10-28",
+    "flight_status": "landed",
+    "departure": {
+      "airport": "Poretta",
+      "timezone": "Europe/Paris",
+      "iata": "BIA",
+      "icao": "LFKB",
+      "terminal": null,
+      "gate": "F",
+      "delay": 4,
+      "scheduled": "2024-10-28T07:30:00+00:00",
+      "estimated": "2024-10-28T07:30:00+00:00",
+      "actual": "2024-10-28T07:33:00+00:00",
+      "estimated_runway": "2024-10-28T07:33:00+00:00",
+      "actual_runway": "2024-10-28T07:33:00+00:00"
+    },
+    "arrival": {
+      "airport": "Cote D'azur International Airport",
+      "timezone": "Europe/Paris",
+      "iata": "NCE",
+      "icao": "LFMN",
+      "terminal": "2",
+      "gate": null,
+      "baggage": "4",
+      "delay": null,
+      "scheduled": "2024-10-28T08:20:00+00:00",
+      "estimated": "2024-10-28T08:20:00+00:00",
+      "actual": "2024-10-28T08:07:00+00:00",
+      "estimated_runway": "2024-10-28T08:07:00+00:00",
+      "actual_runway": "2024-10-28T08:07:00+00:00"
+    },
+    "airline": {
+      "name": "Air France",
+      "iata": "AF",
+      "icao": "AFR"
+    },
+    "flight": {
+      "number": "4739",
+      "iata": "AF4739",
+      "icao": "AFR4739",
+      "codeshared": {
+        "airline_name": "air corsica",
+        "airline_iata": "xk",
+        "airline_icao": "ccm",
+        "flight_number": "202",
+        "flight_iata": "xk202",
+        "flight_icao": "ccm202"
+      }
+    },
+    "aircraft": null,
+    "live": null
+  },
+  {
+    "flight_date": "2024-10-28",
+    "flight_status": "landed",
+    "departure": {
+      "airport": "Poretta",
+      "timezone": "Europe/Paris",
+      "iata": "BIA",
+      "icao": "LFKB",
+      "terminal": "1",
+      "gate": "I",
+      "delay": 5,
+      "scheduled": "2024-10-28T07:15:00+00:00",
+      "estimated": "2024-10-28T07:15:00+00:00",
+      "actual": "2024-10-28T07:19:00+00:00",
+      "estimated_runway": "2024-10-28T07:19:00+00:00",
+      "actual_runway": "2024-10-28T07:19:00+00:00"
+    },
+    "arrival": {
+      "airport": "Marseille Provence Airport",
+      "timezone": "Europe/Paris",
+      "iata": "MRS",
+      "icao": "LFML",
+      "terminal": "1",
+      "gate": null,
+      "baggage": "2",
+      "delay": null,
+      "scheduled": "2024-10-28T08:10:00+00:00",
+      "estimated": "2024-10-28T08:10:00+00:00",
+      "actual": "2024-10-28T08:02:00+00:00",
+      "estimated_runway": "2024-10-28T08:02:00+00:00",
+      "actual_runway": "2024-10-28T08:02:00+00:00"
+    },
+    "airline": {
+      "name": "Air Corsica",
+      "iata": "XK",
+      "icao": "CCM"
+    },
+    "flight": {
+      "number": "250",
+      "iata": "XK250",
+      "icao": "CCM250",
+      "codeshared": null
+    },
+    "aircraft": {
+      "registration": "F-HXKF",
+      "iata": "A20N",
+      "icao": "A20N",
+      "icao24": "39DD45"
+    },
+    "live": null
+  },
+  {
+    "flight_date": "2024-10-28",
+    "flight_status": "landed",
+    "departure": {
+      "airport": "Poretta",
+      "timezone": "Europe/Paris",
+      "iata": "BIA",
+      "icao": "LFKB",
+      "terminal": "1",
+      "gate": "I",
+      "delay": 5,
+      "scheduled": "2024-10-28T07:15:00+00:00",
+      "estimated": "2024-10-28T07:15:00+00:00",
+      "actual": "2024-10-28T07:19:00+00:00",
+      "estimated_runway": "2024-10-28T07:19:00+00:00",
+      "actual_runway": "2024-10-28T07:19:00+00:00"
+    },
+    "arrival": {
+      "airport": "Marseille Provence Airport",
+      "timezone": "Europe/Paris",
+      "iata": "MRS",
+      "icao": "LFML",
+      "terminal": "1",
+      "gate": null,
+      "baggage": "2",
+      "delay": null,
+      "scheduled": "2024-10-28T08:10:00+00:00",
+      "estimated": "2024-10-28T08:10:00+00:00",
+      "actual": "2024-10-28T08:02:00+00:00",
+      "estimated_runway": "2024-10-28T08:02:00+00:00",
+      "actual_runway": "2024-10-28T08:02:00+00:00"
+    },
+    "airline": {
+      "name": "Air France",
+      "iata": "AF",
+      "icao": "AFR"
+    },
+    "flight": {
+      "number": "4701",
+      "iata": "AF4701",
+      "icao": "AFR4701",
+      "codeshared": {
+        "airline_name": "air corsica",
+        "airline_iata": "xk",
+        "airline_icao": "ccm",
+        "flight_number": "250",
+        "flight_iata": "xk250",
+        "flight_icao": "ccm250"
+      }
+    },
+    "aircraft": null,
+    "live": null
+  },
+  {
+    "flight_date": "2024-10-28",
+    "flight_status": "landed",
+    "departure": {
+      "airport": "Chengdu Tianfu International Airport",
+      "timezone": "Asia/Chongqing",
+      "iata": "TFU",
+      "icao": "ZUTF",
+      "terminal": "2",
+      "gate": "210",
+      "delay": 9,
+      "scheduled": "2024-10-28T12:35:00+00:00",
+      "estimated": "2024-10-28T12:35:00+00:00",
+      "actual": "2024-10-28T12:44:00+00:00",
+      "estimated_runway": "2024-10-28T12:44:00+00:00",
+      "actual_runway": "2024-10-28T12:44:00+00:00"
+    },
+    "arrival": {
+      "airport": "Beihai",
+      "timezone": "Asia/Shanghai",
+      "iata": "BHY",
+      "icao": "ZGBH",
+      "terminal": "2",
+      "gate": null,
+      "baggage": "1",
+      "delay": null,
+      "scheduled": "2024-10-28T14:40:00+00:00",
+      "estimated": "2024-10-28T14:40:00+00:00",
+      "actual": "2024-10-28T14:27:00+00:00",
+      "estimated_runway": "2024-10-28T14:27:00+00:00",
+      "actual_runway": "2024-10-28T14:27:00+00:00"
+    },
+    "airline": {
+      "name": "Sichuan Airlines",
+      "iata": "3U",
+      "icao": "CSC"
+    },
+    "flight": {
+      "number": "6755",
+      "iata": "3U6755",
+      "icao": "CSC6755",
+      "codeshared": null
+    },
+    "aircraft": {
+      "registration": "B-305U",
+      "iata": "A321",
+      "icao": "A321",
+      "icao24": "7815EA"
+    },
+    "live": null
+  },
+  {
+    "flight_date": "2024-10-28",
+    "flight_status": "landed",
+    "departure": {
+      "airport": "Chengdu Tianfu International Airport",
+      "timezone": "Asia/Chongqing",
+      "iata": "TFU",
+      "icao": "ZUTF",
+      "terminal": "2",
+      "gate": "210",
+      "delay": 9,
+      "scheduled": "2024-10-28T12:35:00+00:00",
+      "estimated": "2024-10-28T12:35:00+00:00",
+      "actual": "2024-10-28T12:44:00+00:00",
+      "estimated_runway": "2024-10-28T12:44:00+00:00",
+      "actual_runway": "2024-10-28T12:44:00+00:00"
+    },
+    "arrival": {
+      "airport": "Beihai",
+      "timezone": "Asia/Shanghai",
+      "iata": "BHY",
+      "icao": "ZGBH",
+      "terminal": "2",
+      "gate": null,
+      "baggage": "1",
+      "delay": null,
+      "scheduled": "2024-10-28T14:40:00+00:00",
+      "estimated": "2024-10-28T14:40:00+00:00",
+      "actual": "2024-10-28T14:27:00+00:00",
+      "estimated_runway": "2024-10-28T14:27:00+00:00",
+      "actual_runway": "2024-10-28T14:27:00+00:00"
+    },
+    "airline": {
+      "name": "China Southern Airlines",
+      "iata": "CZ",
+      "icao": "CSN"
+    },
+    "flight": {
+      "number": "9270",
+      "iata": "CZ9270",
+      "icao": "CSN9270",
+      "codeshared": {
+        "airline_name": "sichuan airlines",
+        "airline_iata": "3u",
+        "airline_icao": "csc",
+        "flight_number": "6755",
+        "flight_iata": "3u6755",
+        "flight_icao": "csc6755"
+      }
+    },
+    "aircraft": null,
+    "live": null
+  },
+  {
+    "flight_date": "2024-10-28",
+    "flight_status": "landed",
+    "departure": {
+      "airport": "Chengdu Tianfu International Airport",
+      "timezone": "Asia/Chongqing",
+      "iata": "TFU",
+      "icao": "ZUTF",
+      "terminal": "2",
+      "gate": "210",
+      "delay": 9,
+      "scheduled": "2024-10-28T12:35:00+00:00",
+      "estimated": "2024-10-28T12:35:00+00:00",
+      "actual": "2024-10-28T12:44:00+00:00",
+      "estimated_runway": "2024-10-28T12:44:00+00:00",
+      "actual_runway": "2024-10-28T12:44:00+00:00"
+    },
+    "arrival": {
+      "airport": "Beihai",
+      "timezone": "Asia/Shanghai",
+      "iata": "BHY",
+      "icao": "ZGBH",
+      "terminal": "2",
+      "gate": null,
+      "baggage": "1",
+      "delay": null,
+      "scheduled": "2024-10-28T14:40:00+00:00",
+      "estimated": "2024-10-28T14:40:00+00:00",
+      "actual": "2024-10-28T14:27:00+00:00",
+      "estimated_runway": "2024-10-28T14:27:00+00:00",
+      "actual_runway": "2024-10-28T14:27:00+00:00"
+    },
+    "airline": {
+      "name": "Chengdu Airlines",
+      "iata": "EU",
+      "icao": "UEA"
+    },
+    "flight": {
+      "number": "7107",
+      "iata": "EU7107",
+      "icao": "UEA7107",
+      "codeshared": {
+        "airline_name": "sichuan airlines",
+        "airline_iata": "3u",
+        "airline_icao": "csc",
+        "flight_number": "6755",
+        "flight_iata": "3u6755",
+        "flight_icao": "csc6755"
+      }
+    },
+    "aircraft": null,
+    "live": null
+  },
+  {
+    "flight_date": "2024-10-28",
+    "flight_status": "landed",
+    "departure": {
+      "airport": "Chengdu Tianfu International Airport",
+      "timezone": "Asia/Chongqing",
+      "iata": "TFU",
+      "icao": "ZUTF",
+      "terminal": "2",
+      "gate": "210",
+      "delay": 9,
+      "scheduled": "2024-10-28T12:35:00+00:00",
+      "estimated": "2024-10-28T12:35:00+00:00",
+      "actual": "2024-10-28T12:44:00+00:00",
+      "estimated_runway": "2024-10-28T12:44:00+00:00",
+      "actual_runway": "2024-10-28T12:44:00+00:00"
+    },
+    "arrival": {
+      "airport": "Beihai",
+      "timezone": "Asia/Shanghai",
+      "iata": "BHY",
+      "icao": "ZGBH",
+      "terminal": "2",
+      "gate": null,
+      "baggage": "1",
+      "delay": null,
+      "scheduled": "2024-10-28T14:40:00+00:00",
+      "estimated": "2024-10-28T14:40:00+00:00",
+      "actual": "2024-10-28T14:27:00+00:00",
+      "estimated_runway": "2024-10-28T14:27:00+00:00",
+      "actual_runway": "2024-10-28T14:27:00+00:00"
+    },
+    "airline": {
+      "name": "Xiamen Airlines",
+      "iata": "MF",
+      "icao": "CXA"
+    },
+    "flight": {
+      "number": "5271",
+      "iata": "MF5271",
+      "icao": "CXA5271",
+      "codeshared": {
+        "airline_name": "sichuan airlines",
+        "airline_iata": "3u",
+        "airline_icao": "csc",
+        "flight_number": "6755",
+        "flight_iata": "3u6755",
+        "flight_icao": "csc6755"
+      }
+    },
+    "aircraft": null,
+    "live": null
+  },
+  {
+    "flight_date": "2024-10-28",
+    "flight_status": "landed",
+    "departure": {
+      "airport": "Chengdu Tianfu International Airport",
+      "timezone": "Asia/Chongqing",
+      "iata": "TFU",
+      "icao": "ZUTF",
+      "terminal": "2",
+      "gate": "210",
+      "delay": 9,
+      "scheduled": "2024-10-28T12:35:00+00:00",
+      "estimated": "2024-10-28T12:35:00+00:00",
+      "actual": "2024-10-28T12:44:00+00:00",
+      "estimated_runway": "2024-10-28T12:44:00+00:00",
+      "actual_runway": "2024-10-28T12:44:00+00:00"
+    },
+    "arrival": {
+      "airport": "Beihai",
+      "timezone": "Asia/Shanghai",
+      "iata": "BHY",
+      "icao": "ZGBH",
+      "terminal": "2",
+      "gate": null,
+      "baggage": "1",
+      "delay": null,
+      "scheduled": "2024-10-28T14:40:00+00:00",
+      "estimated": "2024-10-28T14:40:00+00:00",
+      "actual": "2024-10-28T14:27:00+00:00",
+      "estimated_runway": "2024-10-28T14:27:00+00:00",
+      "actual_runway": "2024-10-28T14:27:00+00:00"
+    },
+    "airline": {
+      "name": "China Eastern Airlines",
+      "iata": "MU",
+      "icao": "CES"
+    },
+    "flight": {
+      "number": "3279",
+      "iata": "MU3279",
+      "icao": "CES3279",
+      "codeshared": {
+        "airline_name": "sichuan airlines",
+        "airline_iata": "3u",
+        "airline_icao": "csc",
+        "flight_number": "6755",
+        "flight_iata": "3u6755",
+        "flight_icao": "csc6755"
+      }
+    },
+    "aircraft": null,
+    "live": null
+  },
+  {
+    "flight_date": "2024-10-28",
+    "flight_status": "landed",
+    "departure": {
+      "airport": "Tianhe International",
+      "timezone": "Asia/Shanghai",
+      "iata": "WUH",
+      "icao": "ZHHH",
+      "terminal": "2",
+      "gate": "B",
+      "delay": 4,
+      "scheduled": "2024-10-28T12:05:00+00:00",
+      "estimated": "2024-10-28T12:05:00+00:00",
+      "actual": "2024-10-28T12:09:00+00:00",
+      "estimated_runway": "2024-10-28T12:09:00+00:00",
+      "actual_runway": "2024-10-28T12:09:00+00:00"
+    },
+    "arrival": {
+      "airport": "Beihai",
+      "timezone": "Asia/Shanghai",
+      "iata": "BHY",
+      "icao": "ZGBH",
+      "terminal": "2",
+      "gate": null,
+      "baggage": "2",
+      "delay": null,
+      "scheduled": "2024-10-28T14:40:00+00:00",
+      "estimated": "2024-10-28T14:40:00+00:00",
+      "actual": "2024-10-28T14:11:00+00:00",
+      "estimated_runway": "2024-10-28T14:11:00+00:00",
+      "actual_runway": "2024-10-28T14:11:00+00:00"
+    },
+    "airline": {
+      "name": "China Southern Airlines",
+      "iata": "CZ",
+      "icao": "CSN"
+    },
+    "flight": {
+      "number": "1429",
+      "iata": "CZ1429",
+      "icao": "CSN1429",
+      "codeshared": {
+        "airline_name": "chengdu airlines",
+        "airline_iata": "eu",
+        "airline_icao": "uea",
+        "flight_number": "1857",
+        "flight_iata": "eu1857",
+        "flight_icao": "uea1857"
+      }
+    },
+    "aircraft": null,
+    "live": null
+  },
+  {
+    "flight_date": "2024-10-28",
+    "flight_status": "landed",
+    "departure": {
+      "airport": "Tianhe International",
+      "timezone": "Asia/Shanghai",
+      "iata": "WUH",
+      "icao": "ZHHH",
+      "terminal": "2",
+      "gate": "B",
+      "delay": 4,
+      "scheduled": "2024-10-28T12:05:00+00:00",
+      "estimated": "2024-10-28T12:05:00+00:00",
+      "actual": "2024-10-28T12:09:00+00:00",
+      "estimated_runway": "2024-10-28T12:09:00+00:00",
+      "actual_runway": "2024-10-28T12:09:00+00:00"
+    },
+    "arrival": {
+      "airport": "Beihai",
+      "timezone": "Asia/Shanghai",
+      "iata": "BHY",
+      "icao": "ZGBH",
+      "terminal": "2",
+      "gate": null,
+      "baggage": "2",
+      "delay": null,
+      "scheduled": "2024-10-28T14:40:00+00:00",
+      "estimated": "2024-10-28T14:40:00+00:00",
+      "actual": "2024-10-28T14:11:00+00:00",
+      "estimated_runway": "2024-10-28T14:11:00+00:00",
+      "actual_runway": "2024-10-28T14:11:00+00:00"
+    },
+    "airline": {
+      "name": "Tibet Airlines",
+      "iata": "TV",
+      "icao": "TBA"
+    },
+    "flight": {
+      "number": "5030",
+      "iata": "TV5030",
+      "icao": "TBA5030",
+      "codeshared": {
+        "airline_name": "chengdu airlines",
+        "airline_iata": "eu",
+        "airline_icao": "uea",
+        "flight_number": "1857",
+        "flight_iata": "eu1857",
+        "flight_icao": "uea1857"
+      }
+    },
+    "aircraft": null,
+    "live": null
+  },
+  {
+    "flight_date": "2024-10-28",
+    "flight_status": "scheduled",
+    "departure": {
+      "airport": "Beihai",
+      "timezone": "Asia/Shanghai",
+      "iata": "BHY",
+      "icao": "ZGBH",
+      "terminal": null,
+      "gate": "G5",
+      "delay": 40,
+      "scheduled": "2024-10-28T14:15:00+00:00",
+      "estimated": "2024-10-28T14:15:00+00:00",
+      "actual": "2024-10-28T15:15:00+00:00",
+      "estimated_runway": "2024-10-28T15:15:00+00:00",
+      "actual_runway": "2024-10-28T15:15:00+00:00"
+    },
+    "arrival": {
+      "airport": "Jinan",
+      "timezone": "Asia/Shanghai",
+      "iata": "TNA",
+      "icao": "ZSJN",
+      "terminal": "T1",
+      "gate": null,
+      "baggage": "4",
+      "delay": 19,
+      "scheduled": "2024-10-28T17:15:00+00:00",
+      "estimated": "2024-10-28T17:15:00+00:00",
+      "actual": null,
+      "estimated_runway": null,
+      "actual_runway": null
+    },
+    "airline": {
+      "name": "Guangxi Beibu Gulf Airlines",
+      "iata": "GX",
+      "icao": "CBG"
+    },
+    "flight": {
+      "number": "8850",
+      "iata": "GX8850",
+      "icao": "CBG8850",
+      "codeshared": null
+    },
+    "aircraft": {
+      "registration": "B-6670",
+      "iata": "A320",
+      "icao": "A320",
+      "icao24": "780653"
+    },
+    "live": {
+      "updated": "2024-10-28T08:37:47+00:00",
+      "latitude": 32.5744,
+      "longitude": 114.387,
+      "altitude": 8107.68,
+      "direction": 4,
+      "speed_horizontal": 788.952,
+      "speed_vertical": 0,
+      "is_ground": false
+    }
+  },
+  {
+    "flight_date": "2024-10-28",
+    "flight_status": "scheduled",
+    "departure": {
+      "airport": "Beihai",
+      "timezone": "Asia/Shanghai",
+      "iata": "BHY",
+      "icao": "ZGBH",
+      "terminal": null,
+      "gate": "G5",
+      "delay": 40,
+      "scheduled": "2024-10-28T14:15:00+00:00",
+      "estimated": "2024-10-28T14:15:00+00:00",
+      "actual": "2024-10-28T15:15:00+00:00",
+      "estimated_runway": "2024-10-28T15:15:00+00:00",
+      "actual_runway": "2024-10-28T15:15:00+00:00"
+    },
+    "arrival": {
+      "airport": "Jinan",
+      "timezone": "Asia/Shanghai",
+      "iata": "TNA",
+      "icao": "ZSJN",
+      "terminal": "T1",
+      "gate": null,
+      "baggage": "4",
+      "delay": 19,
+      "scheduled": "2024-10-28T17:15:00+00:00",
+      "estimated": "2024-10-28T17:15:00+00:00",
+      "actual": null,
+      "estimated_runway": null,
+      "actual_runway": null
+    },
+    "airline": {
+      "name": "Hainan Airlines",
+      "iata": "HU",
+      "icao": "CHH"
+    },
+    "flight": {
+      "number": "4328",
+      "iata": "HU4328",
+      "icao": "CHH4328",
+      "codeshared": {
+        "airline_name": "guangxi beibu gulf airlines",
+        "airline_iata": "gx",
+        "airline_icao": "cbg",
+        "flight_number": "8850",
+        "flight_iata": "gx8850",
+        "flight_icao": "cbg8850"
+      }
+    },
+    "aircraft": null,
+    "live": null
+  },
+  {
+    "flight_date": "2024-10-28",
+    "flight_status": "active",
+    "departure": {
+      "airport": "Birmingham International Airport",
+      "timezone": "Europe/London",
+      "iata": "BHX",
+      "icao": "EGBB",
+      "terminal": null,
+      "gate": "15",
+      "delay": 13,
+      "scheduled": "2024-10-28T07:05:00+00:00",
+      "estimated": "2024-10-28T07:05:00+00:00",
+      "actual": "2024-10-28T07:17:00+00:00",
+      "estimated_runway": "2024-10-28T07:17:00+00:00",
+      "actual_runway": "2024-10-28T07:17:00+00:00"
+    },
+    "arrival": {
+      "airport": "Keflavik International",
+      "timezone": "Atlantic/Reykjavik",
+      "iata": "KEF",
+      "icao": "BIKF",
+      "terminal": "S",
+      "gate": null,
+      "baggage": null,
+      "delay": null,
+      "scheduled": "2024-10-28T10:05:00+00:00",
+      "estimated": "2024-10-28T10:05:00+00:00",
+      "actual": null,
+      "estimated_runway": null,
+      "actual_runway": null
+    },
+    "airline": {
+      "name": "Jet2",
+      "iata": "LS",
+      "icao": "EXS"
+    },
+    "flight": {
+      "number": "1375",
+      "iata": "LS1375",
+      "icao": "EXS1375",
+      "codeshared": null
+    },
+    "aircraft": {
+      "registration": "G-DRTD",
+      "iata": "B738",
+      "icao": "B738",
+      "icao24": "40751C"
+    },
+    "live": {
+      "updated": "2024-10-28T08:34:49+00:00",
+      "latitude": 58.1717,
+      "longitude": -11.8151,
+      "altitude": 10972.8,
+      "direction": 319,
+      "speed_horizontal": 740.8,
+      "speed_vertical": 0,
+      "is_ground": false
+    }
+  },
+  {
+    "flight_date": "2024-10-28",
+    "flight_status": "active",
+    "departure": {
+      "airport": "Birmingham International Airport",
+      "timezone": "Europe/London",
+      "iata": "BHX",
+      "icao": "EGBB",
+      "terminal": null,
+      "gate": "14B",
+      "delay": 25,
+      "scheduled": "2024-10-28T07:05:00+00:00",
+      "estimated": "2024-10-28T07:05:00+00:00",
+      "actual": "2024-10-28T07:29:00+00:00",
+      "estimated_runway": "2024-10-28T07:29:00+00:00",
+      "actual_runway": "2024-10-28T07:29:00+00:00"
+    },
+    "arrival": {
+      "airport": "Tivat",
+      "timezone": "Europe/Podgorica",
+      "iata": "TIV",
+      "icao": "LYTV",
+      "terminal": null,
+      "gate": null,
+      "baggage": null,
+      "delay": null,
+      "scheduled": "2024-10-28T11:10:00+00:00",
+      "estimated": "2024-10-28T11:10:00+00:00",
+      "actual": null,
+      "estimated_runway": null,
+      "actual_runway": null
+    },
+    "airline": {
+      "name": "Jet2",
+      "iata": "LS",
+      "icao": "EXS"
+    },
+    "flight": {
+      "number": "1191",
+      "iata": "LS1191",
+      "icao": "EXS1191",
+      "codeshared": null
+    },
+    "aircraft": {
+      "registration": "G-JZBI",
+      "iata": "B738",
+      "icao": "B738",
+      "icao24": "407176"
+    },
+    "live": {
+      "updated": "2024-10-28T08:34:39+00:00",
+      "latitude": 49.6909,
+      "longitude": 9.4344,
+      "altitude": 11887.2,
+      "direction": 133,
+      "speed_horizontal": 840.808,
+      "speed_vertical": 0,
+      "is_ground": false
+    }
+  },
+  {
+    "flight_date": "2024-10-28",
+    "flight_status": "active",
+    "departure": {
+      "airport": "Birmingham International Airport",
+      "timezone": "Europe/London",
+      "iata": "BHX",
+      "icao": "EGBB",
+      "terminal": null,
+      "gate": "12",
+      "delay": 7,
+      "scheduled": "2024-10-28T07:05:00+00:00",
+      "estimated": "2024-10-28T07:05:00+00:00",
+      "actual": "2024-10-28T07:11:00+00:00",
+      "estimated_runway": "2024-10-28T07:11:00+00:00",
+      "actual_runway": "2024-10-28T07:11:00+00:00"
+    },
+    "arrival": {
+      "airport": "Faro",
+      "timezone": "Europe/Lisbon",
+      "iata": "FAO",
+      "icao": "LPFR",
+      "terminal": "N",
+      "gate": null,
+      "baggage": null,
+      "delay": null,
+      "scheduled": "2024-10-28T10:00:00+00:00",
+      "estimated": "2024-10-28T10:00:00+00:00",
+      "actual": null,
+      "estimated_runway": null,
+      "actual_runway": null
+    },
+    "airline": {
+      "name": "Jet2",
+      "iata": "LS",
+      "icao": "EXS"
+    },
+    "flight": {
+      "number": "1221",
+      "iata": "LS1221",
+      "icao": "EXS1221",
+      "codeshared": null
+    },
+    "aircraft": {
+      "registration": "G-SUNJ",
+      "iata": "A21N",
+      "icao": "A21N",
+      "icao24": "408033"
+    },
+    "live": {
+      "updated": "2024-10-28T08:34:05+00:00",
+      "latitude": 42.4258,
+      "longitude": -6.8538,
+      "altitude": 11285.2,
+      "direction": 203,
+      "speed_horizontal": 1000.08,
+      "speed_vertical": 0,
+      "is_ground": false
+    }
+  },
+  {
+    "flight_date": "2024-10-28",
+    "flight_status": "scheduled",
+    "departure": {
+      "airport": "Birmingham International Airport",
+      "timezone": "Europe/London",
+      "iata": "BHX",
+      "icao": "EGBB",
+      "terminal": null,
+      "gate": "40",
+      "delay": 34,
+      "scheduled": "2024-10-28T07:00:00+00:00",
+      "estimated": "2024-10-28T07:00:00+00:00",
+      "actual": null,
+      "estimated_runway": null,
+      "actual_runway": null
+    },
+    "arrival": {
+      "airport": "Charles De Gaulle",
+      "timezone": "Europe/Paris",
+      "iata": "CDG",
+      "icao": "LFPG",
+      "terminal": "2B",
+      "gate": null,
+      "baggage": "03",
+      "delay": null,
+      "scheduled": "2024-10-28T09:20:00+00:00",
+      "estimated": "2024-10-28T09:20:00+00:00",
+      "actual": null,
+      "estimated_runway": null,
+      "actual_runway": null
+    },
+    "airline": {
+      "name": "easyJet",
+      "iata": "U2",
+      "icao": "EZY"
+    },
+    "flight": {
+      "number": "6637",
+      "iata": "U26637",
+      "icao": "EZY6637",
+      "codeshared": null
+    },
+    "aircraft": {
+      "registration": "G-EZRX",
+      "iata": "A320",
+      "icao": "A320",
+      "icao24": "407573"
+    },
+    "live": {
+      "updated": "2024-10-28T08:29:58+00:00",
+      "latitude": 52.3994,
+      "longitude": -1.6961,
+      "altitude": 723.9,
+      "direction": 165.27,
+      "speed_horizontal": 407.88,
+      "speed_vertical": 45.648,
+      "is_ground": false
+    }
+  },
+  {
+    "flight_date": "2024-10-28",
+    "flight_status": "scheduled",
+    "departure": {
+      "airport": "Birmingham International Airport",
+      "timezone": "Europe/London",
+      "iata": "BHX",
+      "icao": "EGBB",
+      "terminal": null,
+      "gate": "43",
+      "delay": 41,
+      "scheduled": "2024-10-28T07:00:00+00:00",
+      "estimated": "2024-10-28T07:00:00+00:00",
+      "actual": "2024-10-28T07:40:00+00:00",
+      "estimated_runway": "2024-10-28T07:40:00+00:00",
+      "actual_runway": "2024-10-28T07:40:00+00:00"
+    },
+    "arrival": {
+      "airport": "Sur Reina Sofia",
+      "timezone": "Atlantic/Canary",
+      "iata": "TFS",
+      "icao": "GCTS",
+      "terminal": "2",
+      "gate": null,
+      "baggage": "B1",
+      "delay": 28,
+      "scheduled": "2024-10-28T11:20:00+00:00",
+      "estimated": "2024-10-28T11:20:00+00:00",
+      "actual": null,
+      "estimated_runway": null,
+      "actual_runway": null
+    },
+    "airline": {
+      "name": "easyJet",
+      "iata": "U2",
+      "icao": "EZY"
+    },
+    "flight": {
+      "number": "6607",
+      "iata": "U26607",
+      "icao": "EZY6607",
+      "codeshared": null
+    },
+    "aircraft": {
+      "registration": "G-EZTR",
+      "iata": "A320",
+      "icao": "A320",
+      "icao24": "406229"
+    },
+    "live": {
+      "updated": "2024-10-28T08:34:05+00:00",
+      "latitude": 46.7691,
+      "longitude": -5.8335,
+      "altitude": 11277.6,
+      "direction": 201,
+      "speed_horizontal": 903.776,
+      "speed_vertical": 0,
+      "is_ground": false
+    }
+  },
+  {
+    "flight_date": "2024-10-28",
+    "flight_status": "active",
+    "departure": {
+      "airport": "Birmingham International Airport",
+      "timezone": "Europe/London",
+      "iata": "BHX",
+      "icao": "EGBB",
+      "terminal": null,
+      "gate": "3B",
+      "delay": 26,
+      "scheduled": "2024-10-28T07:00:00+00:00",
+      "estimated": "2024-10-28T07:00:00+00:00",
+      "actual": "2024-10-28T07:26:00+00:00",
+      "estimated_runway": "2024-10-28T07:26:00+00:00",
+      "actual_runway": "2024-10-28T07:26:00+00:00"
+    },
+    "arrival": {
+      "airport": "Menara",
+      "timezone": "Africa/Casablanca",
+      "iata": "RAK",
+      "icao": "GMMX",
+      "terminal": "1",
+      "gate": null,
+      "baggage": null,
+      "delay": 2,
+      "scheduled": "2024-10-28T11:40:00+00:00",
+      "estimated": "2024-10-28T11:40:00+00:00",
+      "actual": null,
+      "estimated_runway": null,
+      "actual_runway": null
+    },
+    "airline": {
+      "name": "Jet2",
+      "iata": "LS",
+      "icao": "EXS"
+    },
+    "flight": {
+      "number": "1133",
+      "iata": "LS1133",
+      "icao": "EXS1133",
+      "codeshared": null
+    },
+    "aircraft": {
+      "registration": "G-GDFF",
+      "iata": "B738",
+      "icao": "B738",
+      "icao24": "4066B9"
+    },
+    "live": {
+      "updated": "2024-10-28T08:34:06+00:00",
+      "latitude": 44.2639,
+      "longitude": -5.7662,
+      "altitude": 11277.6,
+      "direction": 203,
+      "speed_horizontal": 981.56,
+      "speed_vertical": 0,
+      "is_ground": false
+    }
+  },
+  {
+    "flight_date": "2024-10-28",
+    "flight_status": "active",
+    "departure": {
+      "airport": "Birmingham International Airport",
+      "timezone": "Europe/London",
+      "iata": "BHX",
+      "icao": "EGBB",
+      "terminal": null,
+      "gate": "56",
+      "delay": 15,
+      "scheduled": "2024-10-28T07:00:00+00:00",
+      "estimated": "2024-10-28T07:00:00+00:00",
+      "actual": "2024-10-28T07:14:00+00:00",
+      "estimated_runway": "2024-10-28T07:14:00+00:00",
+      "actual_runway": "2024-10-28T07:14:00+00:00"
+    },
+    "arrival": {
+      "airport": "Paphos International Airport",
+      "timezone": "Asia/Nicosia",
+      "iata": "PFO",
+      "icao": "LCPH",
+      "terminal": "N",
+      "gate": "56",
+      "baggage": null,
+      "delay": null,
+      "scheduled": "2024-10-28T13:40:00+00:00",
+      "estimated": "2024-10-28T13:40:00+00:00",
+      "actual": null,
+      "estimated_runway": null,
+      "actual_runway": null
+    },
+    "airline": {
+      "name": "Ryanair",
+      "iata": "FR",
+      "icao": "RYR"
+    },
+    "flight": {
+      "number": "2136",
+      "iata": "FR2136",
+      "icao": "RYR2136",
+      "codeshared": null
+    },
+    "aircraft": {
+      "registration": "EI-HGV",
+      "iata": "B38M",
+      "icao": "B38M",
+      "icao24": "4CAD54"
+    },
+    "live": {
+      "updated": "2024-10-28T08:34:34+00:00",
+      "latitude": 48.3965,
+      "longitude": 11.6609,
+      "altitude": 11277.6,
+      "direction": 132,
+      "speed_horizontal": 861.18,
+      "speed_vertical": 0,
+      "is_ground": false
+    }
+  },
+  {
+    "flight_date": "2024-10-28",
+    "flight_status": "active",
+    "departure": {
+      "airport": "Birmingham International Airport",
+      "timezone": "Europe/London",
+      "iata": "BHX",
+      "icao": "EGBB",
+      "terminal": null,
+      "gate": "13",
+      "delay": 34,
+      "scheduled": "2024-10-28T06:50:00+00:00",
+      "estimated": "2024-10-28T06:50:00+00:00",
+      "actual": "2024-10-28T07:24:00+00:00",
+      "estimated_runway": "2024-10-28T07:24:00+00:00",
+      "actual_runway": "2024-10-28T07:24:00+00:00"
+    },
+    "arrival": {
+      "airport": "Alicante El Altet",
+      "timezone": "Europe/Madrid",
+      "iata": "ALC",
+      "icao": "LEAL",
+      "terminal": "N",
+      "gate": null,
+      "baggage": "4B",
+      "delay": 8,
+      "scheduled": "2024-10-28T10:30:00+00:00",
+      "estimated": "2024-10-28T10:30:00+00:00",
+      "actual": null,
+      "estimated_runway": null,
+      "actual_runway": null
+    },
+    "airline": {
+      "name": "Jet2",
+      "iata": "LS",
+      "icao": "EXS"
+    },
+    "flight": {
+      "number": "1215",
+      "iata": "LS1215",
+      "icao": "EXS1215",
+      "codeshared": null
+    },
+    "aircraft": {
+      "registration": "G-SUNE",
+      "iata": "A21N",
+      "icao": "A21N",
+      "icao24": "407E53"
+    },
+    "live": {
+      "updated": "2024-10-28T08:34:30+00:00",
+      "latitude": 44.4261,
+      "longitude": 0.7601,
+      "altitude": 11277.6,
+      "direction": 184,
+      "speed_horizontal": 825.992,
+      "speed_vertical": 0,
+      "is_ground": false
+    }
+  },
+  {
+    "flight_date": "2024-10-28",
+    "flight_status": "active",
+    "departure": {
+      "airport": "Birmingham International Airport",
+      "timezone": "Europe/London",
+      "iata": "BHX",
+      "icao": "EGBB",
+      "terminal": null,
+      "gate": "49H",
+      "delay": 23,
+      "scheduled": "2024-10-28T06:45:00+00:00",
+      "estimated": "2024-10-28T06:45:00+00:00",
+      "actual": "2024-10-28T07:08:00+00:00",
+      "estimated_runway": "2024-10-28T07:08:00+00:00",
+      "actual_runway": "2024-10-28T07:08:00+00:00"
+    },
+    "arrival": {
+      "airport": "Lanzarote",
+      "timezone": "Atlantic/Canary",
+      "iata": "ACE",
+      "icao": "GCRR",
+      "terminal": "1",
+      "gate": null,
+      "baggage": "3",
+      "delay": 2,
+      "scheduled": "2024-10-28T10:55:00+00:00",
+      "estimated": "2024-10-28T10:55:00+00:00",
+      "actual": null,
+      "estimated_runway": null,
+      "actual_runway": null
+    },
+    "airline": {
+      "name": "Fly4 Airlines",
+      "iata": "F4",
+      "icao": "FFA"
+    },
+    "flight": {
+      "number": "7194",
+      "iata": "F47194",
+      "icao": "FFA7194",
+      "codeshared": null
+    },
+    "aircraft": null,
+    "live": null
+  },
+  {
+    "flight_date": "2024-10-28",
+    "flight_status": "active",
+    "departure": {
+      "airport": "Birmingham International Airport",
+      "timezone": "Europe/London",
+      "iata": "BHX",
+      "icao": "EGBB",
+      "terminal": null,
+      "gate": "1",
+      "delay": 36,
+      "scheduled": "2024-10-28T06:45:00+00:00",
+      "estimated": "2024-10-28T06:45:00+00:00",
+      "actual": "2024-10-28T07:21:00+00:00",
+      "estimated_runway": "2024-10-28T07:21:00+00:00",
+      "actual_runway": "2024-10-28T07:21:00+00:00"
+    },
+    "arrival": {
+      "airport": "Son Sant Joan Airport",
+      "timezone": "Europe/Madrid",
+      "iata": "PMI",
+      "icao": "LEPA",
+      "terminal": "1",
+      "gate": null,
+      "baggage": "06",
+      "delay": 8,
+      "scheduled": "2024-10-28T10:15:00+00:00",
+      "estimated": "2024-10-28T10:15:00+00:00",
+      "actual": null,
+      "estimated_runway": null,
+      "actual_runway": null
+    },
+    "airline": {
+      "name": "Jet2",
+      "iata": "LS",
+      "icao": "EXS"
+    },
+    "flight": {
+      "number": "1275",
+      "iata": "LS1275",
+      "icao": "EXS1275",
+      "codeshared": null
+    },
+    "aircraft": {
+      "registration": "G-DRTZ",
+      "iata": "B738",
+      "icao": "B738",
+      "icao24": "407914"
+    },
+    "live": {
+      "updated": "2024-10-28T08:34:32+00:00",
+      "latitude": 43.8901,
+      "longitude": 1.7547,
+      "altitude": 11277.6,
+      "direction": 171,
+      "speed_horizontal": 820.436,
+      "speed_vertical": 0,
+      "is_ground": false
+    }
+  },
+  {
+    "flight_date": "2024-10-28",
+    "flight_status": "active",
+    "departure": {
+      "airport": "Birmingham International Airport",
+      "timezone": "Europe/London",
+      "iata": "BHX",
+      "icao": "EGBB",
+      "terminal": null,
+      "gate": "49C",
+      "delay": 8,
+      "scheduled": "2024-10-28T06:45:00+00:00",
+      "estimated": "2024-10-28T06:45:00+00:00",
+      "actual": "2024-10-28T06:53:00+00:00",
+      "estimated_runway": "2024-10-28T06:53:00+00:00",
+      "actual_runway": "2024-10-28T06:53:00+00:00"
+    },
+    "arrival": {
+      "airport": "Girona-Costa Brava",
+      "timezone": "Europe/Madrid",
+      "iata": "GRO",
+      "icao": "LEGE",
+      "terminal": "1",
+      "gate": null,
+      "baggage": "2",
+      "delay": null,
+      "scheduled": "2024-10-28T10:00:00+00:00",
+      "estimated": "2024-10-28T10:00:00+00:00",
+      "actual": null,
+      "estimated_runway": null,
+      "actual_runway": null
+    },
+    "airline": {
+      "name": "Jet2",
+      "iata": "LS",
+      "icao": "EXS"
+    },
+    "flight": {
+      "number": "1235",
+      "iata": "LS1235",
+      "icao": "EXS1235",
+      "codeshared": null
+    },
+    "aircraft": {
+      "registration": "G-JZDF",
+      "iata": "B738",
+      "icao": "B738",
+      "icao24": "4080A4"
+    },
+    "live": {
+      "updated": "2024-10-28T08:35:32+00:00",
+      "latitude": 41.7793,
+      "longitude": 2.7146,
+      "altitude": 754.38,
+      "direction": 16,
+      "speed_horizontal": 296.32,
+      "speed_vertical": 0,
+      "is_ground": false
+    }
+  },
+  {
+    "flight_date": "2024-10-28",
+    "flight_status": "active",
+    "departure": {
+      "airport": "Birmingham International Airport",
+      "timezone": "Europe/London",
+      "iata": "BHX",
+      "icao": "EGBB",
+      "terminal": null,
+      "gate": "59",
+      "delay": 8,
+      "scheduled": "2024-10-28T06:35:00+00:00",
+      "estimated": "2024-10-28T06:35:00+00:00",
+      "actual": "2024-10-28T06:43:00+00:00",
+      "estimated_runway": "2024-10-28T06:43:00+00:00",
+      "actual_runway": "2024-10-28T06:43:00+00:00"
+    },
+    "arrival": {
+      "airport": "Lodz Lublinek",
+      "timezone": "Europe/Warsaw",
+      "iata": "LCJ",
+      "icao": "EPLL",
+      "terminal": null,
+      "gate": "59",
+      "baggage": null,
+      "delay": null,
+      "scheduled": "2024-10-28T10:05:00+00:00",
+      "estimated": "2024-10-28T10:05:00+00:00",
+      "actual": null,
+      "estimated_runway": null,
+      "actual_runway": null
+    },
+    "airline": {
+      "name": "Ryanair",
+      "iata": "FR",
+      "icao": "RYR"
+    },
+    "flight": {
+      "number": "9846",
+      "iata": "FR9846",
+      "icao": "RYR9846",
+      "codeshared": null
+    },
+    "aircraft": {
+      "registration": "EI-EVF",
+      "iata": "B738",
+      "icao": "B738",
+      "icao24": "4CA9CD"
+    },
+    "live": {
+      "updated": "2024-10-28T08:35:21+00:00",
+      "latitude": 51.8627,
+      "longitude": 19.6594,
+      "altitude": 1554.48,
+      "direction": 146,
+      "speed_horizontal": 475.964,
+      "speed_vertical": 0,
+      "is_ground": false
+    }
+  },
+  {
+    "flight_date": "2024-10-28",
+    "flight_status": "active",
+    "departure": {
+      "airport": "Birmingham International Airport",
+      "timezone": "Europe/London",
+      "iata": "BHX",
+      "icao": "EGBB",
+      "terminal": null,
+      "gate": "14",
+      "delay": 21,
+      "scheduled": "2024-10-28T06:30:00+00:00",
+      "estimated": "2024-10-28T06:30:00+00:00",
+      "actual": "2024-10-28T06:51:00+00:00",
+      "estimated_runway": "2024-10-28T06:51:00+00:00",
+      "actual_runway": "2024-10-28T06:51:00+00:00"
+    },
+    "arrival": {
+      "airport": "Lanzarote",
+      "timezone": "Atlantic/Canary",
+      "iata": "ACE",
+      "icao": "GCRR",
+      "terminal": "1",
+      "gate": null,
+      "baggage": "1",
+      "delay": null,
+      "scheduled": "2024-10-28T10:50:00+00:00",
+      "estimated": "2024-10-28T10:50:00+00:00",
+      "actual": null,
+      "estimated_runway": null,
+      "actual_runway": null
+    },
+    "airline": {
+      "name": "Jet2",
+      "iata": "LS",
+      "icao": "EXS"
+    },
+    "flight": {
+      "number": "1201",
+      "iata": "LS1201",
+      "icao": "EXS1201",
+      "codeshared": null
+    },
+    "aircraft": {
+      "registration": "G-DRTL",
+      "iata": "B738",
+      "icao": "B738",
+      "icao24": "4078FD"
+    },
+    "live": {
+      "updated": "2024-10-28T08:34:05+00:00",
+      "latitude": 39.8718,
+      "longitude": -7.9237,
+      "altitude": 11277.6,
+      "direction": 196,
+      "speed_horizontal": 951.928,
+      "speed_vertical": 0,
+      "is_ground": false
+    }
+  },
+  {
+    "flight_date": "2024-10-28",
+    "flight_status": "landed",
+    "departure": {
+      "airport": "Birmingham International Airport",
+      "timezone": "Europe/London",
+      "iata": "BHX",
+      "icao": "EGBB",
+      "terminal": null,
+      "gate": "47",
+      "delay": 6,
+      "scheduled": "2024-10-28T06:30:00+00:00",
+      "estimated": "2024-10-28T06:30:00+00:00",
+      "actual": "2024-10-28T06:35:00+00:00",
+      "estimated_runway": "2024-10-28T06:35:00+00:00",
+      "actual_runway": "2024-10-28T06:35:00+00:00"
+    },
+    "arrival": {
+      "airport": "Dublin International",
+      "timezone": "Europe/Dublin",
+      "iata": "DUB",
+      "icao": "EIDW",
+      "terminal": "1",
+      "gate": "47",
+      "baggage": "7",
+      "delay": null,
+      "scheduled": "2024-10-28T07:35:00+00:00",
+      "estimated": "2024-10-28T07:35:00+00:00",
+      "actual": "2024-10-28T07:19:00+00:00",
+      "estimated_runway": "2024-10-28T07:19:00+00:00",
+      "actual_runway": "2024-10-28T07:19:00+00:00"
+    },
+    "airline": {
+      "name": "Ryanair",
+      "iata": "FR",
+      "icao": "RYR"
+    },
+    "flight": {
+      "number": "661",
+      "iata": "FR661",
+      "icao": "RYR661",
+      "codeshared": null
+    },
+    "aircraft": {
+      "registration": "EI-EBR",
+      "iata": "B738",
+      "icao": "B738",
+      "icao24": "4CA73A"
+    },
+    "live": null
+  },
+  {
+    "flight_date": "2024-10-28",
+    "flight_status": "active",
+    "departure": {
+      "airport": "Birmingham International Airport",
+      "timezone": "Europe/London",
+      "iata": "BHX",
+      "icao": "EGBB",
+      "terminal": null,
+      "gate": "4",
+      "delay": 14,
+      "scheduled": "2024-10-28T06:25:00+00:00",
+      "estimated": "2024-10-28T06:25:00+00:00",
+      "actual": "2024-10-28T06:38:00+00:00",
+      "estimated_runway": "2024-10-28T06:38:00+00:00",
+      "actual_runway": "2024-10-28T06:38:00+00:00"
+    },
+    "arrival": {
+      "airport": "Pablo Ruiz Picasso",
+      "timezone": "Europe/Madrid",
+      "iata": "AGP",
+      "icao": "LEMG",
+      "terminal": "2",
+      "gate": null,
+      "baggage": null,
+      "delay": null,
+      "scheduled": "2024-10-28T10:30:00+00:00",
+      "estimated": "2024-10-28T10:30:00+00:00",
+      "actual": null,
+      "estimated_runway": null,
+      "actual_runway": null
+    },
+    "airline": {
+      "name": "Jet2",
+      "iata": "LS",
+      "icao": "EXS"
+    },
+    "flight": {
+      "number": "1203",
+      "iata": "LS1203",
+      "icao": "EXS1203",
+      "codeshared": null
+    },
+    "aircraft": {
+      "registration": "G-HLYB",
+      "iata": "A321",
+      "icao": "A321",
+      "icao24": "406ADE"
+    },
+    "live": {
+      "updated": "2024-10-28T08:35:30+00:00",
+      "latitude": 38.3185,
+      "longitude": -4.5989,
+      "altitude": 9044.94,
+      "direction": 187,
+      "speed_horizontal": 751.912,
+      "speed_vertical": 0,
+      "is_ground": false
+    }
+  },
+  {
+    "flight_date": "2024-10-28",
+    "flight_status": "landed",
+    "departure": {
+      "airport": "Birmingham International Airport",
+      "timezone": "Europe/London",
+      "iata": "BHX",
+      "icao": "EGBB",
+      "terminal": null,
+      "gate": "46",
+      "delay": 25,
+      "scheduled": "2024-10-28T06:15:00+00:00",
+      "estimated": "2024-10-28T06:15:00+00:00",
+      "actual": "2024-10-28T06:40:00+00:00",
+      "estimated_runway": "2024-10-28T06:40:00+00:00",
+      "actual_runway": "2024-10-28T06:40:00+00:00"
+    },
+    "arrival": {
+      "airport": "Schiphol",
+      "timezone": "Europe/Amsterdam",
+      "iata": "AMS",
+      "icao": "EHAM",
+      "terminal": "1",
+      "gate": "D41",
+      "baggage": "010",
+      "delay": null,
+      "scheduled": "2024-10-28T08:35:00+00:00",
+      "estimated": "2024-10-28T08:35:00+00:00",
+      "actual": "2024-10-28T08:24:00+00:00",
+      "estimated_runway": "2024-10-28T08:24:00+00:00",
+      "actual_runway": "2024-10-28T08:24:00+00:00"
+    },
+    "airline": {
+      "name": "KLM",
+      "iata": "KL",
+      "icao": "KLM"
+    },
+    "flight": {
+      "number": "1040",
+      "iata": "KL1040",
+      "icao": "KLM1040",
+      "codeshared": null
+    },
+    "aircraft": {
+      "registration": "PH-BXR",
+      "iata": "B739",
+      "icao": "B739",
+      "icao24": "48418C"
+    },
+    "live": null
+  },
+  {
+    "flight_date": "2024-10-28",
+    "flight_status": "landed",
+    "departure": {
+      "airport": "Birmingham International Airport",
+      "timezone": "Europe/London",
+      "iata": "BHX",
+      "icao": "EGBB",
+      "terminal": null,
+      "gate": "46",
+      "delay": 25,
+      "scheduled": "2024-10-28T06:15:00+00:00",
+      "estimated": "2024-10-28T06:15:00+00:00",
+      "actual": "2024-10-28T06:40:00+00:00",
+      "estimated_runway": "2024-10-28T06:40:00+00:00",
+      "actual_runway": "2024-10-28T06:40:00+00:00"
+    },
+    "arrival": {
+      "airport": "Schiphol",
+      "timezone": "Europe/Amsterdam",
+      "iata": "AMS",
+      "icao": "EHAM",
+      "terminal": "1",
+      "gate": "D41",
+      "baggage": "010",
+      "delay": null,
+      "scheduled": "2024-10-28T08:35:00+00:00",
+      "estimated": "2024-10-28T08:35:00+00:00",
+      "actual": "2024-10-28T08:24:00+00:00",
+      "estimated_runway": "2024-10-28T08:24:00+00:00",
+      "actual_runway": "2024-10-28T08:24:00+00:00"
+    },
+    "airline": {
+      "name": "Virgin Atlantic",
+      "iata": "VS",
+      "icao": "VIR"
+    },
+    "flight": {
+      "number": "6934",
+      "iata": "VS6934",
+      "icao": "VIR6934",
+      "codeshared": {
+        "airline_name": "klm",
+        "airline_iata": "kl",
+        "airline_icao": "klm",
+        "flight_number": "1040",
+        "flight_iata": "kl1040",
+        "flight_icao": "klm1040"
+      }
+    },
+    "aircraft": null,
+    "live": null
+  },
+  {
+    "flight_date": "2024-10-28",
+    "flight_status": "landed",
+    "departure": {
+      "airport": "Birmingham International Airport",
+      "timezone": "Europe/London",
+      "iata": "BHX",
+      "icao": "EGBB",
+      "terminal": null,
+      "gate": "46",
+      "delay": 25,
+      "scheduled": "2024-10-28T06:15:00+00:00",
+      "estimated": "2024-10-28T06:15:00+00:00",
+      "actual": "2024-10-28T06:40:00+00:00",
+      "estimated_runway": "2024-10-28T06:40:00+00:00",
+      "actual_runway": "2024-10-28T06:40:00+00:00"
+    },
+    "arrival": {
+      "airport": "Schiphol",
+      "timezone": "Europe/Amsterdam",
+      "iata": "AMS",
+      "icao": "EHAM",
+      "terminal": "1",
+      "gate": "D41",
+      "baggage": "010",
+      "delay": null,
+      "scheduled": "2024-10-28T08:35:00+00:00",
+      "estimated": "2024-10-28T08:35:00+00:00",
+      "actual": "2024-10-28T08:24:00+00:00",
+      "estimated_runway": "2024-10-28T08:24:00+00:00",
+      "actual_runway": "2024-10-28T08:24:00+00:00"
+    },
+    "airline": {
+      "name": "China Eastern Airlines",
+      "iata": "MU",
+      "icao": "CES"
+    },
+    "flight": {
+      "number": "1648",
+      "iata": "MU1648",
+      "icao": "CES1648",
+      "codeshared": {
+        "airline_name": "klm",
+        "airline_iata": "kl",
+        "airline_icao": "klm",
+        "flight_number": "1040",
+        "flight_iata": "kl1040",
+        "flight_icao": "klm1040"
+      }
+    },
+    "aircraft": null,
+    "live": null
+  },
+  {
+    "flight_date": "2024-10-28",
+    "flight_status": "landed",
+    "departure": {
+      "airport": "Birmingham International Airport",
+      "timezone": "Europe/London",
+      "iata": "BHX",
+      "icao": "EGBB",
+      "terminal": null,
+      "gate": "46",
+      "delay": 25,
+      "scheduled": "2024-10-28T06:15:00+00:00",
+      "estimated": "2024-10-28T06:15:00+00:00",
+      "actual": "2024-10-28T06:40:00+00:00",
+      "estimated_runway": "2024-10-28T06:40:00+00:00",
+      "actual_runway": "2024-10-28T06:40:00+00:00"
+    },
+    "arrival": {
+      "airport": "Schiphol",
+      "timezone": "Europe/Amsterdam",
+      "iata": "AMS",
+      "icao": "EHAM",
+      "terminal": "1",
+      "gate": "D41",
+      "baggage": "010",
+      "delay": null,
+      "scheduled": "2024-10-28T08:35:00+00:00",
+      "estimated": "2024-10-28T08:35:00+00:00",
+      "actual": "2024-10-28T08:24:00+00:00",
+      "estimated_runway": "2024-10-28T08:24:00+00:00",
+      "actual_runway": "2024-10-28T08:24:00+00:00"
+    },
+    "airline": {
+      "name": "Kenya Airways",
+      "iata": "KQ",
+      "icao": "KQA"
+    },
+    "flight": {
+      "number": "1420",
+      "iata": "KQ1420",
+      "icao": "KQA1420",
+      "codeshared": {
+        "airline_name": "klm",
+        "airline_iata": "kl",
+        "airline_icao": "klm",
+        "flight_number": "1040",
+        "flight_iata": "kl1040",
+        "flight_icao": "klm1040"
+      }
+    },
+    "aircraft": null,
+    "live": null
+  },
+  {
+    "flight_date": "2024-10-28",
+    "flight_status": "landed",
+    "departure": {
+      "airport": "Birmingham International Airport",
+      "timezone": "Europe/London",
+      "iata": "BHX",
+      "icao": "EGBB",
+      "terminal": null,
+      "gate": "46",
+      "delay": 25,
+      "scheduled": "2024-10-28T06:15:00+00:00",
+      "estimated": "2024-10-28T06:15:00+00:00",
+      "actual": "2024-10-28T06:40:00+00:00",
+      "estimated_runway": "2024-10-28T06:40:00+00:00",
+      "actual_runway": "2024-10-28T06:40:00+00:00"
+    },
+    "arrival": {
+      "airport": "Schiphol",
+      "timezone": "Europe/Amsterdam",
+      "iata": "AMS",
+      "icao": "EHAM",
+      "terminal": "1",
+      "gate": "D41",
+      "baggage": "010",
+      "delay": null,
+      "scheduled": "2024-10-28T08:35:00+00:00",
+      "estimated": "2024-10-28T08:35:00+00:00",
+      "actual": "2024-10-28T08:24:00+00:00",
+      "estimated_runway": "2024-10-28T08:24:00+00:00",
+      "actual_runway": "2024-10-28T08:24:00+00:00"
+    },
+    "airline": {
+      "name": "Gol",
+      "iata": "G3",
+      "icao": "GLO"
+    },
+    "flight": {
+      "number": "5545",
+      "iata": "G35545",
+      "icao": "GLO5545",
+      "codeshared": {
+        "airline_name": "klm",
+        "airline_iata": "kl",
+        "airline_icao": "klm",
+        "flight_number": "1040",
+        "flight_iata": "kl1040",
+        "flight_icao": "klm1040"
+      }
+    },
+    "aircraft": null,
+    "live": null
+  },
+  {
+    "flight_date": "2024-10-28",
+    "flight_status": "landed",
+    "departure": {
+      "airport": "Birmingham International Airport",
+      "timezone": "Europe/London",
+      "iata": "BHX",
+      "icao": "EGBB",
+      "terminal": null,
+      "gate": "46",
+      "delay": 25,
+      "scheduled": "2024-10-28T06:15:00+00:00",
+      "estimated": "2024-10-28T06:15:00+00:00",
+      "actual": "2024-10-28T06:40:00+00:00",
+      "estimated_runway": "2024-10-28T06:40:00+00:00",
+      "actual_runway": "2024-10-28T06:40:00+00:00"
+    },
+    "arrival": {
+      "airport": "Schiphol",
+      "timezone": "Europe/Amsterdam",
+      "iata": "AMS",
+      "icao": "EHAM",
+      "terminal": "1",
+      "gate": "D41",
+      "baggage": "010",
+      "delay": null,
+      "scheduled": "2024-10-28T08:35:00+00:00",
+      "estimated": "2024-10-28T08:35:00+00:00",
+      "actual": "2024-10-28T08:24:00+00:00",
+      "estimated_runway": "2024-10-28T08:24:00+00:00",
+      "actual_runway": "2024-10-28T08:24:00+00:00"
+    },
+    "airline": {
+      "name": "Delta Air Lines",
+      "iata": "DL",
+      "icao": "DAL"
+    },
+    "flight": {
+      "number": "9449",
+      "iata": "DL9449",
+      "icao": "DAL9449",
+      "codeshared": {
+        "airline_name": "klm",
+        "airline_iata": "kl",
+        "airline_icao": "klm",
+        "flight_number": "1040",
+        "flight_iata": "kl1040",
+        "flight_icao": "klm1040"
+      }
+    },
+    "aircraft": null,
+    "live": null
+  },
+  {
+    "flight_date": "2024-10-28",
+    "flight_status": "landed",
+    "departure": {
+      "airport": "Birmingham International Airport",
+      "timezone": "Europe/London",
+      "iata": "BHX",
+      "icao": "EGBB",
+      "terminal": null,
+      "gate": "46",
+      "delay": 25,
+      "scheduled": "2024-10-28T06:15:00+00:00",
+      "estimated": "2024-10-28T06:15:00+00:00",
+      "actual": "2024-10-28T06:40:00+00:00",
+      "estimated_runway": "2024-10-28T06:40:00+00:00",
+      "actual_runway": "2024-10-28T06:40:00+00:00"
+    },
+    "arrival": {
+      "airport": "Schiphol",
+      "timezone": "Europe/Amsterdam",
+      "iata": "AMS",
+      "icao": "EHAM",
+      "terminal": "1",
+      "gate": "D41",
+      "baggage": "010",
+      "delay": null,
+      "scheduled": "2024-10-28T08:35:00+00:00",
+      "estimated": "2024-10-28T08:35:00+00:00",
+      "actual": "2024-10-28T08:24:00+00:00",
+      "estimated_runway": "2024-10-28T08:24:00+00:00",
+      "actual_runway": "2024-10-28T08:24:00+00:00"
+    },
+    "airline": {
+      "name": "Air Baltic",
+      "iata": "BT",
+      "icao": "BTI"
+    },
+    "flight": {
+      "number": "6033",
+      "iata": "BT6033",
+      "icao": "BTI6033",
+      "codeshared": {
+        "airline_name": "klm",
+        "airline_iata": "kl",
+        "airline_icao": "klm",
+        "flight_number": "1040",
+        "flight_iata": "kl1040",
+        "flight_icao": "klm1040"
+      }
+    },
+    "aircraft": null,
+    "live": null
+  },
+  {
+    "flight_date": "2024-10-28",
+    "flight_status": "active",
+    "departure": {
+      "airport": "Birmingham International Airport",
+      "timezone": "Europe/London",
+      "iata": "BHX",
+      "icao": "EGBB",
+      "terminal": null,
+      "gate": "45",
+      "delay": null,
+      "scheduled": "2024-10-28T06:15:00+00:00",
+      "estimated": "2024-10-28T06:15:00+00:00",
+      "actual": "2024-10-28T06:10:00+00:00",
+      "estimated_runway": "2024-10-28T06:10:00+00:00",
+      "actual_runway": "2024-10-28T06:10:00+00:00"
+    },
+    "arrival": {
+      "airport": "Madeira",
+      "timezone": "Atlantic/Madeira",
+      "iata": "FNC",
+      "icao": "LPMA",
+      "terminal": "T1",
+      "gate": null,
+      "baggage": null,
+      "delay": null,
+      "scheduled": "2024-10-28T10:00:00+00:00",
+      "estimated": "2024-10-28T10:00:00+00:00",
+      "actual": null,
+      "estimated_runway": null,
+      "actual_runway": null
+    },
+    "airline": {
+      "name": "TUIfly",
+      "iata": "X3",
+      "icao": "TUI"
+    },
+    "flight": {
+      "number": "7110",
+      "iata": "X37110",
+      "icao": "TUI7110",
+      "codeshared": null
+    },
+    "aircraft": null,
+    "live": null
+  },
+  {
+    "flight_date": "2024-10-28",
+    "flight_status": "active",
+    "departure": {
+      "airport": "Kunming",
+      "timezone": "Asia/Shanghai",
+      "iata": "KMG",
+      "icao": "ZPPP",
+      "terminal": null,
+      "gate": "D",
+      "delay": 11,
+      "scheduled": "2024-10-28T11:50:00+00:00",
+      "estimated": "2024-10-28T11:50:00+00:00",
+      "actual": "2024-10-28T12:01:00+00:00",
+      "estimated_runway": "2024-10-28T12:01:00+00:00",
+      "actual_runway": "2024-10-28T12:01:00+00:00"
+    },
+    "arrival": {
+      "airport": "Xiangfan",
+      "timezone": "Asia/Shanghai",
+      "iata": "XFN",
+      "icao": "ZHXF",
+      "terminal": "T2",
+      "gate": null,
+      "baggage": null,
+      "delay": null,
+      "scheduled": "2024-10-28T14:10:00+00:00",
+      "estimated": "2024-10-28T14:10:00+00:00",
+      "actual": null,
+      "estimated_runway": null,
+      "actual_runway": null
+    },
+    "airline": {
+      "name": "Air China LTD",
+      "iata": "CA",
+      "icao": "CCA"
+    },
+    "flight": {
+      "number": "5799",
+      "iata": "CA5799",
+      "icao": "CCA5799",
+      "codeshared": {
+        "airline_name": "kunming airlines",
+        "airline_iata": "ky",
+        "airline_icao": "kna",
+        "flight_number": "8225",
+        "flight_iata": "ky8225",
+        "flight_icao": "kna8225"
+      }
+    },
+    "aircraft": null,
+    "live": null
+  },
+  {
+    "flight_date": "2024-10-28",
+    "flight_status": "active",
+    "departure": {
+      "airport": "Kunming",
+      "timezone": "Asia/Shanghai",
+      "iata": "KMG",
+      "icao": "ZPPP",
+      "terminal": null,
+      "gate": "D",
+      "delay": 11,
+      "scheduled": "2024-10-28T11:50:00+00:00",
+      "estimated": "2024-10-28T11:50:00+00:00",
+      "actual": "2024-10-28T12:01:00+00:00",
+      "estimated_runway": "2024-10-28T12:01:00+00:00",
+      "actual_runway": "2024-10-28T12:01:00+00:00"
+    },
+    "arrival": {
+      "airport": "Xiangfan",
+      "timezone": "Asia/Shanghai",
+      "iata": "XFN",
+      "icao": "ZHXF",
+      "terminal": "T2",
+      "gate": null,
+      "baggage": null,
+      "delay": null,
+      "scheduled": "2024-10-28T14:10:00+00:00",
+      "estimated": "2024-10-28T14:10:00+00:00",
+      "actual": null,
+      "estimated_runway": null,
+      "actual_runway": null
+    },
+    "airline": {
+      "name": "Shenzhen Airlines",
+      "iata": "ZH",
+      "icao": "CSZ"
+    },
+    "flight": {
+      "number": "5425",
+      "iata": "ZH5425",
+      "icao": "CSZ5425",
+      "codeshared": {
+        "airline_name": "kunming airlines",
+        "airline_iata": "ky",
+        "airline_icao": "kna",
+        "flight_number": "8225",
+        "flight_iata": "ky8225",
+        "flight_icao": "kna8225"
+      }
+    },
+    "aircraft": null,
+    "live": null
+  },
+  {
+    "flight_date": "2024-10-28",
+    "flight_status": "landed",
+    "departure": {
+      "airport": "Xiangfan",
+      "timezone": "Asia/Shanghai",
+      "iata": "XFN",
+      "icao": "ZHXF",
+      "terminal": "T2",
+      "gate": "1",
+      "delay": 2,
+      "scheduled": "2024-10-28T14:15:00+00:00",
+      "estimated": "2024-10-28T14:15:00+00:00",
+      "actual": "2024-10-28T14:09:00+00:00",
+      "estimated_runway": "2024-10-28T14:09:00+00:00",
+      "actual_runway": "2024-10-28T14:09:00+00:00"
+    },
+    "arrival": {
+      "airport": "Lishe International Airport",
+      "timezone": "Asia/Shanghai",
+      "iata": "NGB",
+      "icao": "ZSNB",
+      "terminal": "1",
+      "gate": null,
+      "baggage": "B1",
+      "delay": null,
+      "scheduled": "2024-10-28T16:05:00+00:00",
+      "estimated": "2024-10-28T16:05:00+00:00",
+      "actual": "2024-10-28T15:40:00+00:00",
+      "estimated_runway": "2024-10-28T15:40:00+00:00",
+      "actual_runway": "2024-10-28T15:40:00+00:00"
+    },
+    "airline": {
+      "name": "Loong Air",
+      "iata": "GJ",
+      "icao": "CDC"
+    },
+    "flight": {
+      "number": "8674",
+      "iata": "GJ8674",
+      "icao": "CDC8674",
+      "codeshared": null
+    },
+    "aircraft": {
+      "registration": "B-1867",
+      "iata": "A320",
+      "icao": "A320",
+      "icao24": "7802BB"
+    },
+    "live": null
+  },
+  {
+    "flight_date": "2024-10-28",
+    "flight_status": "landed",
+    "departure": {
+      "airport": "Xiangfan",
+      "timezone": "Asia/Shanghai",
+      "iata": "XFN",
+      "icao": "ZHXF",
+      "terminal": "T2",
+      "gate": "1",
+      "delay": 2,
+      "scheduled": "2024-10-28T14:15:00+00:00",
+      "estimated": "2024-10-28T14:15:00+00:00",
+      "actual": "2024-10-28T14:09:00+00:00",
+      "estimated_runway": "2024-10-28T14:09:00+00:00",
+      "actual_runway": "2024-10-28T14:09:00+00:00"
+    },
+    "arrival": {
+      "airport": "Lishe International Airport",
+      "timezone": "Asia/Shanghai",
+      "iata": "NGB",
+      "icao": "ZSNB",
+      "terminal": "1",
+      "gate": null,
+      "baggage": "B1",
+      "delay": null,
+      "scheduled": "2024-10-28T16:05:00+00:00",
+      "estimated": "2024-10-28T16:05:00+00:00",
+      "actual": "2024-10-28T15:40:00+00:00",
+      "estimated_runway": "2024-10-28T15:40:00+00:00",
+      "actual_runway": "2024-10-28T15:40:00+00:00"
+    },
+    "airline": {
+      "name": "Xiamen Airlines",
+      "iata": "MF",
+      "icao": "CXA"
+    },
+    "flight": {
+      "number": "5843",
+      "iata": "MF5843",
+      "icao": "CXA5843",
+      "codeshared": {
+        "airline_name": "loong air",
+        "airline_iata": "gj",
+        "airline_icao": "cdc",
+        "flight_number": "8674",
+        "flight_iata": "gj8674",
+        "flight_icao": "cdc8674"
+      }
+    },
+    "aircraft": null,
+    "live": null
+  },
+  {
+    "flight_date": "2024-10-28",
+    "flight_status": "landed",
+    "departure": {
+      "airport": "Xiangfan",
+      "timezone": "Asia/Shanghai",
+      "iata": "XFN",
+      "icao": "ZHXF",
+      "terminal": "T2",
+      "gate": "1",
+      "delay": 2,
+      "scheduled": "2024-10-28T14:15:00+00:00",
+      "estimated": "2024-10-28T14:15:00+00:00",
+      "actual": "2024-10-28T14:09:00+00:00",
+      "estimated_runway": "2024-10-28T14:09:00+00:00",
+      "actual_runway": "2024-10-28T14:09:00+00:00"
+    },
+    "arrival": {
+      "airport": "Lishe International Airport",
+      "timezone": "Asia/Shanghai",
+      "iata": "NGB",
+      "icao": "ZSNB",
+      "terminal": "1",
+      "gate": null,
+      "baggage": "B1",
+      "delay": null,
+      "scheduled": "2024-10-28T16:05:00+00:00",
+      "estimated": "2024-10-28T16:05:00+00:00",
+      "actual": "2024-10-28T15:40:00+00:00",
+      "estimated_runway": "2024-10-28T15:40:00+00:00",
+      "actual_runway": "2024-10-28T15:40:00+00:00"
+    },
+    "airline": {
+      "name": "China Southern Airlines",
+      "iata": "CZ",
+      "icao": "CSN"
+    },
+    "flight": {
+      "number": "4794",
+      "iata": "CZ4794",
+      "icao": "CSN4794",
+      "codeshared": {
+        "airline_name": "loong air",
+        "airline_iata": "gj",
+        "airline_icao": "cdc",
+        "flight_number": "8674",
+        "flight_iata": "gj8674",
+        "flight_icao": "cdc8674"
+      }
+    },
+    "aircraft": null,
+    "live": null
+  },
+  {
+    "flight_date": "2024-10-28",
+    "flight_status": "landed",
+    "departure": {
+      "airport": "Xiangfan",
+      "timezone": "Asia/Shanghai",
+      "iata": "XFN",
+      "icao": "ZHXF",
+      "terminal": "T2",
+      "gate": "1",
+      "delay": 2,
+      "scheduled": "2024-10-28T14:15:00+00:00",
+      "estimated": "2024-10-28T14:15:00+00:00",
+      "actual": "2024-10-28T14:09:00+00:00",
+      "estimated_runway": "2024-10-28T14:09:00+00:00",
+      "actual_runway": "2024-10-28T14:09:00+00:00"
+    },
+    "arrival": {
+      "airport": "Lishe International Airport",
+      "timezone": "Asia/Shanghai",
+      "iata": "NGB",
+      "icao": "ZSNB",
+      "terminal": "1",
+      "gate": null,
+      "baggage": "B1",
+      "delay": null,
+      "scheduled": "2024-10-28T16:05:00+00:00",
+      "estimated": "2024-10-28T16:05:00+00:00",
+      "actual": "2024-10-28T15:40:00+00:00",
+      "estimated_runway": "2024-10-28T15:40:00+00:00",
+      "actual_runway": "2024-10-28T15:40:00+00:00"
+    },
+    "airline": {
+      "name": "China Express Air",
+      "iata": "G5",
+      "icao": "HXA"
+    },
+    "flight": {
+      "number": "6438",
+      "iata": "G56438",
+      "icao": "HXA6438",
+      "codeshared": {
+        "airline_name": "loong air",
+        "airline_iata": "gj",
+        "airline_icao": "cdc",
+        "flight_number": "8674",
+        "flight_iata": "gj8674",
+        "flight_icao": "cdc8674"
+      }
+    },
+    "aircraft": null,
+    "live": null
+  },
+  {
+    "flight_date": "2024-10-28",
+    "flight_status": "landed",
+    "departure": {
+      "airport": "Xiangfan",
+      "timezone": "Asia/Shanghai",
+      "iata": "XFN",
+      "icao": "ZHXF",
+      "terminal": "T2",
+      "gate": "1",
+      "delay": 2,
+      "scheduled": "2024-10-28T14:15:00+00:00",
+      "estimated": "2024-10-28T14:15:00+00:00",
+      "actual": "2024-10-28T14:09:00+00:00",
+      "estimated_runway": "2024-10-28T14:09:00+00:00",
+      "actual_runway": "2024-10-28T14:09:00+00:00"
+    },
+    "arrival": {
+      "airport": "Lishe International Airport",
+      "timezone": "Asia/Shanghai",
+      "iata": "NGB",
+      "icao": "ZSNB",
+      "terminal": "1",
+      "gate": null,
+      "baggage": "B1",
+      "delay": null,
+      "scheduled": "2024-10-28T16:05:00+00:00",
+      "estimated": "2024-10-28T16:05:00+00:00",
+      "actual": "2024-10-28T15:40:00+00:00",
+      "estimated_runway": "2024-10-28T15:40:00+00:00",
+      "actual_runway": "2024-10-28T15:40:00+00:00"
+    },
+    "airline": {
+      "name": "Sichuan Airlines",
+      "iata": "3U",
+      "icao": "CSC"
+    },
+    "flight": {
+      "number": "4102",
+      "iata": "3U4102",
+      "icao": "CSC4102",
+      "codeshared": {
+        "airline_name": "loong air",
+        "airline_iata": "gj",
+        "airline_icao": "cdc",
+        "flight_number": "8674",
+        "flight_iata": "gj8674",
+        "flight_icao": "cdc8674"
+      }
+    },
+    "aircraft": null,
+    "live": null
+  },
+  {
+    "flight_date": "2024-10-28",
+    "flight_status": "landed",
+    "departure": {
+      "airport": "Xiangfan",
+      "timezone": "Asia/Shanghai",
+      "iata": "XFN",
+      "icao": "ZHXF",
+      "terminal": "T2",
+      "gate": "1",
+      "delay": 2,
+      "scheduled": "2024-10-28T14:15:00+00:00",
+      "estimated": "2024-10-28T14:15:00+00:00",
+      "actual": "2024-10-28T14:09:00+00:00",
+      "estimated_runway": "2024-10-28T14:09:00+00:00",
+      "actual_runway": "2024-10-28T14:09:00+00:00"
+    },
+    "arrival": {
+      "airport": "Lishe International Airport",
+      "timezone": "Asia/Shanghai",
+      "iata": "NGB",
+      "icao": "ZSNB",
+      "terminal": "1",
+      "gate": null,
+      "baggage": "B1",
+      "delay": null,
+      "scheduled": "2024-10-28T16:05:00+00:00",
+      "estimated": "2024-10-28T16:05:00+00:00",
+      "actual": "2024-10-28T15:40:00+00:00",
+      "estimated_runway": "2024-10-28T15:40:00+00:00",
+      "actual_runway": "2024-10-28T15:40:00+00:00"
+    },
+    "airline": {
+      "name": "Tibet Airlines",
+      "iata": "TV",
+      "icao": "TBA"
+    },
+    "flight": {
+      "number": "2144",
+      "iata": "TV2144",
+      "icao": "TBA2144",
+      "codeshared": {
+        "airline_name": "loong air",
+        "airline_iata": "gj",
+        "airline_icao": "cdc",
+        "flight_number": "8674",
+        "flight_iata": "gj8674",
+        "flight_icao": "cdc8674"
+      }
+    },
+    "aircraft": null,
+    "live": null
+  },
+  {
+    "flight_date": "2024-10-28",
+    "flight_status": "active",
+    "departure": {
+      "airport": "Xiangfan",
+      "timezone": "Asia/Shanghai",
+      "iata": "XFN",
+      "icao": "ZHXF",
+      "terminal": "T2",
+      "gate": "2",
+      "delay": 15,
+      "scheduled": "2024-10-28T14:15:00+00:00",
+      "estimated": "2024-10-28T14:15:00+00:00",
+      "actual": "2024-10-28T14:30:00+00:00",
+      "estimated_runway": "2024-10-28T14:30:00+00:00",
+      "actual_runway": "2024-10-28T14:30:00+00:00"
+    },
+    "arrival": {
+      "airport": "Guangzhou Baiyun International",
+      "timezone": "Asia/Shanghai",
+      "iata": "CAN",
+      "icao": "ZGGG",
+      "terminal": "1",
+      "gate": null,
+      "baggage": "22",
+      "delay": null,
+      "scheduled": "2024-10-28T16:20:00+00:00",
+      "estimated": "2024-10-28T16:20:00+00:00",
+      "actual": null,
+      "estimated_runway": null,
+      "actual_runway": null
+    },
+    "airline": {
+      "name": "Loong Air",
+      "iata": "GJ",
+      "icao": "CDC"
+    },
+    "flight": {
+      "number": "8382",
+      "iata": "GJ8382",
+      "icao": "CDC8382",
+      "codeshared": null
+    },
+    "aircraft": {
+      "registration": "B-8336",
+      "iata": "A320",
+      "icao": "A320",
+      "icao24": "780F05"
+    },
+    "live": {
+      "updated": "2024-10-28T08:17:47+00:00",
+      "latitude": 23.394,
+      "longitude": 113.292,
+      "altitude": 0,
+      "direction": 140,
+      "speed_horizontal": 9.26,
+      "speed_vertical": 0,
+      "is_ground": true
+    }
+  },
+  {
+    "flight_date": "2024-10-28",
+    "flight_status": "active",
+    "departure": {
+      "airport": "Xiangfan",
+      "timezone": "Asia/Shanghai",
+      "iata": "XFN",
+      "icao": "ZHXF",
+      "terminal": "T2",
+      "gate": "2",
+      "delay": 15,
+      "scheduled": "2024-10-28T14:15:00+00:00",
+      "estimated": "2024-10-28T14:15:00+00:00",
+      "actual": "2024-10-28T14:30:00+00:00",
+      "estimated_runway": "2024-10-28T14:30:00+00:00",
+      "actual_runway": "2024-10-28T14:30:00+00:00"
+    },
+    "arrival": {
+      "airport": "Guangzhou Baiyun International",
+      "timezone": "Asia/Shanghai",
+      "iata": "CAN",
+      "icao": "ZGGG",
+      "terminal": "1",
+      "gate": null,
+      "baggage": "22",
+      "delay": null,
+      "scheduled": "2024-10-28T16:20:00+00:00",
+      "estimated": "2024-10-28T16:20:00+00:00",
+      "actual": null,
+      "estimated_runway": null,
+      "actual_runway": null
+    },
+    "airline": {
+      "name": "Xiamen Airlines",
+      "iata": "MF",
+      "icao": "CXA"
+    },
+    "flight": {
+      "number": "5909",
+      "iata": "MF5909",
+      "icao": "CXA5909",
+      "codeshared": {
+        "airline_name": "loong air",
+        "airline_iata": "gj",
+        "airline_icao": "cdc",
+        "flight_number": "8382",
+        "flight_iata": "gj8382",
+        "flight_icao": "cdc8382"
+      }
+    },
+    "aircraft": null,
+    "live": null
+  },
+  {
+    "flight_date": "2024-10-28",
+    "flight_status": "active",
+    "departure": {
+      "airport": "Xiangfan",
+      "timezone": "Asia/Shanghai",
+      "iata": "XFN",
+      "icao": "ZHXF",
+      "terminal": "T2",
+      "gate": "2",
+      "delay": 15,
+      "scheduled": "2024-10-28T14:15:00+00:00",
+      "estimated": "2024-10-28T14:15:00+00:00",
+      "actual": "2024-10-28T14:30:00+00:00",
+      "estimated_runway": "2024-10-28T14:30:00+00:00",
+      "actual_runway": "2024-10-28T14:30:00+00:00"
+    },
+    "arrival": {
+      "airport": "Guangzhou Baiyun International",
+      "timezone": "Asia/Shanghai",
+      "iata": "CAN",
+      "icao": "ZGGG",
+      "terminal": "1",
+      "gate": null,
+      "baggage": "22",
+      "delay": null,
+      "scheduled": "2024-10-28T16:20:00+00:00",
+      "estimated": "2024-10-28T16:20:00+00:00",
+      "actual": null,
+      "estimated_runway": null,
+      "actual_runway": null
+    },
+    "airline": {
+      "name": "Tibet Airlines",
+      "iata": "TV",
+      "icao": "TBA"
+    },
+    "flight": {
+      "number": "2210",
+      "iata": "TV2210",
+      "icao": "TBA2210",
+      "codeshared": {
+        "airline_name": "loong air",
+        "airline_iata": "gj",
+        "airline_icao": "cdc",
+        "flight_number": "8382",
+        "flight_iata": "gj8382",
+        "flight_icao": "cdc8382"
+      }
+    },
+    "aircraft": null,
+    "live": null
+  },
+  {
+    "flight_date": "2024-10-28",
+    "flight_status": "active",
+    "departure": {
+      "airport": "Xiangfan",
+      "timezone": "Asia/Shanghai",
+      "iata": "XFN",
+      "icao": "ZHXF",
+      "terminal": "T2",
+      "gate": "2",
+      "delay": 15,
+      "scheduled": "2024-10-28T14:15:00+00:00",
+      "estimated": "2024-10-28T14:15:00+00:00",
+      "actual": "2024-10-28T14:30:00+00:00",
+      "estimated_runway": "2024-10-28T14:30:00+00:00",
+      "actual_runway": "2024-10-28T14:30:00+00:00"
+    },
+    "arrival": {
+      "airport": "Guangzhou Baiyun International",
+      "timezone": "Asia/Shanghai",
+      "iata": "CAN",
+      "icao": "ZGGG",
+      "terminal": "1",
+      "gate": null,
+      "baggage": "22",
+      "delay": null,
+      "scheduled": "2024-10-28T16:20:00+00:00",
+      "estimated": "2024-10-28T16:20:00+00:00",
+      "actual": null,
+      "estimated_runway": null,
+      "actual_runway": null
+    },
+    "airline": {
+      "name": "China Southern Airlines",
+      "iata": "CZ",
+      "icao": "CSN"
+    },
+    "flight": {
+      "number": "4860",
+      "iata": "CZ4860",
+      "icao": "CSN4860",
+      "codeshared": {
+        "airline_name": "loong air",
+        "airline_iata": "gj",
+        "airline_icao": "cdc",
+        "flight_number": "8382",
+        "flight_iata": "gj8382",
+        "flight_icao": "cdc8382"
+      }
+    },
+    "aircraft": null,
+    "live": null
+  },
+  {
+    "flight_date": "2024-10-28",
+    "flight_status": "active",
+    "departure": {
+      "airport": "Xiangfan",
+      "timezone": "Asia/Shanghai",
+      "iata": "XFN",
+      "icao": "ZHXF",
+      "terminal": "T2",
+      "gate": "2",
+      "delay": 15,
+      "scheduled": "2024-10-28T14:15:00+00:00",
+      "estimated": "2024-10-28T14:15:00+00:00",
+      "actual": "2024-10-28T14:30:00+00:00",
+      "estimated_runway": "2024-10-28T14:30:00+00:00",
+      "actual_runway": "2024-10-28T14:30:00+00:00"
+    },
+    "arrival": {
+      "airport": "Guangzhou Baiyun International",
+      "timezone": "Asia/Shanghai",
+      "iata": "CAN",
+      "icao": "ZGGG",
+      "terminal": "1",
+      "gate": null,
+      "baggage": "22",
+      "delay": null,
+      "scheduled": "2024-10-28T16:20:00+00:00",
+      "estimated": "2024-10-28T16:20:00+00:00",
+      "actual": null,
+      "estimated_runway": null,
+      "actual_runway": null
+    },
+    "airline": {
+      "name": "Sichuan Airlines",
+      "iata": "3U",
+      "icao": "CSC"
+    },
+    "flight": {
+      "number": "4160",
+      "iata": "3U4160",
+      "icao": "CSC4160",
+      "codeshared": {
+        "airline_name": "loong air",
+        "airline_iata": "gj",
+        "airline_icao": "cdc",
+        "flight_number": "8382",
+        "flight_iata": "gj8382",
+        "flight_icao": "cdc8382"
+      }
+    },
+    "aircraft": null,
+    "live": null
+  },
+  {
+    "flight_date": "2024-10-28",
+    "flight_status": "scheduled",
+    "departure": {
+      "airport": "Bharatpur Airport",
+      "timezone": "Asia/Kathmandu",
+      "iata": "BHR",
+      "icao": "VNBP",
+      "terminal": null,
+      "gate": null,
+      "delay": null,
+      "scheduled": "2024-10-28T12:45:00+00:00",
+      "estimated": "2024-10-28T12:45:00+00:00",
+      "actual": null,
+      "estimated_runway": null,
+      "actual_runway": null
+    },
+    "arrival": {
+      "airport": "Tribhuvan International",
+      "timezone": "Asia/Kathmandu",
+      "iata": "KTM",
+      "icao": "VNKT",
+      "terminal": "D",
+      "gate": null,
+      "baggage": null,
+      "delay": null,
+      "scheduled": "2024-10-28T13:05:00+00:00",
+      "estimated": "2024-10-28T13:05:00+00:00",
+      "actual": null,
+      "estimated_runway": null,
+      "actual_runway": null
+    },
+    "airline": {
+      "name": "Buddha Air",
+      "iata": "U4",
+      "icao": "BHA"
+    },
+    "flight": {
+      "number": "358",
+      "iata": "U4358",
+      "icao": "BHA358",
+      "codeshared": null
+    },
+    "aircraft": null,
+    "live": null
+  },
+  {
+    "flight_date": "2024-10-28",
+    "flight_status": "scheduled",
+    "departure": {
+      "airport": "Wilcannia",
+      "timezone": "Australia/Sydney",
+      "iata": "WIO",
+      "icao": "YWCA",
+      "terminal": null,
+      "gate": null,
+      "delay": null,
+      "scheduled": "2024-10-28T17:00:00+00:00",
+      "estimated": "2024-10-28T17:00:00+00:00",
+      "actual": null,
+      "estimated_runway": null,
+      "actual_runway": null
+    },
+    "arrival": {
+      "airport": "Broken Hill",
+      "timezone": "Australia/Broken_Hill",
+      "iata": "BHQ",
+      "icao": "YBHI",
+      "terminal": null,
+      "gate": null,
+      "baggage": null,
+      "delay": null,
+      "scheduled": "2024-10-28T17:00:00+00:00",
+      "estimated": "2024-10-28T17:00:00+00:00",
+      "actual": null,
+      "estimated_runway": null,
+      "actual_runway": null
+    },
+    "airline": {
+      "name": "empty",
+      "iata": null,
+      "icao": null
+    },
+    "flight": {
+      "number": null,
+      "iata": null,
+      "icao": null,
+      "codeshared": null
+    },
+    "aircraft": null,
+    "live": null
+  },
+  {
+    "flight_date": "2024-10-28",
+    "flight_status": "landed",
+    "departure": {
+      "airport": "Sydney Kingsford Smith Airport",
+      "timezone": "Australia/Sydney",
+      "iata": "SYD",
+      "icao": "YSSY",
+      "terminal": "3",
+      "gate": "1",
+      "delay": 17,
+      "scheduled": "2024-10-28T11:05:00+00:00",
+      "estimated": "2024-10-28T11:05:00+00:00",
+      "actual": "2024-10-28T11:21:00+00:00",
+      "estimated_runway": "2024-10-28T11:21:00+00:00",
+      "actual_runway": "2024-10-28T11:21:00+00:00"
+    },
+    "arrival": {
+      "airport": "Broken Hill",
+      "timezone": "Australia/Broken_Hill",
+      "iata": "BHQ",
+      "icao": "YBHI",
+      "terminal": null,
+      "gate": null,
+      "baggage": null,
+      "delay": 4,
+      "scheduled": "2024-10-28T12:55:00+00:00",
+      "estimated": "2024-10-28T12:55:00+00:00",
+      "actual": "2024-10-28T12:36:00+00:00",
+      "estimated_runway": "2024-10-28T12:36:00+00:00",
+      "actual_runway": "2024-10-28T12:36:00+00:00"
+    },
+    "airline": {
+      "name": "QantasLink",
+      "iata": null,
+      "icao": "QLK"
+    },
+    "flight": {
+      "number": "2017",
+      "iata": null,
+      "icao": "QLK2017",
+      "codeshared": null
+    },
+    "aircraft": null,
+    "live": null
+  },
+  {
+    "flight_date": "2024-10-28",
+    "flight_status": "active",
+    "departure": {
+      "airport": "Nhulunbuy",
+      "timezone": "Australia/Darwin",
+      "iata": "GOV",
+      "icao": "YPGV",
+      "terminal": null,
+      "gate": null,
+      "delay": null,
+      "scheduled": "2024-10-28T10:00:00+00:00",
+      "estimated": "2024-10-28T10:00:00+00:00",
+      "actual": null,
+      "estimated_runway": null,
+      "actual_runway": null
+    },
+    "arrival": {
+      "airport": "Borroloola",
+      "timezone": "Australia/Darwin",
+      "iata": "BOX",
+      "icao": "YBRL",
+      "terminal": null,
+      "gate": null,
+      "baggage": null,
+      "delay": null,
+      "scheduled": "2024-10-28T11:00:00+00:00",
+      "estimated": "2024-10-28T11:00:00+00:00",
+      "actual": null,
+      "estimated_runway": null,
+      "actual_runway": null
+    },
+    "airline": {
+      "name": "CareFlight",
+      "iata": null,
+      "icao": "CFH"
+    },
+    "flight": {
+      "number": "28",
+      "iata": null,
+      "icao": "CFH28",
+      "codeshared": null
+    },
+    "aircraft": null,
+    "live": null
+  },
+  {
+    "flight_date": "2024-10-28",
+    "flight_status": "active",
+    "departure": {
+      "airport": "Landvetter",
+      "timezone": "Europe/Stockholm",
+      "iata": "GOT",
+      "icao": "ESGG",
+      "terminal": "T1",
+      "gate": "24B",
+      "delay": 25,
+      "scheduled": "2024-10-28T08:00:00+00:00",
+      "estimated": "2024-10-28T08:00:00+00:00",
+      "actual": "2024-10-28T08:25:00+00:00",
+      "estimated_runway": "2024-10-28T08:25:00+00:00",
+      "actual_runway": "2024-10-28T08:25:00+00:00"
+    },
+    "arrival": {
+      "airport": "Frederic Chopin",
+      "timezone": "Europe/Warsaw",
+      "iata": "WAW",
+      "icao": "EPWA",
+      "terminal": "A",
+      "gate": null,
+      "baggage": null,
+      "delay": 1,
+      "scheduled": "2024-10-28T09:35:00+00:00",
+      "estimated": "2024-10-28T09:35:00+00:00",
+      "actual": null,
+      "estimated_runway": null,
+      "actual_runway": null
+    },
+    "airline": {
+      "name": "LOT - Polish Airlines",
+      "iata": "LO",
+      "icao": "LOT"
+    },
+    "flight": {
+      "number": "496",
+      "iata": "LO496",
+      "icao": "LOT496",
+      "codeshared": null
+    },
+    "aircraft": {
+      "registration": "SP-LVD",
+      "iata": "B38M",
+      "icao": "B38M",
+      "icao24": "48AF03"
+    },
+    "live": {
+      "updated": "2024-10-28T08:35:20+00:00",
+      "latitude": 52.053,
+      "longitude": 21.0655,
+      "altitude": 708.66,
+      "direction": 331,
+      "speed_horizontal": 275.948,
+      "speed_vertical": 0,
+      "is_ground": false
+    }
+  },
+  {
+    "flight_date": "2024-10-28",
+    "flight_status": "landed",
+    "departure": {
+      "airport": "Landvetter",
+      "timezone": "Europe/Stockholm",
+      "iata": "GOT",
+      "icao": "ESGG",
+      "terminal": "T1",
+      "gate": "20A",
+      "delay": 60,
+      "scheduled": "2024-10-28T08:00:00+00:00",
+      "estimated": "2024-10-28T08:00:00+00:00",
+      "actual": "2024-10-28T07:53:00+00:00",
+      "estimated_runway": "2024-10-28T07:53:00+00:00",
+      "actual_runway": "2024-10-28T07:53:00+00:00"
+    },
+    "arrival": {
+      "airport": "John Paul II Balice International",
+      "timezone": "Europe/Warsaw",
+      "iata": "KRK",
+      "icao": "EPKK",
+      "terminal": "T",
+      "gate": null,
+      "baggage": null,
+      "delay": null,
+      "scheduled": "2024-10-28T09:45:00+00:00",
+      "estimated": "2024-10-28T09:45:00+00:00",
+      "actual": "2024-10-28T09:12:00+00:00",
+      "estimated_runway": "2024-10-28T09:12:00+00:00",
+      "actual_runway": "2024-10-28T09:12:00+00:00"
+    },
+    "airline": {
+      "name": "Ryanair",
+      "iata": "FR",
+      "icao": "RYR"
+    },
+    "flight": {
+      "number": "4011",
+      "iata": "FR4011",
+      "icao": "RYR4011",
+      "codeshared": null
+    },
+    "aircraft": {
+      "registration": "EI-EGA",
+      "iata": "B738",
+      "icao": "B738",
+      "icao24": "4CA7B6"
+    },
+    "live": null
+  },
+  {
+    "flight_date": "2024-10-28",
+    "flight_status": "active",
+    "departure": {
+      "airport": "Landvetter",
+      "timezone": "Europe/Stockholm",
+      "iata": "GOT",
+      "icao": "ESGG",
+      "terminal": "T1",
+      "gate": "23",
+      "delay": 4,
+      "scheduled": "2024-10-28T07:45:00+00:00",
+      "estimated": "2024-10-28T07:45:00+00:00",
+      "actual": "2024-10-28T07:49:00+00:00",
+      "estimated_runway": "2024-10-28T07:49:00+00:00",
+      "actual_runway": "2024-10-28T07:49:00+00:00"
+    },
+    "arrival": {
+      "airport": "Heathrow",
+      "timezone": "Europe/London",
+      "iata": "LHR",
+      "icao": "EGLL",
+      "terminal": "3",
+      "gate": null,
+      "baggage": null,
+      "delay": null,
+      "scheduled": "2024-10-28T09:10:00+00:00",
+      "estimated": "2024-10-28T09:10:00+00:00",
+      "actual": null,
+      "estimated_runway": null,
+      "actual_runway": null
+    },
+    "airline": {
+      "name": "British Airways",
+      "iata": "BA",
+      "icao": "BAW"
+    },
+    "flight": {
+      "number": "803",
+      "iata": "BA803",
+      "icao": "BAW803",
+      "codeshared": null
+    },
+    "aircraft": {
+      "registration": "G-DBCK",
+      "iata": "A319",
+      "icao": "A319",
+      "icao24": "400F9A"
+    },
+    "live": {
+      "updated": "2024-10-28T08:35:19+00:00",
+      "latitude": 51.4689,
+      "longitude": 0.0188,
+      "altitude": 1508.76,
+      "direction": 250,
+      "speed_horizontal": 287.06,
+      "speed_vertical": 0,
+      "is_ground": false
+    }
+  },
+  {
+    "flight_date": "2024-10-28",
+    "flight_status": "active",
+    "departure": {
+      "airport": "Landvetter",
+      "timezone": "Europe/Stockholm",
+      "iata": "GOT",
+      "icao": "ESGG",
+      "terminal": "T1",
+      "gate": "23",
+      "delay": 4,
+      "scheduled": "2024-10-28T07:45:00+00:00",
+      "estimated": "2024-10-28T07:45:00+00:00",
+      "actual": "2024-10-28T07:49:00+00:00",
+      "estimated_runway": "2024-10-28T07:49:00+00:00",
+      "actual_runway": "2024-10-28T07:49:00+00:00"
+    },
+    "arrival": {
+      "airport": "Heathrow",
+      "timezone": "Europe/London",
+      "iata": "LHR",
+      "icao": "EGLL",
+      "terminal": "3",
+      "gate": null,
+      "baggage": null,
+      "delay": null,
+      "scheduled": "2024-10-28T09:10:00+00:00",
+      "estimated": "2024-10-28T09:10:00+00:00",
+      "actual": null,
+      "estimated_runway": null,
+      "actual_runway": null
+    },
+    "airline": {
+      "name": "American Airlines",
+      "iata": "AA",
+      "icao": "AAL"
+    },
+    "flight": {
+      "number": "6619",
+      "iata": "AA6619",
+      "icao": "AAL6619",
+      "codeshared": {
+        "airline_name": "british airways",
+        "airline_iata": "ba",
+        "airline_icao": "baw",
+        "flight_number": "803",
+        "flight_iata": "ba803",
+        "flight_icao": "baw803"
+      }
+    },
+    "aircraft": null,
+    "live": null
   }
 ]

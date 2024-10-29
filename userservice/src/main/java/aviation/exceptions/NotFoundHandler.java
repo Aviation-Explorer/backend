@@ -11,10 +11,10 @@ import jakarta.inject.Singleton;
 @Produces
 @Singleton
 @Requires(classes = {NotFoundException.class, ExceptionHandler.class})
-public class NotFoundHandler implements ExceptionHandler<NotFoundException, HttpResponse<ErrorMessage>> {
+public class NotFoundHandler implements ExceptionHandler<NotFoundException, HttpResponse<ErrorResponse>> {
     @Override
-    public HttpResponse<ErrorMessage> handle(HttpRequest request, NotFoundException exception) {
-        ErrorMessage errorMessage = new ErrorMessage(HttpStatus.NOT_FOUND.getCode(), exception.getMessage());
-        return HttpResponse.serverError(errorMessage).status(HttpStatus.NOT_FOUND);
+    public HttpResponse<ErrorResponse> handle(HttpRequest request, NotFoundException exception) {
+        ErrorResponse errorResponse = new ErrorResponse(HttpStatus.NOT_FOUND.getCode(), exception.getMessage());
+        return HttpResponse.serverError(errorResponse).status(HttpStatus.NOT_FOUND);
     }
 }

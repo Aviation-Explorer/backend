@@ -28,5 +28,4 @@ public class AuthenticationProviderUserPassword<B> implements HttpRequestExecuto
                 ? AuthenticationResponse.success(authRequest.getIdentity())
                 : AuthenticationResponse.failure();
     }
-
 }
