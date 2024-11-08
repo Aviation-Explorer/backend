@@ -4,6 +4,7 @@ import authservice.clients.UserServiceClient;
 import authservice.models.UserCredentials;
 import io.micronaut.core.annotation.NonNull;
 import io.micronaut.core.annotation.Nullable;
+import io.micronaut.discovery.exceptions.NoAvailableServiceException;
 import io.micronaut.http.HttpRequest;
 import io.micronaut.http.HttpResponse;
 import io.micronaut.security.authentication.AuthenticationRequest;
@@ -28,12 +29,13 @@ public class AuthenticationProviderUserPassword<B> implements HttpRequestExecuto
         Mono<HttpResponse<Boolean>> responseMono = client.verifyCredentials(credentials);
 
         HttpResponse<Boolean> response = responseMono.block();
-        if (response != null && response.getStatus().getCode() == 200 && Boolean.TRUE.equals(response.body())) {
-            return AuthenticationResponse.success(authRequest.getIdentity());
-        } else if (response != null && Boolean.FALSE.equals(response.body())) {
+        try {
+            if (response != null && response.getStatus().getCode() == 200 && Boolean.TRUE.equals(response.body())) {
+                return AuthenticationResponse.success(authRequest.getIdentity());
+            }
             return AuthenticationResponse.failure("Invalid credentials");
-        } else {
-            return AuthenticationResponse.failure("Unexpected error occurred");
+        } catch (NoAvailableServiceException e) {
+            return AuthenticationResponse.failure(e.getMessage());
         }
     }
 }

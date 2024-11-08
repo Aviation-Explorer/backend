@@ -19,12 +19,13 @@
    `docker run -p 27017:27017 -e MONGO_INITDB_DATABASE=aviationDb -e MONGO_INITDB_ROOT_USERNAME=admin -e MONGO_INITDB_ROOT_PASSWORD=password --name aviation-mongo -v flights-volume:/app/flights-data -d mongo:7.0.14 | docker start aviation-mongo`
 4. Run
    `docker run -e MARIADB_ROOT_PASSWORD=password -e MARIADB_DATABASE=userDb -p 3306:3306 -v users-volume:/app/user-data --name aviation-maria -d mariadb:11.2 | docker start aviation-maria`
-5. From each service run one of either:
+5. Run `docker run --name aviation-redis redis | docker start aviation-redis`
+6. From each service run one of either:
     * `./gradlew clean build` and `java -jar build/libs/<service-name>-all.jar`
     * `./gradlew run`
     * for authservice `AVIATION_SMTP_USER="aviation.explorer.helper@gmail.com" AVIATION_SMTP_PASSWORD="rkzw ynbs lihz dyrw" ./gradlew run`
     * or it can be done with `./gradlew --parallel run` from root directory
-6. Each service is under specific endpoint
+7. Each service is under specific endpoint
 
 ## Testing
 

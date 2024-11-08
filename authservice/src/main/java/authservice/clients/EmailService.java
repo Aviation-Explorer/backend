@@ -24,13 +24,18 @@ import reactor.core.publisher.Mono;
 public class EmailService {
   private final EmailSender emailSender;
   private final StatefulRedisConnection<String, String> redis;
+  private final UserServiceClient userServiceClient;
 
   private static final String EMAIL_REGEX = "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$";
   private static final Pattern EMAIL_PATTERN = Pattern.compile(EMAIL_REGEX);
 
-  public EmailService(EmailSender emailSender, StatefulRedisConnection<String, String> redis) {
+  public EmailService(
+      EmailSender emailSender,
+      StatefulRedisConnection<String, String> redis,
+      UserServiceClient userServiceClient) {
     this.emailSender = emailSender;
     this.redis = redis;
+    this.userServiceClient = userServiceClient;
   }
 
   public Mono<CharSequence> send(String receiverEmail) {
@@ -38,20 +43,30 @@ public class EmailService {
       return Mono.error(new EmailNotValidException("Invalid email"));
     }
 
-    String token = UUID.randomUUID().toString();
-    String resetLink = "http://localhost:3000/reset-password/" + token;
+    return userServiceClient
+        .checkIfUserExists(receiverEmail)
+        .flatMap(
+            userExists -> {
+              if (!userExists.body()) {
+                return Mono.error(
+                    new NoEmailExistsException("Email address not found: " + receiverEmail));
+              }
 
-    Map<String, Object> model = Map.of("userEmail", receiverEmail, "resetLink", resetLink);
-    Email.Builder emailBuilder =
-        Email.builder()
-            .to(receiverEmail)
-            .subject("Password reset request")
-            .body(new TemplateBody<>(BodyType.HTML, new ModelAndView<>("email", model)));
+              String token = UUID.randomUUID().toString();
+              String resetLink = "http://localhost:3000/reset-password/" + token;
 
-    emailSender.send(emailBuilder);
+              Map<String, Object> model =
+                  Map.of("userEmail", receiverEmail, "resetLink", resetLink);
+              Email.Builder emailBuilder =
+                  Email.builder()
+                      .to(receiverEmail)
+                      .subject("Password reset request")
+                      .body(new TemplateBody<>(BodyType.HTML, new ModelAndView<>("email", model)));
 
-    saveResetToken(receiverEmail, token);
-    return Mono.just(token);
+              emailSender.send(emailBuilder);
+              saveResetToken(receiverEmail, token);
+              return Mono.just(token);
+            });
   }
 
   public Mono<String> getValue(String email) {
@@ -73,6 +88,6 @@ public class EmailService {
     RedisCommands<String, String> redisCommands = redis.sync();
     String tokenToSave = "reset_token" + email;
     redisCommands.set(tokenToSave, token);
-    redisCommands.expire(tokenToSave, 50);
+    redisCommands.expire(tokenToSave, 60);
   }
 }

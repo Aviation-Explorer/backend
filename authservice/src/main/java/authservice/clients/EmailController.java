@@ -16,11 +16,9 @@ import reactor.core.publisher.Mono;
 @Slf4j
 public class EmailController {
   private final EmailService emailService;
-  private final UserServiceClient userServiceClient;
 
-  public EmailController(EmailService emailService, UserServiceClient userServiceClient) {
+  public EmailController(EmailService emailService) {
     this.emailService = emailService;
-    this.userServiceClient = userServiceClient;
   }
 
   @Get("/send-reset")
@@ -46,7 +44,4 @@ public class EmailController {
             IllegalArgumentException.class,
             e -> Mono.just(HttpResponse.status(HttpStatus.CONFLICT, e.getMessage())));
   }
-
-
-
 }

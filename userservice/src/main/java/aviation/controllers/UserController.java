@@ -38,6 +38,12 @@ public class UserController {
     return userService.findAll();
   }
 
+  @Get("/{email}")
+  @Secured(SecurityRule.IS_ANONYMOUS)
+  public Mono<Boolean> getOneUser(@PathVariable String email) {
+    return userService.existsByEmail(email);
+  }
+
   @Secured(SecurityRule.IS_ANONYMOUS)
   @Post("/verify")
   public Mono<Boolean> verifyCredentials(@Body UserCredentials credentials) {

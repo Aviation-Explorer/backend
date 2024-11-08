@@ -15,5 +15,8 @@ public interface UserServiceClient {
 
     @Post("/api/user/verify")
     Mono<HttpResponse<Boolean>> verifyCredentials(@Body UserCredentials credentials);
+
+    @Get("/api/user/{email}")
+    Mono<HttpResponse<Boolean>> checkIfUserExists(@PathVariable String email);
     
 }

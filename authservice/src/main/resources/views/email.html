@@ -5,8 +5,9 @@
     Hello, <span th:text="${userEmail}">User</span>!
 </p>
 <p>
-    We received a request to reset your password. If you made this request, please click the link below to reset your password:
+    We received a request to reset your password. If you made this request, please click the link below to reset your password.
 </p>
+<strong>Link is available for 1 minute.</strong>
 <p>
     <a th:href="${resetLink}" th:text="${resetLink}"></a>
 </p>

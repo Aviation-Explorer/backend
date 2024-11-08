@@ -1,6 +1,5 @@
 package aviation.services;
 
-
 import aviation.exceptions.DuplicateEmailException;
 import aviation.exceptions.InvalidPasswordException;
 import aviation.exceptions.NotFoundException;
@@ -42,6 +41,10 @@ public class AviationUserService {
     return Flux.fromIterable(users).map(this::toDto);
   }
 
+  public Mono<Boolean> existsByEmail(String email) {
+    return Mono.just(userRepository.existsByEmail(email));
+  }
+
   public Mono<AviationUserDto> save(AviationUser user) {
     Set<ConstraintViolation<AviationUser>> violations = validator.validate(user);
 
@@ -71,19 +74,27 @@ public class AviationUserService {
   }
 
   public Mono<Boolean> updatePassword(UserCredentials credentials) {
-    return userRepository.findByEmail(credentials.email())
-            .flatMap(user -> {
+    Set<ConstraintViolation<UserCredentials>> violations = validator.validate(credentials);
+
+    if (!violations.isEmpty()) {
+      return Mono.error(new InvalidPasswordException("Password violations"));
+    }
+
+    return userRepository
+        .findByEmail(credentials.email())
+        .flatMap(
+            user -> {
               user.setPassword(PasswordManager.hashPassword(credentials.password()));
               userRepository.update(user);
               return Mono.just(true);
             })
-            .switchIfEmpty(Mono.error(new NotFoundException("User not found with email: " + credentials.email())));
+        .switchIfEmpty(
+            Mono.error(new NotFoundException("User not found with email: " + credentials.email())));
   }
-
 
   private AviationUserDto toDto(AviationUser user) {
     return new AviationUserDto(
-            user.getName(), user.getSurname(), user.getEmail(), user.getPhoneNumber(), user.getAge());
+        user.getName(), user.getSurname(), user.getEmail(), user.getPhoneNumber(), user.getAge());
   }
 
   public Mono<AviationUserFlight> saveFlightForUser(
