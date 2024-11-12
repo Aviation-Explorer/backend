@@ -23,7 +23,7 @@ public class AirlineController {
   }
 
   @Get("/airlines")
-  public Flux<AirlineDto> getAirports() {
+  public Flux<AirlineDto> getAirlines() {
     return airlineService.getAirlines();
   }
 }

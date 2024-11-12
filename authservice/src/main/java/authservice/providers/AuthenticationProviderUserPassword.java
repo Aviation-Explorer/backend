@@ -10,6 +10,7 @@ import io.micronaut.http.HttpResponse;
 import io.micronaut.security.authentication.AuthenticationRequest;
 import io.micronaut.security.authentication.AuthenticationResponse;
 import io.micronaut.security.authentication.provider.HttpRequestExecutorAuthenticationProvider;
+import io.micronaut.security.token.render.BearerAccessRefreshToken;
 import jakarta.inject.Inject;
 import jakarta.inject.Singleton;
 import lombok.extern.slf4j.Slf4j;

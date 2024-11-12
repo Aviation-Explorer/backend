@@ -1,6 +1,7 @@
 package aviation.services;
 
 import aviation.exceptions.DuplicateEmailException;
+import aviation.exceptions.ExistRelationException;
 import aviation.exceptions.InvalidPasswordException;
 import aviation.exceptions.NotFoundException;
 import aviation.models.AviationUser;
@@ -92,13 +93,15 @@ public class AviationUserService {
             Mono.error(new NotFoundException("User not found with email: " + credentials.email())));
   }
 
-  private AviationUserDto toDto(AviationUser user) {
-    return new AviationUserDto(
-        user.getName(), user.getSurname(), user.getEmail(), user.getPhoneNumber(), user.getAge());
-  }
-
   public Mono<AviationUserFlight> saveFlightForUser(
       String email, AviationUserFlight aviationUserFlight) {
+
+//    Boolean assignedYet = flightUserRepository.ifExists(email, aviationUserFlight.getId());
+//
+//    if (assignedYet) {
+//      return Mono.error(new ExistRelationException("User already assigned to this flight"));
+//    }
+
     return userRepository
         .findByEmail(email)
         .map(
@@ -113,20 +116,6 @@ public class AviationUserService {
     return flightUserRepository.findByUserEmail(email).map(this::toFlightDto);
   }
 
-  private AviationUserFlightDto toFlightDto(AviationUserFlight flight) {
-    return new AviationUserFlightDto(
-        flight.getId(),
-        flight.getAirline(),
-        flight.getAviationUserEmail(),
-        flight.getDepartureAirport(),
-        flight.getArrivalAirport(),
-        flight.getFlightDate(),
-        flight.getDepartureTerminal(),
-        flight.getDepartureGate(),
-        flight.getArrivalTerminal(),
-        flight.getArrivalGate());
-  }
-
   public Mono<Void> deleteFlightForUser(String email, Long id) {
     return flightUserRepository
         .deleteFlightByEmailAndID(email, id)
@@ -139,5 +128,24 @@ public class AviationUserService {
                     new IllegalArgumentException("No flight found to delete for user: " + email));
               }
             });
+  }
+
+  private AviationUserDto toDto(AviationUser user) {
+    return new AviationUserDto(
+        user.getName(), user.getSurname(), user.getEmail(), user.getPhoneNumber(), user.getAge());
+  }
+
+  private AviationUserFlightDto toFlightDto(AviationUserFlight flight) {
+    return new AviationUserFlightDto(
+        flight.getId(),
+        flight.getAirline(),
+        flight.getAviationUserEmail(),
+        flight.getDepartureAirport(),
+        flight.getArrivalAirport(),
+        flight.getFlightDate(),
+        flight.getDepartureTerminal(),
+        flight.getDepartureGate(),
+        flight.getArrivalTerminal(),
+        flight.getArrivalGate());
   }
 }

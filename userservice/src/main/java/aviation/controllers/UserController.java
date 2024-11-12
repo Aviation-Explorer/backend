@@ -89,7 +89,7 @@ public class UserController {
         .onErrorResume(e -> Flux.empty());
   }
 
-  @Delete("/flight/{email}/{id}")
+  @Delete("/{email}/flight/{id}")
   public Mono<MutableHttpResponse<Object>> deleteFlightForUser(
       @PathVariable("email") String email, @PathVariable("id") Long id) {
     return userService
