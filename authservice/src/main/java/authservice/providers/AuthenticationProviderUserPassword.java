@@ -1,6 +1,7 @@
 package authservice.providers;
 
 import authservice.clients.UserServiceClient;
+import authservice.models.AviationUserDto;
 import authservice.models.UserCredentials;
 import io.micronaut.core.annotation.NonNull;
 import io.micronaut.core.annotation.Nullable;
@@ -10,11 +11,12 @@ import io.micronaut.http.HttpResponse;
 import io.micronaut.security.authentication.AuthenticationRequest;
 import io.micronaut.security.authentication.AuthenticationResponse;
 import io.micronaut.security.authentication.provider.HttpRequestExecutorAuthenticationProvider;
-import io.micronaut.security.token.render.BearerAccessRefreshToken;
 import jakarta.inject.Inject;
 import jakarta.inject.Singleton;
 import lombok.extern.slf4j.Slf4j;
 import reactor.core.publisher.Mono;
+
+import java.util.Collections;
 
 @Singleton
 @Slf4j
@@ -32,7 +34,9 @@ public class AuthenticationProviderUserPassword<B> implements HttpRequestExecuto
         HttpResponse<Boolean> response = responseMono.block();
         try {
             if (response != null && response.getStatus().getCode() == 200 && Boolean.TRUE.equals(response.body())) {
-                return AuthenticationResponse.success(authRequest.getIdentity());
+                HttpResponse<AviationUserDto> block = client.getUserByEmail(authRequest.getIdentity()).block();
+                String role = block.body().role();
+                return AuthenticationResponse.success(authRequest.getIdentity(), Collections.singletonList(role));
             }
             return AuthenticationResponse.failure("Invalid credentials");
         } catch (NoAvailableServiceException e) {

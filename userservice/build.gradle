@@ -21,6 +21,7 @@ dependencies {
     annotationProcessor("io.micronaut.validation:micronaut-validation-processor")
     annotationProcessor("io.micronaut.openapi:micronaut-openapi")
 
+    implementation("io.micronaut:micronaut-runtime")
     implementation("io.micrometer:context-propagation")
     implementation("io.micronaut:micronaut-http-client")
     implementation("io.micronaut:micronaut-management")

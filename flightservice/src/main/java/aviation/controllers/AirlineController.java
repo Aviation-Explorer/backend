@@ -8,6 +8,7 @@ import io.micronaut.scheduling.TaskExecutors;
 import io.micronaut.scheduling.annotation.ExecuteOn;
 import io.micronaut.security.annotation.Secured;
 import io.micronaut.security.rules.SecurityRule;
+import io.swagger.v3.oas.annotations.Operation;
 import lombok.extern.slf4j.Slf4j;
 import reactor.core.publisher.Flux;
 
@@ -22,6 +23,7 @@ public class AirlineController {
     this.airlineService = airlineService;
   }
 
+  @Operation(summary = "Get all airlines")
   @Get("/airlines")
   public Flux<AirlineDto> getAirlines() {
     return airlineService.getAirlines();

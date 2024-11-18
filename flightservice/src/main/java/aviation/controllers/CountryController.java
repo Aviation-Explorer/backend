@@ -8,6 +8,7 @@ import io.micronaut.scheduling.TaskExecutors;
 import io.micronaut.scheduling.annotation.ExecuteOn;
 import io.micronaut.security.annotation.Secured;
 import io.micronaut.security.rules.SecurityRule;
+import io.swagger.v3.oas.annotations.Operation;
 import reactor.core.publisher.Flux;
 
 @Controller("/api/flight-data")
@@ -20,6 +21,7 @@ public class CountryController {
     this.countryService = countryService;
   }
 
+  @Operation(summary = "Get all countries")
   @Get("/countries")
   public Flux<CountryDto> getCountries() {
     return countryService.getCountries();

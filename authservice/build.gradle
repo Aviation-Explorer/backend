@@ -35,6 +35,7 @@ dependencies {
     implementation("io.micronaut.email:micronaut-email-javamail")
     implementation("io.micronaut.email:micronaut-email-template")
     implementation("io.micronaut.views:micronaut-views-thymeleaf")
+    implementation("io.micronaut.security:micronaut-security-oauth2")
 
     compileOnly("io.micronaut.openapi:micronaut-openapi-annotations")
     compileOnly("io.micronaut:micronaut-http-client")

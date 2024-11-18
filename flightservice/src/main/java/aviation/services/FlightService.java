@@ -8,7 +8,6 @@ import aviation.repositories.AirportRepository;
 import aviation.repositories.CityRepository;
 import aviation.repositories.FlightRepository;
 import jakarta.inject.Singleton;
-import java.time.LocalDate;
 import java.util.List;
 import java.util.Optional;
 import reactor.core.publisher.Flux;
@@ -82,6 +81,7 @@ public class FlightService {
     }
 
     return new FlightDto(
+        flight.get_id(),
         flight.getFlightDate(),
         flight.getFlightStatus(),
         flight.getDeparture(),

@@ -42,20 +42,23 @@ public class AviationUserService {
     return Flux.fromIterable(users).map(this::toDto);
   }
 
-  public Mono<Boolean> existsByEmail(String email) {
-    return Mono.just(userRepository.existsByEmail(email));
+  public Mono<AviationUserDto> findOne(String email) {
+    return userRepository.findByEmail(email).map(this::toDto);
   }
 
   public Mono<AviationUserDto> save(AviationUser user) {
     Set<ConstraintViolation<AviationUser>> violations = validator.validate(user);
 
     if (!violations.isEmpty()) {
-      return Mono.error(new InvalidPasswordException("Password violations"));
+      return Mono.error(new InvalidPasswordException("Password violations " + violations));
     }
-    if (userRepository.existsByEmail(user.getEmail())) {
+
+    if (Boolean.TRUE.equals(userRepository.existsByEmail(user.getEmail()).block())) {
       return Mono.error(new DuplicateEmailException("Duplicate email violation"));
     }
+
     user.setPassword(PasswordManager.hashPassword(user.getPassword()));
+    user.setIsBlocked(false);
 
     AviationUser userToSave = userRepository.save(user);
 
@@ -96,11 +99,11 @@ public class AviationUserService {
   public Mono<AviationUserFlight> saveFlightForUser(
       String email, AviationUserFlight aviationUserFlight) {
 
-//    Boolean assignedYet = flightUserRepository.ifExists(email, aviationUserFlight.getId());
-//
-//    if (assignedYet) {
-//      return Mono.error(new ExistRelationException("User already assigned to this flight"));
-//    }
+    Boolean assignedYet = flightUserRepository.ifExists(email, aviationUserFlight.getFlightId());
+
+    if (assignedYet) {
+      return Mono.error(new ExistRelationException("User already assigned to this flight"));
+    }
 
     return userRepository
         .findByEmail(email)
@@ -108,6 +111,18 @@ public class AviationUserService {
             user -> {
               aviationUserFlight.setAviationUserEmail(user.getEmail());
               return flightUserRepository.save(aviationUserFlight);
+            })
+        .switchIfEmpty(Mono.error(new NotFoundException("User not found with email: " + email)));
+  }
+
+  public Mono<Boolean> updateUserStatus(String email, Boolean isBlocked) {
+    return userRepository
+        .findByEmail(email)
+        .flatMap(
+            user -> {
+              user.setIsBlocked(isBlocked);
+              userRepository.update(user);
+              return Mono.just(true);
             })
         .switchIfEmpty(Mono.error(new NotFoundException("User not found with email: " + email)));
   }
@@ -130,14 +145,25 @@ public class AviationUserService {
             });
   }
 
+  public Mono<Boolean> deleteUser(String email) {
+    return userRepository.deleteByEmail(email);
+  }
+
   private AviationUserDto toDto(AviationUser user) {
     return new AviationUserDto(
-        user.getName(), user.getSurname(), user.getEmail(), user.getPhoneNumber(), user.getAge());
+        user.getName(),
+        user.getSurname(),
+        user.getEmail(),
+        user.getPhoneNumber(),
+        user.getAge(),
+        user.getIsBlocked(),
+        user.getRole());
   }
 
   private AviationUserFlightDto toFlightDto(AviationUserFlight flight) {
     return new AviationUserFlightDto(
         flight.getId(),
+        flight.getFlightId(),
         flight.getAirline(),
         flight.getAviationUserEmail(),
         flight.getDepartureAirport(),

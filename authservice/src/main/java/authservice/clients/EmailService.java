@@ -3,7 +3,6 @@ package authservice.clients;
 import authservice.exceptions.EmailNotValidException;
 import authservice.exceptions.NoEmailExistsException;
 import authservice.exceptions.TokenNotFoundException;
-import authservice.exceptions.TokenNotFoundHandler;
 import io.lettuce.core.api.StatefulRedisConnection;
 import io.lettuce.core.api.sync.RedisCommands;
 import io.micronaut.email.BodyType;
@@ -11,7 +10,6 @@ import io.micronaut.email.Email;
 import io.micronaut.email.EmailSender;
 import io.micronaut.email.template.TemplateBody;
 import io.micronaut.views.ModelAndView;
-import jakarta.inject.Inject;
 import jakarta.inject.Singleton;
 import java.util.Map;
 import java.util.UUID;
@@ -44,10 +42,10 @@ public class EmailService {
     }
 
     return userServiceClient
-        .checkIfUserExists(receiverEmail)
+        .getUserByEmail(receiverEmail)
         .flatMap(
-            userExists -> {
-              if (!userExists.body()) {
+            userResponse -> {
+              if (userResponse != null) {
                 return Mono.error(
                     new NoEmailExistsException("Email address not found: " + receiverEmail));
               }

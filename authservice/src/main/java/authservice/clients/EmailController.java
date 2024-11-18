@@ -1,13 +1,14 @@
 package authservice.clients;
 
-import authservice.models.UserCredentials;
 import io.micronaut.context.annotation.Parameter;
 import io.micronaut.http.HttpResponse;
 import io.micronaut.http.HttpStatus;
 import io.micronaut.http.MutableHttpResponse;
-import io.micronaut.http.annotation.*;
+import io.micronaut.http.annotation.Controller;
+import io.micronaut.http.annotation.Get;
 import io.micronaut.security.annotation.Secured;
 import io.micronaut.security.rules.SecurityRule;
+import io.swagger.v3.oas.annotations.Operation;
 import lombok.extern.slf4j.Slf4j;
 import reactor.core.publisher.Mono;
 
@@ -21,6 +22,7 @@ public class EmailController {
     this.emailService = emailService;
   }
 
+  @Operation(summary = "Send email with password reset link to user email")
   @Get("/send-reset")
   public Mono<MutableHttpResponse<Object>> sendResetEmail(
       @Parameter("receiverEmail") String receiverEmail) {
@@ -35,6 +37,7 @@ public class EmailController {
             });
   }
 
+  @Operation(summary = "Get password reset key from Redis by user email")
   @Get
   public Mono<MutableHttpResponse<String>> getValue(@Parameter("email") String email) {
     return emailService

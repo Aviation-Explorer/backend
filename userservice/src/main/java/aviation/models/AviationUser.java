@@ -1,5 +1,6 @@
 package aviation.models;
 
+import aviation.utils.Role;
 import io.micronaut.core.annotation.Nullable;
 import io.micronaut.data.annotation.GeneratedValue;
 import io.micronaut.data.annotation.Id;
@@ -10,6 +11,8 @@ import jakarta.validation.constraints.Pattern;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+
+import java.util.List;
 
 @Serdeable
 @MappedEntity(value = "aviation_user")
@@ -36,5 +39,8 @@ public class AviationUser {
     private String phoneNumber;
     @Nullable    
     private Integer age;
+    private Boolean isBlocked;
+    @Pattern(regexp = "ADMIN|USER")
+    private Role role;
 
 }

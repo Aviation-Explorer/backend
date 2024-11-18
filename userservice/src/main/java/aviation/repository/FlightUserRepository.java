@@ -16,6 +16,6 @@ public interface FlightUserRepository extends CrudRepository<AviationUserFlight,
   @Query(value = "DELETE FROM aviation_user_flight WHERE aviation_user_email = :email AND id = :id")
   Mono<Integer> deleteFlightByEmailAndID(String email, Long id);
 
-  @Query(value = "SELECT COUNT(1) > 0 FROM aviation_user_flight WHERE aviation_user_email = :email AND flight_id = :id")
-  Boolean ifExists(String email, Long id);
+  @Query(value = "SELECT COUNT(1) > 0 FROM aviation_user_flight WHERE aviation_user_email = :email AND flight_id = :flightId")
+  Boolean ifExists(String email, String flightId);
 }

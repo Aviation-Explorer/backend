@@ -9,6 +9,7 @@ import io.micronaut.scheduling.TaskExecutors;
 import io.micronaut.scheduling.annotation.ExecuteOn;
 import io.micronaut.security.annotation.Secured;
 import io.micronaut.security.rules.SecurityRule;
+import io.swagger.v3.oas.annotations.Operation;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
@@ -22,11 +23,13 @@ public class CityController {
     this.cityService = cityService;
   }
 
+  @Operation(summary = "Get all cities")
   @Get("/cities")
   public Flux<CityDto> getCities() {
     return cityService.getCities();
   }
 
+  @Operation(summary = "Get city by iata code")
   @Get("/cities/{iataCode}")
   public Mono<CityDto> getCityByIataCode(@PathVariable(value = "iataCode") String iataCode) {
     return cityService.getCityByIataCode(iataCode);

@@ -11,11 +11,21 @@ import io.micronaut.http.HttpResponse;
 import io.micronaut.http.HttpStatus;
 import io.micronaut.http.MediaType;
 import io.micronaut.http.MutableHttpResponse;
-import io.micronaut.http.annotation.*;
+import io.micronaut.http.annotation.Body;
+import io.micronaut.http.annotation.Consumes;
+import io.micronaut.http.annotation.Controller;
+import io.micronaut.http.annotation.Delete;
+import io.micronaut.http.annotation.Get;
+import io.micronaut.http.annotation.Patch;
+import io.micronaut.http.annotation.PathVariable;
+import io.micronaut.http.annotation.Post;
+import io.micronaut.http.annotation.Produces;
 import io.micronaut.scheduling.TaskExecutors;
 import io.micronaut.scheduling.annotation.ExecuteOn;
 import io.micronaut.security.annotation.Secured;
 import io.micronaut.security.rules.SecurityRule;
+import io.swagger.v3.oas.annotations.Operation;
+import jakarta.annotation.security.RolesAllowed;
 import lombok.extern.slf4j.Slf4j;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
@@ -32,18 +42,22 @@ public class UserController {
     this.userService = userService;
   }
 
+  @Operation(summary = "Get all users")
+  @RolesAllowed("ADMIN")
   @Get("/users")
   @Produces(MediaType.APPLICATION_JSON)
   public Flux<AviationUserDto> getUsers() {
     return userService.findAll();
   }
 
+  @Operation(summary = "Get one user")
   @Get("/{email}")
   @Secured(SecurityRule.IS_ANONYMOUS)
-  public Mono<Boolean> getOneUser(@PathVariable String email) {
-    return userService.existsByEmail(email);
+  public Mono<AviationUserDto> getOneUser(@PathVariable String email) {
+    return userService.findOne(email);
   }
 
+  @Operation(summary = "Check credentials")
   @Secured(SecurityRule.IS_ANONYMOUS)
   @Post("/verify")
   public Mono<Boolean> verifyCredentials(@Body UserCredentials credentials) {
@@ -51,12 +65,14 @@ public class UserController {
     return userService.verifyCredentials(credentials);
   }
 
+  @Operation(summary = "Update user password")
   @Secured(SecurityRule.IS_ANONYMOUS)
   @Patch("/update-password")
   public Mono<Boolean> updatePassword(@Body UserCredentials credentials) {
     return userService.updatePassword(credentials);
   }
 
+  @Operation(summary = "Create new user")
   @Post
   @Secured(SecurityRule.IS_ANONYMOUS)
   @Consumes(MediaType.APPLICATION_JSON)
@@ -69,6 +85,8 @@ public class UserController {
             e -> Mono.just(HttpResponse.status(HttpStatus.CONFLICT, e.getMessage())));
   }
 
+  @Operation(summary = "Assign user to flight")
+  @RolesAllowed("USER")
   @Post("/flight")
   public Mono<MutableHttpResponse<AviationUserFlight>> saveFlightForUser(
       @Body FlightSubmissionDto submissionDto) {
@@ -80,6 +98,8 @@ public class UserController {
             e -> Mono.just(HttpResponse.status(HttpStatus.CONFLICT, e.getMessage())));
   }
 
+  @Operation(summary = "Get flights related to user")
+  @RolesAllowed("USER")
   @Get("/{email}/flights")
   @Produces(MediaType.APPLICATION_JSON)
   public Flux<AviationUserFlightDto> getUserFlights(@PathVariable("email") String email) {
@@ -89,6 +109,8 @@ public class UserController {
         .onErrorResume(e -> Flux.empty());
   }
 
+  @Operation(summary = "Unasign user from flight")
+  @RolesAllowed({"USER", "ADMIN"})
   @Delete("/{email}/flight/{id}")
   public Mono<MutableHttpResponse<Object>> deleteFlightForUser(
       @PathVariable("email") String email, @PathVariable("id") Long id) {
@@ -99,6 +121,35 @@ public class UserController {
             IllegalArgumentException.class,
             e -> {
               log.error("Error deleting flight for user {}: {}", email, e.getMessage());
+              return Mono.just(HttpResponse.status(HttpStatus.NOT_FOUND, e.getMessage()));
+            });
+  }
+
+  @Operation(summary = "Delete user")
+  @RolesAllowed("ADMIN")
+  @Delete("/{email}")
+  public Mono<MutableHttpResponse<Object>> deleteUser(
+      @PathVariable("email") String email) {
+    return userService.deleteUser(email)
+        .then(Mono.just(HttpResponse.ok()))
+        .onErrorResume(IllegalAccessError.class,
+            e -> {
+              log.error("Error deleting user {}: {}", email, e.getMessage());
+              return Mono.just(HttpResponse.status(HttpStatus.NOT_FOUND, e.getMessage()));
+            });
+  }
+
+  @Operation(summary = "Block or unblock user")
+  @RolesAllowed("ADMIN")
+  @Patch("/{email}/status/{block}")
+  public Mono<MutableHttpResponse<Object>> updateUserStatus(
+      @PathVariable("email") String email,
+      @PathVariable("block") Boolean isBlocked) {
+    return userService.updateUserStatus(email, isBlocked)
+        .then(Mono.just(HttpResponse.ok()))
+        .onErrorResume(IllegalAccessError.class,
+            e -> {
+              log.error("Error updating status for user  {}: {}", email, e.getMessage());
               return Mono.just(HttpResponse.status(HttpStatus.NOT_FOUND, e.getMessage()));
             });
   }
