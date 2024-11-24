@@ -1,0 +1,2 @@
+ALTER TABLE aviation_user
+MODIFY COLUMN role ENUM('ADMIN', 'USER') DEFAULT 'USER';

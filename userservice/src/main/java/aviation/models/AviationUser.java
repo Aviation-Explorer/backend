@@ -12,8 +12,6 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import java.util.List;
-
 @Serdeable
 @MappedEntity(value = "aviation_user")
 @NoArgsConstructor
@@ -39,8 +37,9 @@ public class AviationUser {
     private String phoneNumber;
     @Nullable    
     private Integer age;
+    @Nullable
     private Boolean isBlocked;
-    @Pattern(regexp = "ADMIN|USER")
+    @Nullable
     private Role role;
 
 }

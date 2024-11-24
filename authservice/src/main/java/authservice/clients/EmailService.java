@@ -45,7 +45,7 @@ public class EmailService {
         .getUserByEmail(receiverEmail)
         .flatMap(
             userResponse -> {
-              if (userResponse != null) {
+              if (userResponse == null) {
                 return Mono.error(
                     new NoEmailExistsException("Email address not found: " + receiverEmail));
               }

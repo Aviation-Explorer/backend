@@ -1,3 +1,5 @@
+#!/bin/bash
+
 docker cp ./airports.json aviation-mongo:/tmp/airports.json
 docker exec -i aviation-mongo mongoimport --db aviationDb --collection airports --type json --file /tmp/airports.json --jsonArray --authenticationDatabase admin -u admin -p password
 

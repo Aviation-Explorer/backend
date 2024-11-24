@@ -9,6 +9,8 @@ import aviation.models.AviationUserFlight;
 import aviation.models.UserCredentials;
 import aviation.models.dto.AviationUserDto;
 import aviation.models.dto.AviationUserFlightDto;
+import aviation.models.stats.UserCreatedStat;
+import aviation.models.stats.UserFlightStat;
 import aviation.repository.FlightUserRepository;
 import aviation.repository.UserRepository;
 import aviation.utils.PasswordManager;
@@ -50,7 +52,7 @@ public class AviationUserService {
     Set<ConstraintViolation<AviationUser>> violations = validator.validate(user);
 
     if (!violations.isEmpty()) {
-      return Mono.error(new InvalidPasswordException("Password violations " + violations));
+      return Mono.error(new InvalidPasswordException("Password violations"));
     }
 
     if (Boolean.TRUE.equals(userRepository.existsByEmail(user.getEmail()).block())) {
@@ -128,8 +130,20 @@ public class AviationUserService {
   }
 
   public Flux<AviationUserFlightDto> getFlightsForUser(String email) {
-    return flightUserRepository.findByUserEmail(email).map(this::toFlightDto);
+      Flux<AviationUserFlightDto> map = flightUserRepository.findByUserEmail(email).map(this::toFlightDto);
+      AviationUserFlightDto aviationUserFlightDto = map.blockFirst();
+      System.out.println(aviationUserFlightDto);
+
+      return map;
   }
+
+  public Mono<Long> countBlockedUsers() {
+    return userRepository.countBlockedUsers();
+  }
+
+  public Flux<UserCreatedStat> countCreatedAtUsers() {
+        return userRepository.countUserCreated();
+    }
 
   public Mono<Void> deleteFlightForUser(String email, Long id) {
     return flightUserRepository
@@ -145,9 +159,11 @@ public class AviationUserService {
             });
   }
 
-  public Mono<Boolean> deleteUser(String email) {
-    return userRepository.deleteByEmail(email);
-  }
+    public Mono<Long> deleteUser(String email) {
+        return userRepository.findByEmail(email)
+                .flatMap(user -> userRepository.deleteByEmail(email))
+                .switchIfEmpty(Mono.error(new NotFoundException("User not found with email: " + email)));
+    }
 
   private AviationUserDto toDto(AviationUser user) {
     return new AviationUserDto(

@@ -22,5 +22,6 @@
 - docker cp ./flights.json aviation-mongo:/tmp/flights.json
 - docker exec -i aviation-mongo mongoimport --db aviationDb --collection flights --type json --file /tmp/flights.json --jsonArray --authenticationDatabase admin -u admin -p password
 
-To enter mongo container: `docker exec -it aviation-mongo mongosh -u admin -p password --authenticationDatabase admin`
+To enter mongo container: `docker exec -it aviation-mongo mongosh -u admin -p password --authenticationDatabase admin`. \
+You can populate data with script `./write-data-mongo.sh`.
     

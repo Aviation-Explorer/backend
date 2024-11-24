@@ -1,6 +1,7 @@
 package aviation.repository;
 
 import aviation.models.AviationUserFlight;
+import aviation.models.stats.UserFlightStat;
 import io.micronaut.data.annotation.Query;
 import io.micronaut.data.jdbc.annotation.JdbcRepository;
 import io.micronaut.data.model.query.builder.sql.Dialect;
@@ -18,4 +19,7 @@ public interface FlightUserRepository extends CrudRepository<AviationUserFlight,
 
   @Query(value = "SELECT COUNT(1) > 0 FROM aviation_user_flight WHERE aviation_user_email = :email AND flight_id = :flightId")
   Boolean ifExists(String email, String flightId);
+
+  @Query(value = "SELECT airline AS airline, COUNT(*) AS count FROM aviation_user_flight GROUP BY airline")
+  Flux<UserFlightStat> countUsersFlightByAirline();
 }

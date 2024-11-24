@@ -99,7 +99,6 @@ public class UserController {
   }
 
   @Operation(summary = "Get flights related to user")
-  @RolesAllowed("USER")
   @Get("/{email}/flights")
   @Produces(MediaType.APPLICATION_JSON)
   public Flux<AviationUserFlightDto> getUserFlights(@PathVariable("email") String email) {
@@ -131,7 +130,7 @@ public class UserController {
   public Mono<MutableHttpResponse<Object>> deleteUser(
       @PathVariable("email") String email) {
     return userService.deleteUser(email)
-        .then(Mono.just(HttpResponse.ok()))
+        .then(Mono.just(HttpResponse.noContent()))
         .onErrorResume(IllegalAccessError.class,
             e -> {
               log.error("Error deleting user {}: {}", email, e.getMessage());
@@ -141,16 +140,10 @@ public class UserController {
 
   @Operation(summary = "Block or unblock user")
   @RolesAllowed("ADMIN")
-  @Patch("/{email}/status/{block}")
-  public Mono<MutableHttpResponse<Object>> updateUserStatus(
+  @Patch("/{email}/status")
+  public Mono<Boolean> updateUserStatus(
       @PathVariable("email") String email,
-      @PathVariable("block") Boolean isBlocked) {
-    return userService.updateUserStatus(email, isBlocked)
-        .then(Mono.just(HttpResponse.ok()))
-        .onErrorResume(IllegalAccessError.class,
-            e -> {
-              log.error("Error updating status for user  {}: {}", email, e.getMessage());
-              return Mono.just(HttpResponse.status(HttpStatus.NOT_FOUND, e.getMessage()));
-            });
+      @Body("toBlock") Boolean toBlock) {
+    return userService.updateUserStatus(email, toBlock);
   }
 }
